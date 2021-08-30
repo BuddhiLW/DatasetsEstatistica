@@ -1,0 +1,28 @@
+* DONE Monitoria Estatística I, II
+CLOSED: [2021-08-18 Wed 11:20]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-08-18 Wed 11:20]
+:END:
+DEADLINE: <2021-08-15 Sun> SCHEDULED: <2021-08-12 Thu>
+* Estatística - Parte 1
+- Distribuicao conjunta
+- Esperança conjunta
+- Qualidade
+- Chi-quadrado
+- Logística
+
+* Estatística - Parte 2
+- Escolha de dados
+- Suporte para fazer o trabalho
+- Correção
+
+* Novos Datasets
+** Análise de Regressão Linear Múltipla
+** Análise de Regressão Logística Múltipla
+** Análise de Variância Múltipla
+** Análise de Agrupamento
+** Análise Discriminante
+** Análise de Componentes Principais
+** Análise Fatorial
+** Análise de Correspondência.
+
