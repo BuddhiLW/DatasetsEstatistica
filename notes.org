@@ -25,4 +25,20 @@ DEADLINE: <2021-08-15 Sun> SCHEDULED: <2021-08-12 Thu>
 ** Análise de Componentes Principais
 ** Análise Fatorial
 ** Análise de Correspondência.
+   #+begin_src ein-r :session localhost :results output
+haireye <- margin.table(HairEyeColor, 1:2)
+library(ca)
+(haireye.ca <- ca(haireye))
+   #+end_src
+
+#+begin_src emacs-lisp
+  (use-package poly-R)
+  (use-package ess)
+#+end_src
+
+#+RESULTS:
+
+
+* Segunda reunião
+* R
 

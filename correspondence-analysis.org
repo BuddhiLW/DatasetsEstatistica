@@ -1,0 +1,39 @@
+* Correspondency Analysis
+  Mod-01 Lec-41 Correspondence Analysis
+  https://www.youtube.com/watch?v=jr47E7MZfwY
+** Multivariate
+*** Categorical data
+    - Transform it in distances.
+    - Create a perceptual map.
+**** Nominal/Ordinal
+     - nij: Frequency of two-way relationship ixj.
+     |------+------+------+------|
+     |      | Hab1 | Hab2 | Hab3 |
+     |------+------+------+------|
+     | Age1 | n11  | n12  | n13  |
+     | Age2 | n21  | n22  | n23  |
+     | Age3 | n31  | n32  | n33  |
+     |------+------+------+------|
+** Jean-Paul Benzecri (1960s)
+   - Geometric approach to multivariate descriptive data analysis.
+* Factor Analysis
+  - =n= individuals.
+  - =p= observations.
+  - =k= common factors.
+
+  For each individual $\alpha \in I,\, I=\{1,2,...,n\}$, there are
+  p observations of the k common factors; a $p\times{}k$ matrix associated.
+
+  Existence condition: the quantity of observations =p= must be greater
+  than the number of common factors =k=. e.i., $p>k$.
+
+  For each observation of a individual, we will have the k values
+  associated with it. The matrix of all observations and mesures for a
+  given individual is a =loading matrix=, $L \in \mathbb{R}^{p\times{}k}$.
+
+** Observation equation
+*** For a single observation (i),
+    ${\displaystyle x_{i,m}-\mu _{i}=l_{i,1}f_{1,m}+\dots +l_{i,k}f_{k,m}+\epsilon _{i,m}}$
+
+    $\mu_i\biggr\rvert_{m \in K} = \sum_{\alpha}{x_i}$
+*** In matrix notation
