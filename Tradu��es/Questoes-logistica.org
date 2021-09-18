@@ -1,0 +1,26 @@
+* Questão 1 - Comerciais de Energéticos
+  # (17.1)
+  # Energy drink commercials. A study was designed to compare Red Bull
+  # energy drink commercials. Each participant was shown the commercials, A and
+  # B, in random order and asked to select the better one. There were 140 women and
+  # 130 men who participated in the study. Commercial A was selected by 65 women
+  # and by 67 men. Find the odds of selecting Commercial A for the men. Do the same
+  # for the women.
+  *Contextualização*
+  
+  Um estudo foi arquitetado para comparar comerciais da empresa
+  vedendora de energéricos, Red Bull. Neste estudo, mostrou-se a cada
+  participante os comerciais A e B, em ordem aleatória (A, B ou B,
+  A). Por fim, coletou-se a opinião de qual era melhor.
+
+  Haviam um total de 140 mulheres participantes, e 130 homens. O
+  comercial A foi selecionado por 65 mulheres e 67 homens.
+
+**  Encontre a Razão de Chances
+
+   + Encontre a Razão de Chances de selecionar-se o comercial A, para
+   homens;
+   + Encontre a Razão de Chances de selecionar-se o comercial A, para
+     mulheres.
+
+* Questão 2

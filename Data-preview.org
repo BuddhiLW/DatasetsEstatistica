@@ -1,0 +1,33 @@
+* Overview of Collected Data(sets)
+** Toxic Comment Classification - JigSaw (Google)
+  - [[https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data][URL to data]]
+*** Overview (Julia)
+**** Packages used
+    #+begin_src julia :session main :result output
+      using DataFrames, CSV
+    #+end_src
+    #+RESULTS:
+**** Load data
+     #+begin_src julia :session main :results output silent
+       df_t = DataFrame(CSV.File("./data/test.csv"))
+       df_l = DataFrame(CSV.File("./data/test_labels.csv"))
+     #+end_src
+
+     #+RESULTS:
+
+     #+begin_src julia :session main :result output
+       first(df_t,5)
+     #+end_src
+     
+     #+RESULTS:
+     : 5×2 DataFrame
+     :  Row │ id                comment_text
+     :      │ String31          String
+     : ─────┼─────────────────────────────────────────────────────
+     :    1 │ 00001cee341fdb12  Yo bitch Ja Rule is more succesf…
+     :    2 │ 0000247867823ef7  == From RfC == \n\n The title is…
+     :    3 │ 00013b17ad220c46  " \n\n == Sources == \n\n * Zawe…
+     :    4 │ 00017563c3f7919a  :If you have a look back at the …
+     :    5 │ 00017695ad8997eb  I don't anonymously edit article…
+
+NLP - Natural Language  Processing

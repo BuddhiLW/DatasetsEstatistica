@@ -1,0 +1,37 @@
+* Transform data from xlsx to csv, with Julia
+  #+begin_src julia :session main :result output
+    using Pkg;
+    Pkg.add("XLSX")
+  #+end_src
+
+  #+RESULTS:
+
+  #+begin_src julia :session main :result output
+    using XLSX
+  #+end_src
+
+  #+RESULTS:
+  : nothing
+
+
+  #+begin_src julia :session main :result output
+    xf = XLSX.readxlsx("./data/xlsx/disease-prevalence.xlsx")
+  #+end_src
+
+  #+RESULTS:
+  : XLSXFile("disease-prevalence.xlsx") containing 4 Worksheets
+  :             sheetname size          range        
+  : -------------------------------------------------
+  :            SuppTable1 15x5          A1:E15       
+  :            SuppTable2 15x8          A1:H15       
+  :            SuppTable3 38x11         A1:K38       
+  :            SuppTable4 37x18         A1:R37       
+
+  #+begin_src julia :session main :result output
+    XLSX.sheetnames(xf)
+  #+end_src
+
+  #+RESULTS:
+  : ["SuppTable1", "SuppTable2", "SuppTable3", "SuppTable4"]
+
+  

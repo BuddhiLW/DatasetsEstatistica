@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{tidyverse}\PYG{p}{)}
+  \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{janitor}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{}  library(glmnet)}
+  \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{ggthemes}\PYG{p}{)}
+  \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{patchwork}\PYG{p}{)}
+\end{Verbatim}

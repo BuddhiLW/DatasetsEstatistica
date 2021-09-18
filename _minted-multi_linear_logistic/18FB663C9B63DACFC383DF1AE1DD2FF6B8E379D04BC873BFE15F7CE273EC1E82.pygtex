@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{glm\PYGZus{}heart\PYGZus{}model} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{glm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{morte} \PYG{o}{\PYGZti{}} \PYG{n}{.}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{heart\PYGZus{}data}\PYG{p}{[}\PYG{n}{train}\PYG{p}{,} \PYG{p}{],} \PYG{n}{family} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}binomial\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
