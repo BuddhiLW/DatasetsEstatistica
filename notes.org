@@ -18,27 +18,42 @@ DEADLINE: <2021-08-15 Sun> SCHEDULED: <2021-08-12 Thu>
 
 * Novos Datasets
 ** Análise de Regressão Linear Múltipla
+ - [[file:data/csv/heart.csv::age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target][Heart Health]]
+ - [[file:data/Life_Expectancy_Data.csv::Country,Year,Status,Life expectancy ,Adult Mortality,infant deaths,Alcohol,percentage expenditure,Hepatitis B,Measles , BMI ,under-five deaths ,Polio,Total expenditure,Diphtheria , HIV/AIDS,GDP,Population, thinness 1-19 years, thinness 5-9 years,Income composition of resources,Schooling][Life Expectancy]]
+ - 
+   
 ** Análise de Regressão Logística Múltipla
+   # - Dados de Bioestatística
+   - [[file:data/heart_failure_clinical_records_dataset.csv::age,anaemia,creatinine_phosphokinase,diabetes,ejection_fraction,high_blood_pressure,platelets,serum_creatinine,serum_sodium,sex,smoking,time,DEATH_EVENT][Infarto]] (Heart failure)
+   - [[file:data/csv/Churn_Modelling.csv::RowNumber,CustomerId,Surname,CreditScore,Geography,Gender,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,Exited][Exit-rate from jobs]]
 ** Análise de Variância Múltipla
 ** Análise de Agrupamento
+   - Carangueijos
+   - Café
+   - Cerveja
 ** Análise Discriminante
-** Análise de Componentes Principais
+** Análise de Componentes Principais (PCA)
+   - 
 ** Análise Fatorial
 ** Análise de Correspondência.
+   #+NAME: ce7c0bad-5b4f-45ca-8207-4e5bb23edd0b
    #+begin_src ein-r :session localhost :results output
-haireye <- margin.table(HairEyeColor, 1:2)
-library(ca)
-(haireye.ca <- ca(haireye))
+     haireye <- margin.table(HairEyeColor, 1:2)
+     library(ca)
+     (haireye.ca <- ca(haireye))
    #+end_src
 
-#+begin_src emacs-lisp
-  (use-package poly-R)
-  (use-package ess)
-#+end_src
-
-#+RESULTS:
+   #+RESULTS: ce7c0bad-5b4f-45ca-8207-4e5bb23edd0b
+   : [....]
 
 
+* To look forward
+- [[file:Literature/Article-data/fgene-12-690366.pdf::%PDF-1.6][Disease Prevalence]] -
+  [[file:data/xlsx/disease-prevalence.xlsx][file:~/PP/MonitoriaEstatistica/data/xlsx/disease-prevalence.xlsx]]
+- PCA/SMOTE: [[https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets][Insurance Analysis]]
 * Segunda reunião
-* R
+* Terceira reunião
+* R 
+
+
 
