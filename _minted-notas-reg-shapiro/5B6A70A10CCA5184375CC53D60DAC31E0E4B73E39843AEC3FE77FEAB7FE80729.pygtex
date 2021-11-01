@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{sat} \PYG{o}{\PYGZti{}} \PYG{n}{.} \PYG{p}{,} \PYG{n}{data}\PYG{p}{)}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{modreg\PYGZus{}trein}\PYG{p}{)}
+\end{Verbatim}

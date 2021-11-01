@@ -1,0 +1,56 @@
+\contentsline {section}{\numberline {1}Análise de Regressão Linear Múltipla, Conjuntos de Dados}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}\href {https://www.kaggle.com/augustus0498/life-expectancy-who}{Expectativa de Vida por País} (normal)}{3}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Sobre o \texttt {Conjunto}}{3}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{4}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Regressão e Teste de Shapiro (normal)}{4}{subsubsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.2}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-plm-cigar}{Consumo de Cigarro} (não normal)}{8}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Sobre o \texttt {Conjunto}}{8}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Como utilizar pelo R}{9}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Invocação de conjuto, por arquivo local}{10}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Regressão e Teste de Shapiro (não normal)}{10}{subsubsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.3}\href {https://www.openintro.org/data/index.php?data=gifted}{Inteligência de prodígios} (normal)}{13}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Sobre o \texttt {Conjunto}}{13}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Invocação de conjuto, por arquivo local}{14}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Regressão e Teste de Shapiro (normal)}{14}{subsubsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.4}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-mosaicdata-sat}{SAT - Professores} (não normal)}{17}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Sobre o \texttt {Conjunto}}{17}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Como utilizar pelo R}{17}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Invocação de conjuto, por arquivo local}{18}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Regressão e Teste de Shapiro (não normal)}{18}{subsubsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.5}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-robustbase-toxicity}{Toxicidade} (não normal)}{22}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Sobre o \texttt {Conjunto}}{22}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Como utilizar pelo R}{22}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}Invocação de conjuto, por arquivo local}{23}{subsubsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.4}Regressão e Teste de Shapiro (não normal)}{23}{subsubsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.6}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-stat2data-fertility}{Fertilidade Feminina} (não normal)}{27}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Sobre o \texttt {Conjunto}}{27}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}Como utilizar pelo R}{28}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}Invocação de conjuto, por arquivo local}{28}{subsubsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.4}Regressão e Teste de Shapiro (não normal)}{29}{subsubsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.7}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-attitude}{Atitudes em relação à empresa} (normal)}{33}{subsection.1.7}%
+\contentsline {subsubsection}{\numberline {1.7.1}Sobre o \texttt {Conjunto}}{33}{subsubsection.1.7.1}%
+\contentsline {subsubsection}{\numberline {1.7.2}Como utilizar pelo R}{33}{subsubsection.1.7.2}%
+\contentsline {subsubsection}{\numberline {1.7.3}Invocação de conjuto, por arquivo local}{34}{subsubsection.1.7.3}%
+\contentsline {subsubsection}{\numberline {1.7.4}Regressão e Teste de Shapiro (normal)}{34}{subsubsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.8}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-lifecyclesavings}{Hipótese de ciclos-de-economia salarial} (normal)}{37}{subsection.1.8}%
+\contentsline {subsubsection}{\numberline {1.8.1}Sobre o \texttt {Conjunto}}{38}{subsubsection.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.8.2}Como utilizar pelo R}{38}{subsubsection.1.8.2}%
+\contentsline {subsubsection}{\numberline {1.8.3}Invocação de conjuto, por arquivo local}{38}{subsubsection.1.8.3}%
+\contentsline {subsubsection}{\numberline {1.8.4}Regressão e Teste de Shapiro (normal)}{39}{subsubsection.1.8.4}%
+\contentsline {subsection}{\numberline {1.9}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-ecdat-computers}{Preço de Computadores 1993-1995} (não normal)}{41}{subsection.1.9}%
+\contentsline {subsubsection}{\numberline {1.9.1}Dados sobre o \texttt {Conjunto}}{41}{subsubsection.1.9.1}%
+\contentsline {subsubsection}{\numberline {1.9.2}Como utilizar pelo R}{41}{subsubsection.1.9.2}%
+\contentsline {subsubsection}{\numberline {1.9.3}Invocação de conjuto, por arquivo local}{42}{subsubsection.1.9.3}%
+\contentsline {subsubsection}{\numberline {1.9.4}Regressão e Teste de Shapiro (não normal)}{42}{subsubsection.1.9.4}%
+\contentsline {subsection}{\numberline {1.10}\href {https://www.sheffield.ac.uk/mash/statistics/datasets}{Peso ao Nascimento} (normal)}{45}{subsection.1.10}%
+\contentsline {subsubsection}{\numberline {1.10.1}Dados sobre o \texttt {Conjunto}}{45}{subsubsection.1.10.1}%
+\contentsline {subsubsection}{\numberline {1.10.2}Invocação de conjuto, por arquivo local}{46}{subsubsection.1.10.2}%
+\contentsline {subsubsection}{\numberline {1.10.3}Regressão e Teste de Shapiro (normal)}{46}{subsubsection.1.10.3}%
+\contentsline {subsection}{\numberline {1.11}\href {https://www.sheffield.ac.uk/mash/statistics/datasets}{Crime} (normal)}{53}{subsection.1.11}%
+\contentsline {subsubsection}{\numberline {1.11.1}Dados sobre o \texttt {Conjunto}}{53}{subsubsection.1.11.1}%
+\contentsline {subsubsection}{\numberline {1.11.2}Invocação de conjuto, por arquivo local}{54}{subsubsection.1.11.2}%
+\contentsline {subsubsection}{\numberline {1.11.3}Regressão e Teste de Shapiro (normal)}{55}{subsubsection.1.11.3}%
+\contentsline {subsection}{\numberline {1.12}\href {https://archive.ics.uci.edu/ml/datasets/Student+Performance\#}{Performance de Estudantes (não normal)}}{73}{subsection.1.12}%
+\contentsline {subsubsection}{\numberline {1.12.1}Dados sobre o \texttt {Conjunto}}{73}{subsubsection.1.12.1}%
+\contentsline {subsubsection}{\numberline {1.12.2}Invocação de conjuto, por arquivo local}{75}{subsubsection.1.12.2}%
+\contentsline {subsubsection}{\numberline {1.12.3}Regressão e Teste de Shapiro (fortemente não normal)}{76}{subsubsection.1.12.3}%

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{stepAIC\PYGZus{}x} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{stepAIC}
+\end{Verbatim}

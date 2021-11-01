@@ -1,0 +1,180 @@
+% Created 2021-09-20 Mon 11:29
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.4.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{Questão 1 - Comerciais de Energéticos}
+\label{sec:org4b7dd1e}
+\textbf{Contextualização}
+
+Um estudo foi arquitetado para comparar comerciais da empresa
+vedendora de energéricos, Red Bull. Neste estudo, mostrou-se a cada
+participante os comerciais A e B, em ordem aleatória (A, B ou B,
+A). Por fim, coletou-se a opinião de qual era melhor.
+
+Haviam um total de 140 mulheres participantes, e 130 homens. O
+comercial A foi selecionado por 65 mulheres e 67 homens.
+
+\subsection{Encontre a Razão de Chances}
+\label{sec:org1855af3}
+\subsubsection{Comercial A, homens}
+\label{sec:org468c52f}
+Encontre a \texttt{Razão de Chances} de selecionar-se o comercial A, para
+homens;
+\subsubsection{Comercial A, mulheres}
+\label{sec:org65784a2}
+Encontre a \texttt{Razão de Chances} de selecionar-se o comercial A, para
+mulheres.
+
+\subsubsection{Comercial A, homens ou mulheres}
+\label{sec:orgd9d8b79}
+Encontre a \texttt{Razão de Chances} de se escolher o comercial A.
+
+
+\subsection{Modelo Ajustado}
+\label{sec:orga8aecc4}
+\subsubsection{Parâmetros}
+\label{sec:org8a59dea}
+Encontre o Modelo Ajustado, estimando os valores \(b_0\) e \(b_1\).
+\subsubsection{Razão de Chances do modelo}
+\label{sec:org277fdbf}
+Qual é a \texttt{Razão de Chances} estimada para um homem \((x=1)\) escolher o
+comercial A, comparado à uma mulher \((x=0)\)?
+
+\section{Questão 2 - Uso de áudio-visual em propagandas}
+\label{sec:org1a0f98d}
+\textbf{Contextualização}
+
+Utilizaremos, nesse problema, dados de empresas de pequeno e médio
+porte, quanto a seu \texttt{uso}, ou \texttt{não}, de áudio-visual em postagens em
+mídias sociais.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+ &  & Usam audio-visual & \\
+\hline
+Tamanho & Sim & Não & Total\\
+\hline
+Pequenas & 150 & 28 & 178\\
+Médias & 27 & 25 & 52\\
+Total & 177 & 53 & 230\\
+\hline
+\end{tabular}
+\end{center}
+\subsection{Proporções}
+\label{sec:org2a73cbf}
+\subsubsection{Proporção, pequenas empresas}
+\label{sec:org6d399a9}
+Qual proporção de pequenas empresas utiliza postagens áudio-visuais?
+\subsubsection{Proporção, médias empresas}
+\label{sec:orgeeab4cf}
+Qual proporção de médias empresas utilizam postagens áudio-visuais?
+\subsection{Razão de Chances}
+\label{sec:org34c59ae}
+\subsubsection{Pequenas empresas}
+\label{sec:org20a43f8}
+Encontre a \texttt{Razão de Chances} de empresas pequenas utilizarem A.V.
+\subsubsection{Médias empresas}
+\label{sec:org551babe}
+Encontre a \texttt{Razão de Chances} de médias empresas utilizarem A.V.
+
+\subsection{Modelo Ajustado}
+\label{sec:org99ce477}
+\subsubsection{Parâmetros}
+\label{sec:orgd5d1426}
+Encontre o Modelo Ajustado, estimando os valores \(b_0\) e \(b_1\).
+\subsubsection{Razão de Chances do modelo}
+\label{sec:org9cec49a}
+Qual é a \texttt{Razão de Chances} estimada para uma pequena empresa \((x=1)\) escolher o
+comercial A, comparado à uma média \((x=0)\)?
+
+
+\section{Questão 3 - O Filme Será Lucrativo?}
+\label{sec:org1dd0782}
+\textbf{Contextualização:}
+
+Ao se utilizar dados provindos de diversos filmes e vendas de
+bilheterias, ajustou-se uma curva \texttt{Logística}, para tentar prever
+quais filmes seriam lucrativos, ou não.
+
+Temos um \texttt{Modelo Ajustado}, do tipo,
+  \begin{equation}
+\begin{aligned}
+    \log\left(\dfrac{p}{1-p}\right) = \beta_0 + \beta_1{}x
+\end{aligned}
+\end{equation}
+
+Em que \texttt{p} é a probabilidade de que um filme será lucrativo. E, \texttt{x}
+é o log do lucro de bilheteria, na semana de estreia do filme (em
+milhões de dólares).
+
+Quando ajustado, o modelo encontrado foi:
+
+\begin{equation}
+  \begin{aligned}
+    \log(\textrm{chances}) = b_0 + b_1 x = -1.41+0.781x
+  \end{aligned}
+\end{equation}
+
+Percebe-se, pelo valor das \texttt{Chance}, \(e^{b_1}=2.184\), que caso o
+lucro da semana estreial for \(e^1=2.71\) vezes maior, então o filme
+será, em geral, \(2.2\) vezes mais lucrativo.
+
+\subsection{Interpretação da Razão de Chances}
+\label{sec:org13da156}
+Dado que se aplicarmos uma \texttt{exponencial} à função de \texttt{modelo ajustado},
+encontramos:
+
+\begin{equation}
+  \begin{aligned}
+    \textrm{chances} = e^{-1.41+0.781x}=e^{-1.41}.e^{0.781x}
+  \end{aligned}
+\end{equation}
+\subsubsection{Demonstre}
+\label{sec:org353b7e1}
+Demonstre que, para qualquer valor \(x\), ao se aumentar uma
+unidade, a seguinte relação é válida,
+
+\begin{equation}
+  \begin{aligned}
+    \frac{\textrm{chances}_{x+1}}{\textrm{chances}_{x}}
+  \end{aligned}
+\end{equation}
+
+e vale \(e^{0.781}=2.184\). Essa análise justifica o resultado em \hyperref[sec:org277fdbf]{Razão de Chances do modelo}
+
+\subsection{Decida se um filme será lucrativo!}
+\label{sec:orgb0ff9c3}
+Caso a semana inaugural tenha um lucro de
+
+(a) \$20 milhões de dólares
+(b) \$35 milhões de dólares
+(c) \$50 milhões de dólares
+
+o filme será lucrativo?
+\end{document}

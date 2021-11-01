@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{Birthweight} \PYG{o}{\PYGZti{}} \PYG{n}{Length} \PYG{o}{+} \PYG{n}{Headcirc} \PYG{o}{+} \PYG{n}{Gestation} \PYG{o}{+} \PYG{n}{smoker} \PYG{o}{+}
+    \PYG{n}{mppwt} \PYG{o}{+} \PYG{n}{fheight} \PYG{o}{+} \PYG{n}{mage35}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
+\end{Verbatim}

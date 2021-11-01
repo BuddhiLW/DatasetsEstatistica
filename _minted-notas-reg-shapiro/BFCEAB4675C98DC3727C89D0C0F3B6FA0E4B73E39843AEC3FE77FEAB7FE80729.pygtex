@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{Life.expectancy} \PYG{o}{\PYGZti{}} \PYG{n}{Status} \PYG{o}{+} \PYG{n}{Adult.Mortality} \PYG{o}{+} \PYG{n}{infant.deaths}  \PYG{o}{+} \PYG{n}{percentage.expenditure} \PYG{o}{+} \PYG{n}{Hepatitis.B} \PYG{o}{+} \PYG{n}{Measles} \PYG{o}{+} \PYG{n}{BMI} \PYG{o}{+} \PYG{n}{under.five.deaths} \PYG{o}{+} \PYG{n}{Polio} \PYG{o}{+} \PYG{n}{Diphtheria} \PYG{o}{+} \PYG{n}{HIV.AIDS} \PYG{o}{+} \PYG{n}{GDP} \PYG{o}{+} \PYG{n}{Population} \PYG{o}{+} \PYG{n}{thinness..1.19.years} \PYG{o}{+} \PYG{n}{thinness.5.9.years} \PYG{o}{+} \PYG{n}{Income.composition.of.resources} \PYG{o}{+} \PYG{n}{Schooling} \PYG{p}{,} \PYG{n}{life\PYGZus{}2015\PYGZus{}clean}\PYG{p}{)}
+
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{modreg\PYGZus{}trein}\PYG{p}{)}
+\end{Verbatim}

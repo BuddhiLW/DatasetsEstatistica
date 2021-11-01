@@ -1,0 +1,599 @@
+#+LATEX_COMPILER: xelatex
+
+#+STARTUP: latexpreview
+
+#+LATEX_HEADER: \hypersetup{colorlinks, allcolors=., colorlinks=true,linkcolor={blue!78!white}, urlcolor={purple}, filecolor={winered}}
+
+#+LATEX_HEADER:\usepackage{xcolor} % to access the named colour LightGray
+#+LATEX_HEADER:\definecolor{LightGray}{gray}{0.2}
+#+LATEX_HEADER:\usepackage{minted}
+#+LATEX_HEADER:\usemintedstyle{monokai}
+
+* Links conjuntos
+Para cada conjunto de dado documentado, há um hyperlink correspondente
+pelo qual pode-se acessar o conjunto específico.
+
+#+CAPTION: Exemplo conjunto gifted.csv
+#+ATTR_HTML: :width 500px
+[[file:img/exemplo1.png][file:~/PP/MonitoriaEstatistica/img/exemplo1.png]]
+
+
+#+CAPTION: Exemplo direcionamento do hyperlink gifted.csv
+#+ATTR_HTML: :width 500px
+[[file:img/exemplo2.png][file:~/PP/MonitoriaEstatistica/img/exemplo2.png]]
+
+Ou, acesse os links com todos os dados:
+- [[https://drive.google.com/drive/folders/1SaXLjwvKd_z6xSQRIs6rxKnOJ7uQguSW?usp=sharing][Regressão Linear]]
+- [[https://drive.google.com/drive/folders/1BtrKdgg1WzPDfKrSNckv8RcF8DWt-W3F?usp=sharing][Regressão Logística]]
+
+E, siga a secção do documento referente ao conjunto do seu grupo.
+
+* Análise de Regressão Linear e Logísticas Múltiplas
+** [[https://www.kaggle.com/augustus0498/life-expectancy-who][Expectativa de Vida por País]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1nUnOwgAcWIqoyG0P5_wnlh1wPxxSUqv5/view][Life_Expectancy_Data.csv]]
++ *Variável resposta: =Life.expectancy=.* 
+*** Sobre o =Conjunto=
+  + Dados de todos países, derivados da OMS.
+  # + Dividir em até 5 anos. (
+  + Dados:
+   - Country: país,
+   - Year: ano correspondente aos dados,
+   - Status: estado da industrialização,
+   - Life expectancy: expectativa de vida,
+   - Adult Mortality $15<\text{idade}<60$: mortalidade adulta por mil habitantes,
+   - Infant deaths: mortalidade infantil por mil habitantes,
+   - Alcohol: uso de álcool por litro puro (+15 anos),
+   - Percentage expenditure: gasto em saúde em percentagem do PIB per capta,
+   - Hepatitis B: percentagem de imunização entre bebês com um ano,
+   - Measles: quantidade de casos reportados de Rubeola por mil habitantes,
+   - BMI: média de index de massa corpórea da população,
+   - under-five deaths: quantidade de mortes antes dos cinco anos por mil habitantes,
+   - Polio: quantidade de imunização entre bebês com um ano (percentagem),
+   - Total expenditure: percentagem do gasto total do governo com saúde,
+   - Diphtheria: percentagem de imunização de tétano ($\leq 1 \text{ano}$),
+   - HIV/AIDS: morte a cada mil nascimentos (contanto nascimento de 0-4 anos de idade),
+   - GDP: PIB em dólares,
+   - Population: População,
+   - thinness  1-19 years: prevalescência de pessoas magras (1-19 anos de idade),
+   - thinness 5-9 years: prevalescência de pessoas magras (5-9 anos de idade),
+   - Income composition of resources: IDH (qualidade de vida) em termos de composição por salário pessoal (provida por salário próprio),
+   - Schooling: média do número de anos sendo educado (escolaridade).
+     
+*** Como utilizar o conjunto (cópia de arquivo CSV, localmente)
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto [[https://drive.google.com/file/d/1nUnOwgAcWIqoyG0P5_wnlh1wPxxSUqv5/view][Life_Expectancy_Data.csv]] da seguinte maneira.
+
+Por exemplo, para a análise da expectativa de vida, para o ano de
+2015, seria feita invocamos os dados da seguinte maneira,
+
+#+NAME: 9691c825-228e-4c3b-8f18-5fe87ed051ea
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  life <- read.csv('./data/csv/Life_Expectancy_Data.csv')
+  life_2015 <- subset(life, Year=="2015")
+  life_2015[1:6,1:5] 
+#+end_src
+
+#+RESULTS: 9691c825-228e-4c3b-8f18-5fe87ed051ea
+:    Country             Year Status     Life.expectancy Adult.Mortality
+: 1  Afghanistan         2015 Developing 65.0            263            
+: 17 Albania             2015 Developing 77.8             74            
+: 33 Algeria             2015 Developing 75.6             19            
+: 49 Angola              2015 Developing 52.4            335            
+: 65 Antigua and Barbuda 2015 Developing 76.4             13            
+: 81 Argentina           2015 Developing 76.3            116            
+
+Obs: apenas 5 colunas foram selecionadas, por motivos estéticos na formatação.
+
+** [[https://www.openintro.org/data/index.php?data=gifted][Inteligência de prodígios]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1stukrpc_Rqu-nlYZu_-BFHNZec676_BR/view?usp=sharing][gifted.csv]]
++ *Variável resposta: =score=.*
+*** Sobre o =Conjunto=
++ Referências:
+  - Graybill, F.A. & Iyer, H.K., (1994) Regression Analysis: Concepts and Applications, Duxbury, p. 511-6.
++ Dados:
+  1. IQ da Criança.
+  2. IQ Pai.
+  3. IQ Mãe.
+  4. Período em meses, até primeiras palavras.
+  5. Período em meses, até quanto contou até dez.
+  6. Tempo passado, pelos pais, lendo livros, semanalmente.
+  7. Tempo passado assistindo programas educativos, semanalmente.
+  8. Tempo assistindo desenhos (=cartoons=), semanalmente.
+     
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/1stukrpc_Rqu-nlYZu_-BFHNZec676_BR/view?usp=sharing][gifted.csv]] da seguinte maneira.
+
+#+NAME: 2d27946d-47bf-49a7-9412-c31c12858425
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/gifted.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 2d27946d-47bf-49a7-9412-c31c12858425
+:   score fatheriq motheriq speak count read edutv cartoons
+: 1 159   115      117      18    26    1.9  3.00  2.00    
+: 2 164   117      113      20    37    2.5  1.75  3.25    
+: 3 154   115      118      20    32    2.2  2.75  2.50    
+: 4 157   113      131      12    24    1.7  2.75  2.25    
+: 5 156   110      109      17    34    2.2  2.25  2.50    
+
+** [[https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-attitude][Atitudes em relação à empresa]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1rKj4NPD61bWKD6HBC4fux2Eit6CNEKwr/view?usp=sharing][Atitude]]
++ *Variável resposta: =rating=.*
+*** Sobre o =Conjunto=
+  + Dados: (em percentagem)
+    - Complaints: percentagem de resoluções de reclamações.
+    - Privileges: percentagem de intolerância de privilégios.
+    - Learning: percentagem de oportunidade de aprendizado.
+    - Raises: percetagem de aumento correspondente à perfôrmance.
+    - Critical: percentagem de atitudes e críticas exacerbadas.
+    - Advancel: percentadem de evolução percebida da empresa e posto.
+    - Rating: avaliação geral positiva da empresa
+      
+*** Como utilizar pelo R
+O =conjunto de dados= se encontra sob o pacote =datasets=. Desta forma, precisamos
+instalá-lo.
+
+#+begin_src ein-r :session localhost :results output :exports both :eval no 
+  install.packages("datasets",mirror="https://vps.fmvz.usp.br/CRAN/")
+#+end_src
+
+Após instalação, precisamos invocar o pacote,
+#+begin_src ein-r :session localhost :results output :exports both :eval no 
+ library(datasets)
+#+end_src
+
+Finalmente, podemos acessar o =conjunto=,
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- data("attitude")
+  head(data)
+#+end_src
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto [[https://drive.google.com/file/d/1rKj4NPD61bWKD6HBC4fux2Eit6CNEKwr/view?usp=sharing][Atitude]] da seguinte maneira.
+
+#+NAME: 589027ab-8c61-4626-b868-598b449a1512
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/attitude.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 589027ab-8c61-4626-b868-598b449a1512
+:   rating complaints privileges learning raises critical advance
+: 1 43     51         30         39       61     92       45     
+: 2 63     64         51         54       63     73       47     
+: 3 71     70         68         69       76     86       48     
+: 4 61     63         45         47       54     84       35     
+: 5 81     78         56         66       71     83       47     
+
+** [[https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-lifecyclesavings][Hipótese de ciclos-de-economia salarial]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1j2K7J1rb3V2Qr_t0rcBhA6tyuqh88AjY/view?usp=sharing][savings.csv]]
++ *Variável resposta: =sr=.*
++ Hipótese formulada por Franco Modigliani 1960-1970, de que essas (outras)
+  variáveis eram explicativas do fenômeno 'sr'.
+*** Sobre o =Conjunto=
+  + Dados:
+    - Sr: valor agregado à economia particular (razão entre valor total de economias pessoais e salário líquido)
+    - Pop15: população sob quinze anos de idade.
+    - Pop75: população acima de setenta e cinco anos de idade.
+    - dpi: valor de salário líquido per-capita médio.
+    - ddpi: taxa de crescimento de dpi.
+
+*** Como utilizar pelo R
+O =conjunto de dados= se encontra sob o pacote =datasets=. Desta forma, precisamos
+instalá-lo.
+
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  install.packages("datasets",mirror="https://vps.fmvz.usp.br/CRAN/")
+#+end_src
+
+Após instalação, precisamos invocar o pacote,
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+ library(datasets)
+#+end_src
+
+Finalmente, podemos acessar o =conjunto=,
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- data("LifeCycleSavings")
+  head(data)
+#+end_src
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto [[https://drive.google.com/file/d/1j2K7J1rb3V2Qr_t0rcBhA6tyuqh88AjY/view?usp=sharing][savings.csv]] da seguinte maneira.
+
+#+NAME: 4257fa63-5cc2-4ad2-a160-08a764a6ff60
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/savings.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 4257fa63-5cc2-4ad2-a160-08a764a6ff60
+:           sr    pop15 pop75 dpi     ddpi
+: Australia 11.43 29.35 2.87  2329.68 2.87
+: Austria   12.07 23.32 4.41  1507.99 3.93
+: Belgium   13.17 23.80 4.43  2108.47 3.82
+: Bolivia    5.75 41.89 1.67   189.13 0.22
+: Brazil    12.88 42.19 0.83   728.47 4.56
+
+** [[https://www.sheffield.ac.uk/mash/statistics/datasets][Peso ao Nascimento]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1xv2lCPsj04FjGPQ_BgPS9mrTIjBcyHQk/view?usp=sharing][Birth Weight]]
++ *Variável resposta: =Birthweight=.*.
+*** Dados sobre o =Conjunto=
+ + Dados:
+   - lowbwt: baixo peso ao nascer. 
+   - ID: Identificador
+   - mage35: mãe mais velha do que 35 anos.
+   - fnocig: número de cigarros fumado pelo pai diariamente.
+   - fheight: peso do pai (kg)
+   - fedyrs: quantidade de anos de educação do pai
+   - fage: idade do pai
+   - mppwt: peso da mãe pré gravidez.
+   - mheight: tamanho da mãe (cm).
+   - mnocig: número de cigarros fumados diariamente pela mãe.
+   - Motherage: idade da mãe.
+   - Gestation Smoker: fumante durante gestação 
+   - headcirumfer: circunferência da cabeça
+   - length: tamanho (cm)
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto [[https://drive.google.com/file/d/1xv2lCPsj04FjGPQ_BgPS9mrTIjBcyHQk/view?usp=sharing][Birth Weight]] da seguinte maneira.
+
+#+NAME: 457c1318-b690-4974-9451-4c0f5901dac7
+#+begin_src ein-r :session localhost :results output :exports both :eval no 
+  data <- read.csv('./data/csv/Birthweight_reduced_kg_R.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 457c1318-b690-4974-9451-4c0f5901dac7
+#+begin_example
+  X...ID Length Birthweight Headcirc Gestation smoker mage mnocig mheight mppwt
+1 1360   56     4.55        34       44        0      20   0      162     57   
+2 1016   53     4.32        36       40        0      19   0      171     62   
+3  462   58     4.10        39       41        0      35   0      172     58   
+4 1187   53     4.07        38       44        0      20   0      174     68   
+5  553   54     3.94        37       42        0      24   0      175     66   
+  fage fedyrs fnocig fheight lowbwt mage35
+1 23   10     35     179     0      0     
+2 19   12      0     183     0      0     
+3 31   16     25     185     0      1     
+4 26   14     25     189     0      0     
+5 30   12      0     184     0      0     
+#+end_example
+
+** [[https://www.sheffield.ac.uk/mash/statistics/datasets][Crime]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1hZpHoEXbhZGvmtmrbcWpXYfBV-2ZD7uF/view?usp=sharing][Crimes]]
++ *Variável resposta: =CrimeRate=.*.
+*** Dados sobre o =Conjunto=
++ Dados:
+  - CrimeRate: Taxa de criminalidade (ofensas por milhão de habitantes). 
+  - Youth: Jovens entre 18-24 anos a cada mil habitantes. 
+  - Southern: Estado do sul? 
+  - Education: Tempo de educação (anos de estudo até 25) 
+  - ExpenditureYear0: Dinheiro para segurança pública per capta.
+  - LabourForce: Quantidade de jovens trabalhadores por 1000 habitantes.
+  - Males: Homens (por cada 1000 mulheres).
+  - MoreMales: Mais homens que mulheres?.
+  - StateSize: Tamanho do estado em milhares.
+  - YouthUnemployment: Desemprego de jovens por mil.
+  - BelowWage: Número de famílias abaixo de meio salário por mil.
+  - Wage: Salário médio semanal.
+  - MatureUnemployment: Desemprego de sêniors (35-39) por mil.
+
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto [[https://drive.google.com/file/d/1hZpHoEXbhZGvmtmrbcWpXYfBV-2ZD7uF/view?usp=sharing][Crimes]] da seguinte maneira.
+
+#+NAME: 86bf43f6-694e-4630-9acc-0a11c246b4de
+#+begin_src ein-r :session localhost :results output :exports both :eval no 
+  data <- read.csv('./data/csv/Crime_R.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 86bf43f6-694e-4630-9acc-0a11c246b4de
+#+begin_example
+  X...CrimeRate Youth Southern Education ExpenditureYear0 LabourForce Males
+1 45.5          135   0        12.4       69              540          965 
+2 52.3          140   0        10.9       55              535         1045 
+3 56.6          157   1        11.2       47              512          962 
+4 60.3          139   1        11.9       46              480          968 
+5 64.2          126   0        12.2      106              599          989 
+  MoreMales StateSize YouthUnemployment ... ExpenditureYear10 LabourForce10
+1 0          6         80               ... 71                564          
+2 1          6        135               ... 54                540          
+3 0         22         97               ... 44                529          
+4 0         19        135               ... 41                497          
+5 0         40         78               ... 97                602          
+  Males10 MoreMales10 StateSize10 YouthUnemploy10 MatureUnemploy10
+1  974    0            6           82             20              
+2 1039    1            7          138             39              
+3  959    0           24           98             33              
+4  983    0           20          131             50              
+5  989    0           42           79             24              
+  HighYouthUnemploy10 Wage10 BelowWage10
+1 1                   632    142        
+2 1                   521    210        
+3 0                   359    256        
+4 0                   510    235        
+5 1                   660    162        
+#+end_example
+
+** [[https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29][Cancer de Mama]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/14WFx8oXCYst_QPySIfuii660A93xg4pg/view?usp=sharing][wdbc.data]]
++ *Variável resposta:  =Diagnosis=.*
+*** Sobre o =Conjunto=
++ Dados:
+  1. Número Identificador (ID). 
+  2. Diagnóstico (M=malígno, B=belígno).
+  3. Dez variáveis contínuas reais, com três medidas, médias, erro e pior medida (maiores valores)
+     1. Raio da mancha
+     2. Textura
+     3. Perímetro
+     4. Área
+     5. Suavidade
+     6. Compactividade (Quão compacto)
+     7. Concavidade
+     8. Pontos de Concavidade
+     9. Simetria
+     10. Dimensão Fractal (formato das bordas)
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/14WFx8oXCYst_QPySIfuii660A93xg4pg/view?usp=sharing][wdbc.data]] da seguinte maneira.
+
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/wdbc.data')
+  head(data,5)
+#+end_src
+
+#+begin_example
+  ID       Diagnosis Radius.mean Texture.mean Perimeter.mean Area.mean
+1   842302 M         17.99       10.38        122.80         1001.0   
+2   842517 M         20.57       17.77        132.90         1326.0   
+3 84300903 M         19.69       21.25        130.00         1203.0   
+4 84348301 M         11.42       20.38         77.58          386.1   
+5 84358402 M         20.29       14.34        135.10         1297.0   
+  Smoothness.mean Compactness.mean Concavity.mean Concavity.poits.mean ...
+1 0.11840         0.27760          0.3001         0.14710              ...
+2 0.08474         0.07864          0.0869         0.07017              ...
+3 0.10960         0.15990          0.1974         0.12790              ...
+4 0.14250         0.28390          0.2414         0.10520              ...
+5 0.10030         0.13280          0.1980         0.10430              ...
+  Radius.worst Texture.worst Perimeter.worst Area.worst Smoothness.worst
+1 25.38        17.33         184.60          2019.0     0.1622          
+2 24.99        23.41         158.80          1956.0     0.1238          
+3 23.57        25.53         152.50          1709.0     0.1444          
+4 14.91        26.50          98.87           567.7     0.2098          
+5 22.54        16.67         152.20          1575.0     0.1374          
+  Compactness.worst Concavity.worst Concavity.poits.worst Symmetry.worst
+1 0.6656            0.7119          0.2654                0.4601        
+2 0.1866            0.2416          0.1860                0.2750        
+3 0.4245            0.4504          0.2430                0.3613        
+4 0.8663            0.6869          0.2575                0.6638        
+5 0.2050            0.4000          0.1625                0.2364        
+  Fractal.dim.worst
+1 0.11890          
+2 0.08902          
+3 0.08758          
+4 0.17300          
+5 0.07678          
+#+end_example
+
+** [[https://www.kaggle.com/uciml/pima-indians-diabetes-database][Diabetes]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/19eaULwopwE1hco_R9QZIXqDuA3CS2OBh/view?usp=sharing][diabetes.csv]]
++ *Variável resposta:  =Outcome=.*
+*** Sobre o =Conjunto=
++ Dados:
+  1. Pregnancies: número de gravidezes.
+  2. Glucose: concentração de glucose durante teste.
+  3. BloodPressure: pressão sanguínea.
+  4. SkinThickness: espessura da pele.
+  5. Insulin: nível de insulina
+  6. BMI: index de massa corporal.
+  7. DiabetesPedigreeFunction: valor da função modelando hereditariedade.
+  8. Age: idade.
+  9. Outcome: tem (1) ou não (0) diabetes.
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/19eaULwopwE1hco_R9QZIXqDuA3CS2OBh/view?usp=sharing][diabetes.csv]] da seguinte maneira.
+
+#+NAME: e86ad0d9-36a9-4b69-8a79-3a700a95a2eb
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/diabetes.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: e86ad0d9-36a9-4b69-8a79-3a700a95a2eb
+#+begin_example
+  Pregnancies Glucose BloodPressure SkinThickness Insulin BMI 
+1 6           148     72            35              0     33.6
+2 1            85     66            29              0     26.6
+3 8           183     64             0              0     23.3
+4 1            89     66            23             94     28.1
+5 0           137     40            35            168     43.1
+  DiabetesPedigreeFunction Age Outcome
+1 0.627                    50  1      
+2 0.351                    31  0      
+3 0.672                    32  1      
+4 0.167                    21  0      
+5 2.288                    33  1      
+#+end_example
+
+** [[https://archive.ics.uci.edu/ml/datasets/Algerian+Forest+Fires+Dataset++][Queimadas em Florestas]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1zuMrZgUo9vRH80HA7zJiBRJpBkGBw3hb/view?usp=sharing][forest.csv]]
++ *Variável resposta:  =Classes=.*
+*** Sobre o =Conjunto=
++ Dados:
+  1. day: dia.
+  2. month: mês.
+  3. year: ano.
+  4. Temperature: temperatura.
+  5. RH: umidade relativa.
+  6. Ws: velocidade do vento.
+  7. Rain: total do dia em mm.
+  8. FFMC: índice de quão inflamável estava a matéria orgânica (Fine fuel moisture code).
+  9. DMC: índide de quão inflamável estava materiais em decomposição (Duff moisture code).
+  10. DC: índice de quão árido/seco.
+  11. ISI: índice de dispersão inicial.
+  12. BUI: índice de velocidade de dispersão.
+  13. FWI: índice de clima propício à queimada.
+  14. Classes: houve ou não queimada.
+      
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/1zuMrZgUo9vRH80HA7zJiBRJpBkGBw3hb/view?usp=sharing][forest.csv]] da seguinte maneira.
+
+#+NAME: 2f7875e3-5d51-4d3e-8bd8-a1821614f441
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/forest.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 2f7875e3-5d51-4d3e-8bd8-a1821614f441
+:   day month year Temperature RH Ws Rain FFMC DMC DC   ISI BUI FWI Classes    
+: 1 01  06    2012 29          57 18 0    65.7 3.4 7.6  1.3 3.4 0.5 not fire   
+: 2 02  06    2012 29          61 13 1.3  64.4 4.1 7.6  1   3.9 0.4 not fire   
+: 3 03  06    2012 26          82 22 13.1 47.1 2.5 7.1  0.3 2.7 0.1 not fire   
+: 4 04  06    2012 25          89 13 2.5  28.6 1.3 6.9  0   1.7 0   not fire   
+: 5 05  06    2012 27          77 16 0    64.8 3   14.2 1.2 3.9 0.5 not fire   
+
+** [[https://archive.ics.uci.edu/ml/datasets/Rice+%28Cammeo+and+Osmancik%29][Arroizal]]
++ *Nome no conjunto de dados:*  [[https://drive.google.com/file/d/1zFkHbui6Ro2N_tNsgPSeajyl7g8XrdAc/view?usp=sharing][rice.csv]]
++ *Variável resposta:  =Class=.*
+*** Sobre o =Conjunto=
++ Dados:
+  1. Area: área.
+  2. Perimeter: perímetro.
+  3. Major.Axis: eixo majoritário.
+  4. Minor.Axis: eixo minoritário.
+  5. Eccentricity: excentricidade.
+  6. Convex.Area: area convexa.
+  7. Extent: extensão.
+  8. Class: Cammeo ou Osmancik (qual arroizal?)
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/1zFkHbui6Ro2N_tNsgPSeajyl7g8XrdAc/view?usp=sharing][rice.csv]] da seguinte maneira.
+
+#+NAME: 0dcaf06f-3484-4ed6-9c1f-bc12bfe1c49f
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/rice.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: 0dcaf06f-3484-4ed6-9c1f-bc12bfe1c49f
+#+begin_example
+  Area  Perimeter Major.Axis Minor.Axis Eccentricity Convex.Area Extent   
+1 15231 525.579   229.7499   85.09379   0.9288820    15617       0.5728955
+2 14656 494.311   206.0201   91.73097   0.8954050    15072       0.6154363
+3 14634 501.122   214.1068   87.76829   0.9121181    14954       0.6932588
+4 13176 458.343   193.3374   87.44839   0.8918609    13368       0.6406690
+5 14688 507.167   211.7434   89.31245   0.9066909    15262       0.6460239
+  Class 
+1 Cammeo
+2 Cammeo
+3 Cammeo
+4 Cammeo
+5 Cammeo
+#+end_example
+
+** [[https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice][Método Contraceptivo]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/1M774v2s0uxQorn7w-ASPOfpPoAb93I2m/view?usp=sharing][cmc.data]]
++ *Variável resposta:  =Contraceptive.method=.*
+**** Sobre o =Conjunto=
++ Dados:
+  1. Wife.age: idade da esposa.
+  2. Wife.edu: educação esposa.
+  3. Husband.edu: educação marido.
+  4. Children.num: número de filhos.
+  5. Wife.religion: religião esposa.
+  6. Wife.NotWorking.stat: estatus da esposa, não trabalhando (1) ou trabalhando (0).
+  7. Husband.occupation: ocupação do marido.
+  8. Standard.living: qualidade de vida.
+  9. Media.exposure: exposição à mídia.
+  10. Contraceptive.method: método contraceptivo.
+
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/1M774v2s0uxQorn7w-ASPOfpPoAb93I2m/view?usp=sharing][cmc.data]] da seguinte maneira.
+
+#+NAME: ad9db0cf-5f2c-463c-ac8d-0bc0973138be
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/cmc.data')
+  head(data,5)
+#+end_src
+
+#+RESULTS: ad9db0cf-5f2c-463c-ac8d-0bc0973138be
+#+begin_example
+  Wife.age Wife.edu Husband.edu Children.num Wife.religion Wife.NotWorking.stat
+1 24       2        3            3           1             1                   
+2 45       1        3           10           1             1                   
+3 43       2        3            7           1             1                   
+4 42       3        2            9           1             1                   
+5 36       3        3            8           1             1                   
+  Husband.occupation Standard.living Media.exposure Contraceptive.method
+1 2                  3               0              1                   
+2 3                  4               0              1                   
+3 3                  4               0              1                   
+4 3                  3               0              1                   
+5 3                  2               0              1                   
+#+end_example
+
+** [[https://archive.ics.uci.edu/ml/datasets/Thoracic+Surgery+Data][Cirurgia Toráxica]]
++ *Nome no conjunto de dados:* [[https://drive.google.com/file/d/13s1ZtCWotN_VwQb07yTWEyBMmvO042At/view?usp=sharing][ThoraicSurgery.csv]]
++ *Variável resposta:  =Risk1Yr=.*
+*** Sobre o =Conjunto=
++ Dados:
+  1. DNG: combinações específicas de códigos genéticos ativos,
+  2. PRE4: capacidade vital forçada (FVC),
+  3. PRE5: volume expirado,
+  4. PRE6: estatus da performance (escala de  Zubrod),
+  5. PRE7: dor anterior à cirurgia,
+  6. PRE8: hematopoese anterior à cirurgia,
+  7. PRE9: dispneia anterior à cirurgia,
+  8. PRE10: toce anterior à cirurgia,
+  9. PRE11: fraqueza anterior à cirurgia,
+  10. PRE14: tamanho inidial do tumor,
+  11. PRE17: presença de diabete tipo 2,
+  12. PRE19: infarto do miocárdio seis meses antes da cirurgia,
+  13. PRE25: presença de doenças arterial periférica,
+  14. PRE30: fumante,
+  15. PRE32: asma,
+  16. AGE: idade quando fez cirurgia,
+  17. Risk1Yr: período de menos de um ano de sobrevivência após cirurgia (T=morte, F=continuou vivo),
+
+*** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o =conjunto= [[https://drive.google.com/file/d/13s1ZtCWotN_VwQb07yTWEyBMmvO042At/view?usp=sharing][ThoraicSurgery.csv]] da seguinte maneira.
+
+#+NAME: c88219ba-98dc-4a14-8bfe-99fd382a5d3b
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  data <- read.csv('./data/csv/ThoraricSurgery.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: c88219ba-98dc-4a14-8bfe-99fd382a5d3b
+#+begin_example
+  DNG  PRE4 PRE5 PRE6 PRE7  PRE8  PRE9  PRE10 PRE11 PRE14 PRE17 PRE19 PRE25
+1 DGN2 2.88 2.16 PRZ1 FALSE FALSE FALSE  TRUE  TRUE OC14  FALSE FALSE FALSE
+2 DGN3 3.40 1.88 PRZ0 FALSE FALSE FALSE FALSE FALSE OC12  FALSE FALSE FALSE
+3 DGN3 2.76 2.08 PRZ1 FALSE FALSE FALSE  TRUE FALSE OC11  FALSE FALSE FALSE
+4 DGN3 3.68 3.04 PRZ0 FALSE FALSE FALSE FALSE FALSE OC11  FALSE FALSE FALSE
+5 DGN3 2.44 0.96 PRZ2 FALSE  TRUE FALSE  TRUE  TRUE OC11  FALSE FALSE FALSE
+  PRE30 PRE32 AGE Risk1Yr
+1  TRUE FALSE 60  FALSE  
+2  TRUE FALSE 51  FALSE  
+3  TRUE FALSE 59  FALSE  
+4 FALSE FALSE 54  FALSE  
+5  TRUE FALSE 73   TRUE  
+#+end_example
+

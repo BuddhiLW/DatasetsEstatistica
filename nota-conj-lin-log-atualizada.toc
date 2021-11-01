@@ -1,0 +1,40 @@
+\contentsline {section}{\numberline {1}Como acessar o conjunto de dados pelo link}{3}{section.1}%
+\contentsline {section}{\numberline {2}Análise de Regressão Linear e Logística Múltiplas}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-lifecyclesavings}{Ciclos-de-economia salarial}}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Sobre o \texttt {Conjunto}}{5}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}\href {https://www.openintro.org/data/index.php?data=gifted}{Inteligência de prodígios}}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Sobre o \texttt {Conjunto}}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Como utilizar o conjunto por arquivo local}{6}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}\href {https://www.kaggle.com/augustus0498/life-expectancy-who}{Expectativa de Vida por País - Ano: 2015}}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Sobre o \texttt {Conjunto}}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{8}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Como utilizar o conjunto pelo R}{9}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Como utilizar o conjunto por arquivo local}{9}{subsubsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.4}\href {https://www.sheffield.ac.uk/mash/statistics/datasets}{Peso ao Nascimento}}{10}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Dados sobre o \texttt {Conjunto}}{10}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{10}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}\href {https://www.sheffield.ac.uk/mash/statistics/datasets}{Taxa de Criminalidade}}{12}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Dados sobre o \texttt {Conjunto}}{12}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{12}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}\href {https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-attitude}{Atitudes em relação à empresa}}{14}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}Sobre o \texttt {Conjunto}}{14}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Como utilizar pelo R}{14}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{14}{subsubsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.7}\href {https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+\%28Diagnostic\%29}{Cancer de Mama}}{16}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Sobre o \texttt {Conjunto}}{16}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Como utilizar o conjunto (cópia de arquivo data, localmente)}{16}{subsubsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.8}\href {https://www.kaggle.com/uciml/pima-indians-diabetes-database}{Diabetes}}{18}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}Sobre o \texttt {Conjunto}}{18}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{18}{subsubsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.9}\href {https://archive.ics.uci.edu/ml/datasets/Rice+\%28Cammeo+and+Osmancik\%29}{Arroizal}}{20}{subsection.2.9}%
+\contentsline {subsubsection}{\numberline {2.9.1}Sobre o \texttt {Conjunto}}{20}{subsubsection.2.9.1}%
+\contentsline {subsubsection}{\numberline {2.9.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{20}{subsubsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.10}\href {https://archive.ics.uci.edu/ml/datasets/Algerian+Forest+Fires+Dataset++}{Queimadas em Florestas}}{21}{subsection.2.10}%
+\contentsline {subsubsection}{\numberline {2.10.1}Sobre o \texttt {Conjunto}}{21}{subsubsection.2.10.1}%
+\contentsline {subsubsection}{\numberline {2.10.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{21}{subsubsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.11}\href {https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice}{Método Contraceptivo}}{23}{subsection.2.11}%
+\contentsline {subsubsection}{\numberline {2.11.1}Sobre o \texttt {Conjunto}}{23}{subsubsection.2.11.1}%
+\contentsline {subsubsection}{\numberline {2.11.2}Como utilizar o conjunto (cópia de arquivo data, localmente)}{23}{subsubsection.2.11.2}%
+\contentsline {subsection}{\numberline {2.12}\href {https://archive.ics.uci.edu/ml/datasets/Thoracic+Surgery+Data}{Cirurgia Toráxica}}{25}{subsection.2.12}%
+\contentsline {subsubsection}{\numberline {2.12.1}Sobre o \texttt {Conjunto}}{25}{subsubsection.2.12.1}%
+\contentsline {subsubsection}{\numberline {2.12.2}Como utilizar o conjunto (cópia de arquivo CSV, localmente)}{25}{subsubsection.2.12.2}%

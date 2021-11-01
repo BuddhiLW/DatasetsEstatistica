@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{Life.expectancy} \PYG{o}{\PYGZti{}} \PYG{n}{Adult.Mortality} \PYG{o}{+} \PYG{n}{infant.deaths} \PYG{o}{+}
+    \PYG{n}{Hepatitis.B} \PYG{o}{+} \PYG{n}{under.five.deaths} \PYG{o}{+} \PYG{n}{HIV.AIDS} \PYG{o}{+} \PYG{n}{thinness..1.19.years} \PYG{o}{+}
+    \PYG{n}{Income.composition.of.resources}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{life\PYGZus{}2015\PYGZus{}clean}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,733 @@
+\frametitle{Análise de Regressão Linear Múltipla, Conjuntos de Dados}
+\begin{block}{\href{https://www.kaggle.com/augustus0498/life-expectancy-who}{Expectativa de Vida por País}}
+\begin{itemize}
+\item \alert{Modelar a variável expectativa de vida}
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados de todos países, derivados da OMS.
+\end{itemize}
+
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item Country: país,
+\item Year: ano correspondente aos dados,
+\item Status: estado da industrialização,
+\item Life expectancy: expectativa de vida,
+\item Adult Mortality \(15<\text{idade}<60\): mortalidade adulta por mil habitantes,
+\item Infant deaths: mortalidade infantil por mil habitantes,
+\item Alcohol: uso de álcool por litro puro (+15 anos),
+\item Percentage expenditure: gasto em saúde em percentagem do PIB per capta,
+\item Hepatitis B: percentagem de imunização entre bebês com um ano,
+\item Measles: quantidade de casos reportados de Rubeola por mil habitantes,
+\item BMI: média de index de massa corpórea da população,
+\item under-five deaths: quantidade de mortes antes dos cinco anos por mil habitantes,
+\item Polio: quantidade de imunização entre bebês com um ano (percentagem),
+\item Total expenditure: percentagem do gasto total do governo com saúde,
+\item Diphtheria: percentagem de imunização de tétano (\(\leq 1 \text{ano}\)),
+\item HIV/AIDS: morte a cada mil nascimentos (contanto nascimento de 0-4 anos de idade),
+\item GDP: PIB em dólares,
+\item Population: População,
+\item thinness  1-19 years: prevalescência de pessoas magras (1-19 anos de idade),
+\item thinness 5-9 years: prevalescência de pessoas magras (5-9 anos de idade),
+\item Income composition of resources: IDH (qualidade de vida) em termos de composição por salário pessoal (provida por salário próprio),
+\item Schooling: média do número de anos sendo educado (escolaridade).
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Como utilizar o conjunto (cópia de arquivo CSV, localmente)}
+O \texttt{conjunto} apenas está disponível por meio da \href{https://drive.google.com/file/d/1nUnOwgAcWIqoyG0P5\_wnlh1wPxxSUqv5/view?usp=sharing}{cópia da núvem}, para o
+computador local. Após baixar o arquivo \texttt{Life\_Expectancy\_Data.csv},
+para seu computador, a análise deve ser feita, em relação a um
+determinado ano, a qual foi indicado ao grupo.
+
+Por exemplo, para a análise da expectativa de vida, para o ano de
+2015, seria feita invocamos os dados da seguinte maneira,
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+life <- read.csv('./data/csv/Life_Expectancy_Data.csv')
+life_2015 <- subset(life, Year=="2015")
+life_2015[1:6,1:5]
+\end{minted}
+
+\begin{verbatim}
+   Country             Year Status     Life.expectancy Adult.Mortality
+1  Afghanistan         2015 Developing 65.0            263
+17 Albania             2015 Developing 77.8             74
+33 Algeria             2015 Developing 75.6             19
+49 Angola              2015 Developing 52.4            335
+65 Antigua and Barbuda 2015 Developing 76.4             13
+81 Argentina           2015 Developing 76.3            116
+\end{verbatim}
+
+
+Obs: apenas 5 colunas foram selecionadas, por motivos estéticos na formatação.
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-plm-cigar}{Consumo de Cigarro}}
+\begin{itemize}
+\item \alert{Modelar quantidade de venda (sales)}.
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Usado em:
+\begin{itemize}
+\item Baltagi, Badi H. (2001) Econometric Analysis of Panel Data, 2nd ed., John Wiley and Sons.
+\item Baltagi, Badi H. (2013) Econometric Analysis of Panel Data, 5th ed., John Wiley and Sons.
+\item Baltagi, B.H. and D. Levin (1992) “Cigarette taxation: raising revenues and reducing consumption”, Structural Changes and Economic Dynamics, 3(2), pp. 321–335.
+\item Baltagi, B.H., J.M. Griffin and W. Xiong (2000) “To pool or not to pool: homogeneous versus heterogeneous estimators applied to cigarette demand”, Review of Economics and Statistics, 82(1), pp. 117–126.
+\end{itemize}
+\item Dados: anos 1963-1992
+\begin{itemize}
+\item State: estados norte americanos, \(\{1,2,3, \ldots, 51\}\).
+\item Year: Anos 63-92.
+\item Price: preço do maço.
+\item Pop: população de fumantes.
+\item Pop16: população acima de 16.
+\item CPI: índice do preço (ideal) dado pelo consumidor.
+\item NDI: Salário líquido per capta.
+\item Sales: venda de cigarro por maço.
+\item Pimin: preço mínimo de cigarro em estados vizinhos
+\end{itemize}
+\end{itemize}
+\end{block}
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{Ecdat} (Econometrics
+Datasets [Conjuntos de Econometria]). Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("Ecdat",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote.
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+load(Ecdat)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto}.
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+cigarro <- data("Cigar")
+cigarro
+\end{minted}
+\end{block}
+
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o \texttt{conjunto} \href{https://drive.google.com/file/d/1iOQFp0TshV8km2X13fRkXGm8kd-ZVfSL/view?usp=sharing}{cigarro.csv }da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/cigarro.csv')
+head(data,5)
+\end{minted}
+
+\begin{verbatim}
+  state year price pop  pop16  cpi  ndi      sales pimin
+1 1     63   28.6  3383 2236.5 30.6 1558.305 93.9  26.1
+2 1     64   29.8  3431 2276.7 31.0 1684.073 95.4  27.5
+3 1     65   29.8  3486 2327.5 31.5 1809.842 98.5  28.9
+4 1     66   31.5  3524 2369.7 32.4 1915.160 96.4  29.5
+5 1     67   31.6  3533 2393.7 33.4 2023.546 95.5  29.6
+\end{verbatim}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/npk}{Nitrogenio-Fosforo-Potassio}}
+\begin{itemize}
+\item \alert{Modelar yield (desenvolvimento das Ervilhas)}
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Usado em:
+\begin{itemize}
+\item Venables, W. N. and Ripley, B. D. (2002) Modern Applied Statistics with S. Fourth edition. Springer.
+\end{itemize}
+\item Dados:
+\begin{itemize}
+\item block: Número do Canteiro.
+\item N: Aplicação de Nitrogênio.
+\item P: Aplicação de Fósforo.
+\item K: Aplicação de Potássio.
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Como utilizar pelo R}
+Na instalação base (padrão) do \texttt{R}, o conjunto deve estar
+automaticamente disponível, por meio da variável \texttt{npk}.
+
+E.g., (cinco primeiras linhas)
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+npk[1:5,]
+\end{minted}
+
+\begin{verbatim}
+  block N P K yield
+1 1     0 1 1 49.5
+2 1     1 1 0 62.8
+3 1     0 0 0 46.8
+4 1     1 0 1 57.0
+5 2     1 0 0 59.8
+\end{verbatim}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://www.openintro.org/data/index.php?data=gifted}{Inteligência de prodígios}}
+\begin{itemize}
+\item \alert{Modele o IQ da criança com as outras variáveis}
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Referências:
+\begin{itemize}
+\item Graybill, F.A. \& Iyer, H.K., (1994) Regression Analysis: Concepts and Applications, Duxbury, p. 511-6.
+\end{itemize}
+\item Dados:
+\begin{enumerate}
+\item IQ da Criança.
+\item IQ Pai.
+\item IQ Mãe.
+\item Período em meses, até primeiras palavras.
+\item Período em meses, até quanto contou até dez.
+\item Tempo passado, pelos pais, lendo livros, semanalmente.
+\item Tempo passado assistindo programas educativos, semanalmente.
+\item Tempo assistindo desenhos (\texttt{cartoons}), semanalmente.
+\end{enumerate}
+\end{itemize}
+\end{block}
+
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o \texttt{conjunto} \href{https://drive.google.com/file/d/1stukrpc\_Rqu-nlYZu\_-BFHNZec676\_BR/view?usp=sharing}{gifted.csv} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/gifted.csv')
+head(data,5)
+\end{minted}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-mosaicdata-sat}{SAT - Professores}}
+\begin{itemize}
+\item \alert{Modelar variável SAT (nota geral)}
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item State: estado norte americano
+\item Expend: termo médio de aula assistida diária.
+\item Ratio: razão de alunos por professor.
+\item Salary: salário do professor médio, anual.
+\item Frac: percentagem de alunos elegíveis a participar do SAT.
+\item Verbal: nota pra proficiência verbal no SAT.
+\item Math: nota para proficiência em exatadas no SAT.
+\item SAT: nota geral do SAT final.
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{mosaicData}. Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("mosaicData",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote,
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+library(mosaicData)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto},
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- SAT
+head(data)
+\end{minted}
+\end{block}
+
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1E6aOdH1nf0qF4Lky131iX1LNBjaIYAev/view?usp=sharing}{professores-SAT} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/professores-SAT.csv')
+head(data,5)
+\end{minted}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-robustbase-toxicity}{Toxicidade}}
+\begin{itemize}
+\item \alert{Modelar nível de toxicidade aquática de ácidos caboxílicos, baseado nos outros descritores moleculares.}
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item toxicity
+\end{itemize}
+toxicidade  aquática, definida como o \(log(\textrm{IGC50}^{-1})\); tipicamente, a "reposta".
+\begin{itemize}
+\item logKow
+log Kow, coeficiente de parcionamento
+\item pKa
+pKa: constante dissociativa
+\item ELUMO
+Energia do menor orbital molecular ocupado
+\item Ecarb
+Estado eletrotopolófico do grupo carboxílico
+\item Emet
+Estado eletrotopolófico do grupo metil
+\item RM
+Reflectibilidade Molar
+\item IR
+Index de Refração
+\item Ts
+Tensão superficial
+\item P
+Polaridade
+\end{itemize}
+\end{itemize}
+\end{block}
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{robustbase}. Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("robustbase",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote,
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+library(robustbase)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto},
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- toxicity
+head(data)
+\end{minted}
+\end{block}
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1dZE0wj0Z-FeXCvz-4ft0CPJ6Enn1fnew/view?usp=sharing}{toxicidade} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/toxicity.csv')
+head(data,5)
+\end{minted}
+
+\begin{verbatim}
+  toxicity logKow pKa  ELUMO Ecarb   Emet   RM    IR    Ts   P
+1 -0.15    1.68   1.00 4.81  17.8635 1.4838 31.36 1.425 31.3 12.43
+2 -0.33    0.94   0.98 4.68  16.9491 0.0000 22.10 1.408 30.4  8.76
+3 -0.34    1.16   0.96 4.86  17.1806 0.2778 26.73 1.418 30.9 10.59
+4  0.03    2.75   1.00 4.83  18.4794 3.5836 40.63 1.435 31.8 16.10
+5 -0.57    0.79   0.97 4.80  16.8022 1.0232 22.14 1.411 32.5  8.77
+\end{verbatim}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-stat2data-fertility}{Fertilidade Feminina}}
+\begin{itemize}
+\item \alert{Modelar MeanAFC} o qual diretamente empacta a habilidade de ter filhos.
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item Idade
+\item LowAFC: Conta da menor quantidade de folículos antrais.
+\item MeanAFC: Média de folículos antrais.
+\item FSH: Máxima quantidade de níveis de hormônios estimulantes aos folículos.
+\item E2: Nível de fertilidade.
+\item MaxE2: Máximo nível de fertilidade.
+\item MaxDailyGn: Nível máximo de gonadotrofina.
+\item TotalGn: Nível total de gonadotrofina.
+\item Oocytes: Quantidade de ovócitos/oócitos.
+\item Embryos: Quantidade de embriões.
+\end{itemize}
+\end{itemize}
+\end{block}
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{Stat2Data}. Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("Stat2Data",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote,
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+library(Stat2Data)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto},
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- data("Fertility")
+head(data)
+\end{minted}
+\end{block}
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1iG15B5sUrntNJCjpIXT7Li1IHOlpvSKc/view?usp=sharing}{Fertilidade} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/Fertility.csv')
+head(data,5)
+\end{minted}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-attitude}{Atitudes em relação à empresa}}
+\begin{itemize}
+\item \alert{Modelar e modelar o rating}
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados: (em percentagem)
+\begin{itemize}
+\item Complaints: percentagem de resoluções de reclamações.
+\item Privileges: percentagem de intolerância de privilégios.
+\item Learning: percentagem de oportunidade de aprendizado.
+\item Raises: percetagem de aumento correspondente à perfôrmance.
+\item Critical: percentagem de atitudes e críticas exacerbadas.
+\item Advancel: percentadem de evolução percebida da empresa e posto.
+\item Rating: avaliação geral positiva da empresa
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{datasets}. Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("datasets",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote,
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+library(datasets)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto},
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- data("attitude")
+head(data)
+\end{minted}
+\end{block}
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1rKj4NPD61bWKD6HBC4fux2Eit6CNEKwr/view?usp=sharing}{Atitude} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/attitude.csv')
+head(data,5)
+\end{minted}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-lifecyclesavings}{Hipótese de ciclos-de-economia salarial}}
+\begin{itemize}
+\item \alert{Modelar \texttt{sr}, a partir das outra variáveis}
+\item Hipótese formulada por Franco Modigliani 1960-1970, de que essas (outras)
+variáveis eram explicativas do fenômeno 'sr'.
+\end{itemize}
+\begin{block}{Sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item Sr: valor agregado à economia particular (razão entre valor total de economias pessoais e salário líquido)
+\item Pop15: população sob quinze anos de idade.
+\item Pop75: população acima de setenta e cinco anos de idade.
+\item dpi: valor de salário líquido per-capita médio.
+\item ddpi: taxa de crescimento de dpi.
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{datasets}. Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("datasets",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote,
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+library(datasets)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto},
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- data("LifeCycleSavings")
+head(data)
+\end{minted}
+\end{block}
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1j2K7J1rb3V2Qr\_t0rcBhA6tyuqh88AjY/view?usp=sharing}{savings.csv} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/savings.csv')
+head(data,5)
+\end{minted}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://r-data.pmagunia.com/dataset/r-dataset-package-ecdat-computers}{Preço de Computadores 1993-1995}}
+\begin{itemize}
+\item \alert{Modelar preço (\texttt{price}) a partir das variáveis}.
+\end{itemize}
+\begin{block}{Dados sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item Speed: velocidade de rotação em MHz do processador (clock speed)
+\item HD: tamanho da memória do disco rígido em MB
+\item RAM: tamanho da RAM em MB
+\item Screen: tamanho da tela em polegadas
+\item CD: tem ou não entrada para CDs.
+\item Multi: kit multimídia incluso ou não (caixa de som etc).
+\item Premium: manufatura feita por compania conhecida (IBM etc).
+\item Ads: quantidade de anúncio do computador por mês.
+\item Trend: quanto tempo está no mercado.
+\end{itemize}
+\end{itemize}
+\end{block}
+\begin{block}{Como utilizar pelo R}
+O \texttt{conjunto de dados} se encontra sob o pacote \texttt{Ecdat}. Desta forma, precisamos
+instalá-lo.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+install.packages("Ecdat",mirror="https://vps.fmvz.usp.br/CRAN/")
+\end{minted}
+
+Após instalação, precisamos invocar o pacote,
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+library(Ecdat)
+\end{minted}
+
+Finalmente, podemos acessar o \texttt{conjunto},
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- data("Computers")
+head(data)
+\end{minted}
+\end{block}
+
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1C1-9aM-dYzx7UQrWq\_gg4DRw6wtj-l7Z/view?usp=sharing}{computers.csv} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/computers.csv')
+head(data,5)
+\end{minted}
+\end{block}
+\end{block}
+
+
+\begin{block}{\href{https://www.sheffield.ac.uk/mash/statistics/datasets}{Peso ao Nascimento}}
+\begin{itemize}
+\item \alert{Modelar peso ao nascimento (libras) (\texttt{Birthweight}) a partir das variáveis}.
+\end{itemize}
+\begin{block}{Dados sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item lowbwt: baixo peso ao nascer.
+\item ID: Identificador
+\item mage35: mãe mais velha do que 35 anos.
+\item fnocig: número de cigarros fumado pelo pai diariamente.
+\item fheight: peso do pai (kg)
+\item fedyrs: quantidade de anos de educação do pai
+\item fage: idade do pai
+\item mppwt: peso da mãe pré gravidez.
+\item mheight: tamanho da mãe (cm).
+\item mnocig: número de cigarros fumados diariamente pela mãe.
+\item Motherage: idade da mãe.
+\item Gestation Smoker: fumante durante gestação
+\item headcirumfer: circunferência da cabeça
+\item length: tamanho (cm)
+\end{itemize}
+\end{itemize}
+\end{block}
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1xv2lCPsj04FjGPQ\_BgPS9mrTIjBcyHQk/view?usp=sharing}{Birth Weight} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/Birthweight_reduced_kg_R.csv')
+head(data,5)
+\end{minted}
+
+\begin{verbatim}
+  X...ID Length Birthweight Headcirc Gestation smoker mage mnocig mheight mppwt
+1 1360   56     4.55        34       44        0      20   0      162     57
+2 1016   53     4.32        36       40        0      19   0      171     62
+3  462   58     4.10        39       41        0      35   0      172     58
+4 1187   53     4.07        38       44        0      20   0      174     68
+5  553   54     3.94        37       42        0      24   0      175     66
+  fage fedyrs fnocig fheight lowbwt mage35
+1 23   10     35     179     0      0
+2 19   12      0     183     0      0
+3 31   16     25     185     0      1
+4 26   14     25     189     0      0
+5 30   12      0     184     0      0
+\end{verbatim}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://www.sheffield.ac.uk/mash/statistics/datasets}{Crime}}
+\begin{itemize}
+\item \alert{Modelar taxa de crime (\texttt{CrimeRate}) a partir das variáveis}.
+\end{itemize}
+\begin{block}{Dados sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item CrimeRate: Taxa de criminalidade (ofensas por milhão de habitantes).
+\item Youth: Jovens entre 18-24 anos a cada mil habitantes.
+\item Southern: Estado do sul?
+\item Education: Tempo de educação (anos de estudo até 25)
+\item ExpenditureYear0: Dinheiro para segurança pública per capta.
+\item LabourForce: Quantidade de jovens trabalhadores por 1000 habitantes.
+\item Males: Homens (por cada 1000 mulheres).
+\item MoreMales: Mais homens que mulheres?.
+\item StateSize: Tamanho do estado em milhares.
+\item YouthUnemployment: Desemprego de jovens por mil.
+\item BelowWage: Número de famílias abaixo de meio salário por mil.
+\item Wage: Salário médio semanal.
+\item MatureUnemployment: Desemprego de sêniors (35-39) por mil.
+\end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto \href{https://drive.google.com/file/d/1hZpHoEXbhZGvmtmrbcWpXYfBV-2ZD7uF/view?usp=sharing}{Crimes} da seguinte maneira.
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data <- read.csv('./data/csv/Crime_R.csv')
+head(data,5)
+\end{minted}
+
+\begin{verbatim}
+  X...CrimeRate Youth Southern Education ExpenditureYear0 LabourForce Males
+1 45.5          135   0        12.4       69              540          965
+2 52.3          140   0        10.9       55              535         1045
+3 56.6          157   1        11.2       47              512          962
+4 60.3          139   1        11.9       46              480          968
+5 64.2          126   0        12.2      106              599          989
+  MoreMales StateSize YouthUnemployment ... ExpenditureYear10 LabourForce10
+1 0          6         80               ... 71                564
+2 1          6        135               ... 54                540
+3 0         22         97               ... 44                529
+4 0         19        135               ... 41                497
+5 0         40         78               ... 97                602
+  Males10 MoreMales10 StateSize10 YouthUnemploy10 MatureUnemploy10
+1  974    0            6           82             20
+2 1039    1            7          138             39
+3  959    0           24           98             33
+4  983    0           20          131             50
+5  989    0           42           79             24
+  HighYouthUnemploy10 Wage10 BelowWage10
+1 1                   632    142
+2 1                   521    210
+3 0                   359    256
+4 0                   510    235
+5 1                   660    162
+\end{verbatim}
+\end{block}
+\end{block}
+
+\begin{block}{\href{https://archive.ics.uci.edu/ml/datasets/Student+Performance\#}{Performance de Estudantes}}
+\begin{itemize}
+\item \alert{Modelar nota final (\texttt{G3}) a partir das variáveis}.
+\end{itemize}
+\begin{block}{Dados sobre o \texttt{Conjunto}}
+\begin{itemize}
+\item Dados:
+\begin{itemize}
+\item school - Escola em que estuda (binary: 'GP' - Gabriel Pereira ou 'MS' - Mousinho da Silveira)
+\item sex - Sexo (binary: 'F' - mulher ou 'M' - homem)
+\item age - Idade (numeric: from 15 to 22)
+\item address - Estadia/tipo da região (binary: 'U' - urbana or 'R' - rural)
+\item famsize - Tamanho familhar (binary: 'LE3' - menos que  3 or 'GT3' - mais que 3)
+\item Pstatus - Estado de co-habitação dos pais (binary: 'T' - junto or 'A' - aparte)
+\item Medu - Educação da mãe (numeric: 0 - nenhuma, 1 - primária (4th ano), 2 - 5th ao 9th ano, 3 - secundária, ou 4 - superior)
+\item Fedu - Educação do pai (numeric: 0 - nenhuma, 1 - primária (4th ano), 2 - 5th ao 9th ano, 3 - secundária, ou 4 - superior)
+\item Mjob - Tabalho da mãe (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at\textsubscript{home}' or 'other')
+\item Fjob - Trabalho do pai (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at\textsubscript{home}' or 'other')
+\item reason - Razão de escolha da escola (nominal: close to 'home', school 'reputation', 'course' preference or 'other')
+\item guardian - Guardião legal (nominal: 'mother', 'father' or 'other')
+\item traveltime - Tempo de viagem, escola à casa (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - >1 hour)
+\item studytime - Tempo de estudo semanal (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)
+\item failures - Número de reprovações (numeric: n if 1<=n<3, else 4)
+\item schoolsup - Suporte educacional extra (binary: yes or no)
+\item famsup - Suporte educacional familiar (binary: yes or no)
+\item paid - Classes extras pagas (Math or Portuguese) (binary: yes or no)
+\item activities - Atividades extra-curriculares (binary: yes or no)
+\item nursery - Atendeu a clases de enfermaria (binary: yes or no)
+\item higher - Quer seguir educação superior (binary: yes or no)
+\item internet - Acesso a internet (binary: yes or no)
+\item romantic - Em relação romántica (binary: yes or no)
+\item famrel - Qualidade de relação familiar (numeric: from 1 - very bad to 5 - excellent)
+\item freetime - Tempo livre fora da escola (numeric: from 1 - very low to 5 - very high)
+\item goout - Tempo gasto saindo com amigos (numeric: from 1 - very low to 5 - very high)
+\item Dalc - Consumo diário de álcool (numeric: from 1 - very low to 5 - very high)
+\item Walc - Consumo em finais de semana de alcool (numeric: from 1 - very low to 5 - very high)
+\item health - Estado de saúde atual (numeric: from 1 - very bad to 5 - very good)
+\item absences - Número de faltas (numeric: from 0 to 93)
+\item G1 - Notas primeiro período (numeric: from 0 to 20) [relacionadas com português ou matemática]
+\item G2 - Nota segundo período (numeric: from 0 to 20) [relacionadas com português ou matemática]
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item G3 - Nota final (numeric: from 0 to 20, output target) [relacionadas com português ou matemática]
+\end{itemize}
+\end{block}
+\begin{block}{Invocação de conjuto, por arquivo local}
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto de métricas e notas de \href{https://drive.google.com/file/d/1vrIpfxXLxqo4ngPDOBjyrJFhB-Ei5N4C/view?usp=sharing}{Português} e \href{https://drive.google.com/file/d/1FO2LEQhKbCX8cq6yBxqKzjrbnR18OxSD/view?usp=sharing}{Matemática} da seguinte maneira,
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+data_mat=read.table("./data/csv/student-mat.csv",sep=";",header=TRUE)
+data_por=read.table("./data/csv/student-por.csv",sep=";",header=TRUE)
+
+data=merge(data_mat,data_por,by=c("school","sex","age","address","famsize","Pstatus","Medu","Fedu","Mjob","Fjob","reason","nursery","internet"))
+print(nrow(data)) # 382 dados
+
+head(data,5)
+\end{minted}
+
+\begin{verbatim}
+[1] 382
+  school sex age address famsize Pstatus Medu Fedu Mjob     Fjob     ...
+1 GP     F   15  R       GT3     T       1    1    at_home  other    ...
+2 GP     F   15  R       GT3     T       1    1    other    other    ...
+3 GP     F   15  R       GT3     T       2    2    at_home  other    ...
+4 GP     F   15  R       GT3     T       2    4    services health   ...
+5 GP     F   15  R       GT3     T       3    3    services services ...
+  famrel.y freetime.y goout.y Dalc.y Walc.y health.y absences.y G1.y G2.y G3.y
+1 3        1          2       1      1      1        4          13   13   13
+2 3        3          4       2      4      5        2          13   11   11
+3 4        3          1       1      1      2        8          14   13   12
+4 4        3          2       1      1      5        2          10   11   10
+5 4        2          1       2      3      3        2          13   13   13
+\end{verbatim}
+
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+summary(data)
+\end{minted}
+\end{block}
+\end{block}

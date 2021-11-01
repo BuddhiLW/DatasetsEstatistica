@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{MeanAFC} \PYG{o}{\PYGZti{}} \PYG{n}{LowAFC} \PYG{o}{+} \PYG{n}{MaxDailyGn} \PYG{o}{+} \PYG{n}{Oocytes} \PYG{o}{+} \PYG{n}{Embryos}\PYG{p}{,}
+    \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,5088 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.10.25)  29 OCT 2021 19:00
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**notas-reg-shapiro.tex
+(./notas-reg-shapiro.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texmf-dist/tex/latex/grffile/grffile.sty
+Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
+y)
+Package grffile Info: This package is an empty stub for compatibility on input 
+line 40.
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count187
+\LTcapwidth=\dimen141
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count188
+\LT@rows=\count189
+\c@LT@tables=\count190
+\c@LT@chunks=\count191
+\LT@p@ftn=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen142
+\WF@size=\dimen143
+\c@WF@wrappedlines=\count192
+\WF@box=\box51
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count193
+\rotFPtop=\skip53
+\rotFPbot=\skip54
+\rot@float@box=\box52
+\rot@mess@toks=\toks18
+)
+(/usr/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip55
+\UL@hook=\toks19
+\UL@height=\dimen144
+\UL@pe=\count194
+\UL@pixel=\dimen145
+\ULC@box=\box55
+Package: ulem 2019/11/18
+\ULdepth=\dimen146
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen147
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
+\dotsspace@=\muskip16
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
+\tag@help=\toks21
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
+\andhelp@=\toks22
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks23
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/capt-of/capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen156
+\Hy@linkcounter=\count273
+\Hy@pagecounter=\count274
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count275
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count276
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen157
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count277
+\Field@Width=\dimen158
+\Fld@charsize=\dimen159
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count278
+\c@Item=\count279
+\c@Hfootnote=\count280
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count281
+\c@bookmark@seq@number=\count282
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip59
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count283
+)
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count284
+\FV@InFile=\read2
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count285
+\FV@StepNumber=\count286
+\FV@OutFile=\write3
+)
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count287
+\output=\toks25
+\linenoprevgraf=\count288
+\linenumbersep=\dimen160
+\linenumberwidth=\dimen161
+\c@linenumber=\count289
+\c@pagewiselinenumber=\count290
+\c@LN@truepage=\count291
+\c@internallinenumber=\count292
+\c@internallinenumbers=\count293
+\quotelinenumbersep=\dimen162
+\bframerule=\dimen163
+\bframesep=\dimen164
+\bframebox=\box59
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count294
+\c@FV@TrueTabCounter=\count295
+\FV@TabBox@Group=\box60
+\FV@TmpLength=\skip60
+\c@FV@HighlightLinesStart=\count296
+\c@FV@HighlightLinesStop=\count297
+\FV@LoopCount=\count298
+\FV@NCharsBox=\box61
+\FV@BreakIndent=\dimen165
+\FV@BreakIndentNChars=\count299
+\FV@BreakSymbolSepLeft=\dimen166
+\FV@BreakSymbolSepLeftNChars=\count300
+\FV@BreakSymbolSepRight=\dimen167
+\FV@BreakSymbolSepRightNChars=\count301
+\FV@BreakSymbolIndentLeft=\dimen168
+\FV@BreakSymbolIndentLeftNChars=\count302
+\FV@BreakSymbolIndentRight=\dimen169
+\FV@BreakSymbolIndentRightNChars=\count303
+\c@FancyVerbLineBreakLast=\count304
+\FV@LineBox=\box62
+\FV@LineIndentBox=\box63
+\FV@LineWidth=\dimen170
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count305
+\calc@Bcount=\count306
+\calc@Adimen=\dimen171
+\calc@Bdimen=\dimen172
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count307
+\calc@Cskip=\skip63
+)
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "notas-reg-shapiro.w18")...executed.
+
+ (./notas-reg-shapiro.w18)
+runsystem(rm -- "notas-reg-shapiro.w18")...executed.
+
+) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count308
+\decimalpart=\count309
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip64
+\fb@frw=\dimen173
+\fb@frh=\dimen174
+\FrameRule=\dimen175
+\FrameSep=\dimen176
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count310
+\float@exts=\toks26
+\float@box=\box64
+\@float@everytoks=\toks27
+\@floatcapt=\box65
+)
+\minted@appexistsfile=\read3
+\minted@bgbox=\box66
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count311
+\c@minted@pygmentizecounter=\count312
+\@float@every@listing=\toks28
+\c@listing=\count313
+)
+runsystem(mkdir -p _minted-notas-reg-shapiro)...executed.
+
+runsystem(which pygmentize && touch notas-reg-shapiro.aex)...executed.
+
+runsystem(rm notas-reg-shapiro.aex)...executed.
+
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count314
+\l__pdf_internal_box=\box67
+)
+(./notas-reg-shapiro.aux)
+\openout1 = `notas-reg-shapiro.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count315
+\scratchdimen=\dimen177
+\scratchbox=\box68
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen178
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks30
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 35.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count321
+)
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
+
+(./notas-reg-shapiro.out) (./notas-reg-shapiro.out)
+\@outlinefile=\write5
+\openout5 = `notas-reg-shapiro.out'.
+
+ (./notas-reg-shapiro.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write6
+\openout6 = `notas-reg-shapiro.toc'.
+
+ [2]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 48.
+ [3
+
+]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/default-pyg-prefix.pygstyle)
+(./_minted-notas-reg-shapiro/monokai.pygstyle)
+(./_minted-notas-reg-shapiro/2ACB5DF3528CBF67C36B9410273FBB500E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (42.40814pt too wide) in paragraph at lines 106--106
+[]   \OT1/cmtt/m/n/10.95 Country             Year Status     Life.expectancy Ad
+ult.Mortality[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/468C1403FAE788ED3F5B89CA809D74E50E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [4]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/3850B1658C282B554BC35DCF3AA17C280E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []    \OT1/cmtt/m/n/10.95 Status      Life.expectancy Adult.Mortality infant.d
+eaths[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Min.   :1.000   Min.   :51.00   Min.   :  1.0   Min.   :
+  0.0[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 1st Qu.:2.000   1st Qu.:65.75   1st Qu.: 74.0   1st Qu.:
+  0.0[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Median :2.000   Median :73.90   Median :138.0   Median :
+  2.0[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Mean   :1.825   Mean   :71.62   Mean   :152.9   Mean   :
+ 23.8[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 3rd Qu.:2.000   3rd Qu.:76.95   3rd Qu.:213.0   3rd Qu.:
+ 17.0[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Max.   :2.000   Max.   :88.00   Max.   :484.0   Max.   :
+910.0[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 185--185
+ []   \OT1/cmtt/m/n/10.95 Alcohol       percentage.expenditure  Hepatitis.B    
+   Measles[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Min.   : 0.010   Min.   :  0.000        Min.   : 6.00   
+Min.   :    0[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 1st Qu.: 2.493   1st Qu.:  0.000        1st Qu.:78.75   
+1st Qu.:    0[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Median : 5.285   Median :  0.000        Median :93.00   
+Median :   17[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Mean   : 5.288   Mean   :  2.384        Mean   :82.43   
+Mean   : 1503[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 3rd Qu.: 8.018   3rd Qu.:  0.000        3rd Qu.:97.00   
+3rd Qu.:  202[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Max.   :10.660   Max.   :364.975        Max.   :99.00   
+Max.   :90387[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 185--185
+ []     \OT1/cmtt/m/n/10.95 BMI        under.five.deaths     Polio       Total.
+expenditure[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Min.   : 2.50   Min.   :   0.00   Min.   : 5.00   Min.  
+ :6.00[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 1st Qu.:24.30   1st Qu.:   0.00   1st Qu.:83.00   1st Qu
+.:6.54[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Median :48.60   Median :   3.00   Median :93.00   Median
+ :7.08[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Mean   :42.75   Mean   :  31.61   Mean   :83.21   Mean  
+ :7.08[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 3rd Qu.:61.40   3rd Qu.:  21.00   3rd Qu.:97.00   3rd Qu
+.:7.62[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Max.   :77.60   Max.   :1100.00   Max.   :99.00   Max.  
+ :8.16[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 NA^^Ms   :2                                         NA^^
+Ms   :181[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 185--185
+ []  \OT1/cmtt/m/n/10.95 Diphtheria       HIV.AIDS           GDP             Po
+pulation[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Min.   : 6.00   Min.   :0.1000   Min.   :   33.68   Min.
+   :     2966[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 1st Qu.:83.50   1st Qu.:0.1000   1st Qu.:  766.01   1st 
+Qu.:   268071[] 
+ []
+
+[5]
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Median :93.00   Median :0.1000   Median : 2916.23   Medi
+an :  2076086[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Mean   :84.63   Mean   :0.6607   Mean   : 7185.33   Mean
+   : 11097408[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 3rd Qu.:97.00   3rd Qu.:0.4000   3rd Qu.: 7290.11   3rd 
+Qu.:  9940296[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 Max.   :99.00   Max.   :9.3000   Max.   :66346.52   Max.
+   :258162113[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 185--185
+ []                                 \OT1/cmtt/m/n/10.95 NA^^Ms   :29         NA
+^^Ms   :41[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 185--185
+ []\OT1/cmtt/m/n/10.95 thinness..1.19.years thinness.5.9.years Income.compositi
+on.of.resources[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/1A4B50A3A3FDE7F4EBC22F7B4C1FB7AE0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/BFCEAB4675C98DC3727C89D0C0F3B6FA0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 lm(formula = Life.expectancy ~ Status + Adult.Mortality 
++ infant.deaths +[] 
+ []
+
+
+Overfull \hbox (115.7727pt too wide) in paragraph at lines 245--245
+ []    \OT1/cmtt/m/n/10.95 percentage.expenditure + Hepatitis.B + Measles + BMI
+ + under.five.deaths +[] 
+ []
+
+
+Overfull \hbox (110.02402pt too wide) in paragraph at lines 245--245
+ []    \OT1/cmtt/m/n/10.95 Polio + Diphtheria + HIV.AIDS + GDP + Population + t
+hinness..1.19.years +[] 
+ []
+
+[6]
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 245--245
+ []    \OT1/cmtt/m/n/10.95 thinness.5.9.years + Income.composition.of.resources
+ + Schooling,[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []                                  \OT1/cmtt/m/n/10.95 Estimate Std. Error t 
+value Pr(>|t|)[] 
+ []
+
+
+Overfull \hbox (92.77795pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 (Intercept)                      5.083e+01  3.024e+00  1
+6.807  < 2e-16 ***[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Status                          -3.824e-01  8.332e-01  -
+0.459   0.6472[] 
+ []
+
+
+Overfull \hbox (92.77795pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Adult.Mortality                 -2.077e-02  3.619e-03  -
+5.738 8.29e-08 ***[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 infant.deaths                    6.626e-02  3.291e-02   
+2.013   0.0465 *[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 percentage.expenditure           5.575e-03  7.362e-03   
+0.757   0.4505[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Hepatitis.B                      4.311e-02  2.264e-02   
+1.904   0.0595 .[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Measles                         -5.027e-05  5.741e-05  -
+0.876   0.3832[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 BMI                             -9.085e-03  1.554e-02  -
+0.585   0.5600[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 under.five.deaths               -4.811e-02  2.359e-02  -
+2.040   0.0437 *[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Polio                            1.179e-02  1.271e-02   
+0.928   0.3553[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Diphtheria                      -1.148e-02  2.636e-02  -
+0.435   0.6641[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 HIV.AIDS                        -4.858e-01  2.243e-01  -
+2.166   0.0324 *[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 GDP                              5.950e-06  3.011e-05   
+0.198   0.8437[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Population                      -7.918e-10  9.586e-09  -
+0.083   0.9343[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 thinness..1.19.years            -1.192e-01  2.343e-01  -
+0.509   0.6119[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 thinness.5.9.years              -2.030e-02  2.291e-01  -
+0.089   0.9296[] 
+ []
+
+
+Overfull \hbox (92.77795pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Income.composition.of.resources  3.331e+01  4.991e+00   
+6.674 9.93e-10 ***[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Schooling                       -5.244e-02  2.407e-01  -
+0.218   0.8279[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+[7]
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/DC62F75D5B97BF6ABA6D9E778AE3669A0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [8]
+Overfull \hbox (9.25604pt too wide) in paragraph at lines 318--321
+\OT1/cmr/m/n/10.95 O \OT1/cmtt/m/n/10.95 conjunto de dados \OT1/cmr/m/n/10.95 s
+e en-con-tra sob o pa-cote \OT1/cmtt/m/n/10.95 Ecdat \OT1/cmr/m/n/10.95 (Econo-
+met-rics Datasets
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CBB460998455F379C0BBE5FCF5D57DC0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/DB49246C3648A838E03C93C15C7739DE0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/61745ACD12A471387B5C79145B6E7EBC0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+ [9]
+(./_minted-notas-reg-shapiro/48C8E7F52578D915A18E8623BB6138C70E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/620E296C4F47EE3F10AF6D921E4AD5750E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/8442654D8006AB79043947F3EC1C2E130E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [10]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 401--401
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [11]
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 469--469
+ []\OT1/cmtt/m/n/10.95 lm(formula = sales ~ price + pop + pop16, data = cigarro
+_clean)[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+[12]
+(./_minted-notas-reg-shapiro/113354243129CFED9739EF5267740A800E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+ [13]
+(./_minted-notas-reg-shapiro/3D35545D8C8E99CB2B596E466C56B6C40E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/1520877857236E675B64AC26345F78C20E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [14]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 584--584
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 645--645
+ []\OT1/cmtt/m/n/10.95 score ~ fatheriq + motheriq + speak + count + read + edu
+tv +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 645--645
+ []\OT1/cmtt/m/n/10.95 score ~ fatheriq + motheriq + speak + read + edutv + car
+toons[] 
+ []
+
+[15]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 645--645
+ []\OT1/cmtt/m/n/10.95 lm(formula = score ~ fatheriq + motheriq + read + edutv 
++ cartoons,[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 645--645
+ []\OT1/cmtt/m/n/10.95 (Intercept)     fatheriq     motheriq         read      
+  edutv     cartoons[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 645--645
+ []    \OT1/cmtt/m/n/10.95 79.0468       0.2374       0.4121      11.9013      
+-4.8881      -3.8202[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/91DC83F7C5436C251AB19F3D5392F6AB0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [16]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/48D02AEEB6111756E7E05B99D0D6DFCE0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/1B566A46EFC0CE0BDE9C2D05D31E9A380E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/D6EC225E12EDBBFFD8A856D19715A2CF0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [17]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/438A187AC5610CFCA27A5657E1609DC90E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/76E61411B08A3E66A44D014D102BC7860E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/5B6A70A10CCA5184375CC53D60DAC31E0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [18]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 781--781
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 781--781
+ []\OT1/cmtt/m/n/10.95 Residual standard error: 2.693e-14 on 43 degrees of free
+dom[] 
+ []
+
+
+Overfull \hbox (0.79895pt too wide) in paragraph at lines 781--781
+ []\OT1/cmtt/m/n/10.95 F-statistic: 6.305e+31 on 6 and 43 DF,  p-value: < 2.2e-
+16[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [19]
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 828--828
+ []\OT1/cmtt/m/n/10.95 lm(formula = sat ~ expend + salary + frac + verbal + mat
+h, data = data)[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 828--828
+ []\OT1/cmtt/m/n/10.95 (Intercept)       expend       salary         frac      
+ verbal         math[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 828--828
+ [] \OT1/cmtt/m/n/10.95 -2.836e-13    8.486e-15   -1.077e-15    3.896e-16    1.
+000e+00    1.000e+00[] 
+ []
+
+[20]
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 865--865
+ []\OT1/cmtt/m/n/10.95 lm(formula = sat ~ expend + salary + frac + verbal + mat
+h, data = data)[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 865--865
+ []\OT1/cmtt/m/n/10.95 (Intercept)       expend       salary         frac      
+ verbal         math[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 865--865
+ [] \OT1/cmtt/m/n/10.95 -2.836e-13    8.486e-15   -1.077e-15    3.896e-16    1.
+000e+00    1.000e+00[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/BB4C2827C778A1AFC99079191AF9A0020E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [21]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/A457001152ADD28713CE58F76C81E82E0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/F8602B13279FA3CD2C3A680933EC711A0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/8FD2F589FFCA9F7419931B7EB8C40AA70E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+ [22]
+(./_minted-notas-reg-shapiro/59CBDB0BF352B418B8CF6F1500C8CFEC0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/5585D1BAD54B597AAECCF46F93687E3F0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 999--999
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+[23]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 1125--1125
+ []\OT1/cmtt/m/n/10.95 toxicity ~ logKow + pKa + ELUMO + Ecarb + Emet + RM + IR
+ + Ts +[] 
+ []
+
+[24] [25] [26]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/504F79BFE6FA960F2CBC042B693E18A10E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [27]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/66B826FA19D90AECB8CE01EE495C89880E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/19D3A918CB14329F853B6B6EA45C26DE0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/118B3DB174BCE0845D153E63292E185B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/035D58B757DDF6D6F60D1B3D864D3EEA0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (30.91077pt too wide) in paragraph at lines 1214--1214
+[]  \OT1/cmtt/m/n/10.95 Age LowAFC MeanAFC FSH E2 MaxE2 MaxDailyGn TotalGn Oocy
+tes Embryos[] 
+ []
+
+
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 1214--1214
+[]\OT1/cmtt/m/n/10.95 1 40  40     51.5    5.3 45 1427  300        2700    25  
+    13[] 
+ []
+
+
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 1214--1214
+[]\OT1/cmtt/m/n/10.95 2 37  41     41.0    7.1 53  802  225        1800     7  
+     6[] 
+ []
+
+
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 1214--1214
+[]\OT1/cmtt/m/n/10.95 3 40  38     41.0    4.9 40 4533  450        4850    27  
+    15[] 
+ []
+
+
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 1214--1214
+[]\OT1/cmtt/m/n/10.95 4 40  36     37.5    3.9 26 1804  300        2700     9  
+     4[] 
+ []
+
+
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 1214--1214
+[]\OT1/cmtt/m/n/10.95 5 30  36     36.0    4.0 49 2526  150        1500    19  
+    12[] 
+ []
+
+[28]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/5B27E70473682F151DA5B832EF80BBDE0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 1256--1256
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+[29]
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 1370--1370
+ []\OT1/cmtt/m/n/10.95 MeanAFC ~ Age + LowAFC + FSH + E2 + MaxE2 + MaxDailyGn +
+ TotalGn +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 1370--1370
+ []\OT1/cmtt/m/n/10.95 MeanAFC ~ Age + LowAFC + FSH + MaxE2 + MaxDailyGn + Tota
+lGn +[] 
+ []
+
+[30]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 1370--1370
+ []\OT1/cmtt/m/n/10.95 MeanAFC ~ Age + LowAFC + FSH + MaxE2 + MaxDailyGn + Oocy
+tes +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 1370--1370
+ []\OT1/cmtt/m/n/10.95 MeanAFC ~ Age + LowAFC + FSH + MaxDailyGn + Oocytes + Em
+bryos[] 
+ []
+
+[31]
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 1370--1370
+ []\OT1/cmtt/m/n/10.95 lm(formula = MeanAFC ~ LowAFC + MaxDailyGn + Oocytes + E
+mbryos,[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 1370--1370
+ []\OT1/cmtt/m/n/10.95 (Intercept)       LowAFC   MaxDailyGn      Oocytes      
+Embryos[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 1370--1370
+ []   \OT1/cmtt/m/n/10.95 -0.40456      1.01104      0.00182      0.11833     -
+0.06786[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/1BDDA785A3E9AC8A4579964C1F943DA60E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [32]
+Overfull \hbox (2.5367pt too wide) in paragraph at lines 1415--1416
+[]\OT1/cmr/m/n/10.95 Advancel: per-centa-dem de evolu^^Xc~ao perce-bida da em-p
+resa e posto. 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/C9CE060429F3A895CBEB73FFC010B53F0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/560527502C2B34EADA92B18ED597F9120E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [33]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/94EC7065590DBCE62D7BF79FAB3A7B460E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/AAF775A5B6C3E30E91D78055C6A87D290E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 1457--1457
+[]  \OT1/cmtt/m/n/10.95 rating complaints privileges learning raises critical a
+dvance[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/EC61109B0855664A642FAB49C72DF62B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [34]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 1497--1497
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 1578--1578
+ []\OT1/cmtt/m/n/10.95 rating ~ complaints + privileges + learning + raises + c
+ritical +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 1578--1578
+ []\OT1/cmtt/m/n/10.95 rating ~ complaints + privileges + learning + raises + a
+dvance[] 
+ []
+
+[35] [36]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/C821EBF555FC249792D5E4A5005479D00E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [37]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/C9CE060429F3A895CBEB73FFC010B53F0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/560527502C2B34EADA92B18ED597F9120E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/60557EC057B07FA4A1DC4DCAABADA6DF0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/03D731A0083D3154E2528724C6525D0A0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+ [38]
+(./_minted-notas-reg-shapiro/8434BCAB6B69CAF3043BD15A341B25640E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 1702--1702
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [39]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/BC46D139E8765B2AE4A139D4FB67D5740E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [40]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CBB460998455F379C0BBE5FCF5D57DC0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/87D8488519C5D7E0F22A54906709E3D00E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [41]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/1342D384CA560809F546A087F80CB36F0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/C7F71FEB2E4C7D27EDB2F89874D778D30E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/3FCA043A50205CEE24882922588546490E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/8011D3A7D361AED35437F3575BD9AB690E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/193C25554DD2E4D5023281268940433C0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [42]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 1889--1889
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [43]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 1928--1928
+ []\OT1/cmtt/m/n/10.95 price ~ speed + hd + ram + screen + cd + multi + premium
+ + ads +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 1928--1928
+ []\OT1/cmtt/m/n/10.95 lm(formula = price ~ speed + hd + ram + screen + cd + mu
+lti +[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 1928--1928
+ []\OT1/cmtt/m/n/10.95 (Intercept)        speed           hd          ram      
+ screen        cdyes[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 1928--1928
+ []   \OT1/cmtt/m/n/10.95 307.9880       9.3203       0.7818      48.2560     1
+23.0890      60.9167[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7D26D7A3389D1C27042D6A9A57DC8F3B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/96F34874CA55EF99791A71F17603D38B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [44]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+ [45]
+(./_minted-notas-reg-shapiro/3C56C1DCFFBB7F5C7E6FC007446CA4DA0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (94.14633pt too wide) in paragraph at lines 2009--2009
+[]  \OT1/cmtt/m/n/10.95 X...ID Length Birthweight Headcirc Gestation smoker mag
+e mnocig mheight mppwt[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 2009--2009
+[]\OT1/cmtt/m/n/10.95 1 1360   56     4.55        34       44        0      20 
+  0      162     57[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 2009--2009
+[]\OT1/cmtt/m/n/10.95 2 1016   53     4.32        36       40        0      19 
+  0      171     62[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 2009--2009
+[]\OT1/cmtt/m/n/10.95 3  462   58     4.10        39       41        0      35 
+  0      172     58[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 2009--2009
+[]\OT1/cmtt/m/n/10.95 4 1187   53     4.07        38       44        0      20 
+  0      174     68[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 2009--2009
+[]\OT1/cmtt/m/n/10.95 5  553   54     3.94        37       42        0      24 
+  0      175     66[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/4E9EF403E7DEB264150BD080D3A116770E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [46]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2058--2058
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ X...ID + Length + Headcirc + Gestation + s
+moker +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2282--2282
+ []    \OT1/cmtt/m/n/10.95 mage + mnocig + mheight + mppwt + fage + fedyrs + fn
+ocig +[] 
+ []
+
+[47]
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ X...ID + Length + Headcirc + Gestation + s
+moker +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2282--2282
+ []    \OT1/cmtt/m/n/10.95 mage + mnocig + mheight + mppwt + fage + fedyrs + fn
+ocig +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ X...ID + Length + Headcirc + Gestation + s
+moker +[] 
+ []
+
+[48]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2282--2282
+ []    \OT1/cmtt/m/n/10.95 mage + mnocig + mppwt + fage + fedyrs + fnocig + fhe
+ight +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ X...ID + Length + Headcirc + Gestation + s
+moker +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 2282--2282
+ []    \OT1/cmtt/m/n/10.95 mage + mnocig + mppwt + fage + fnocig + fheight + ma
+ge35[] 
+ []
+
+[49]
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ X...ID + Length + Headcirc + Gestation + s
+moker +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ Length + Headcirc + Gestation + smoker + m
+age +[] 
+ []
+
+[50]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ Length + Headcirc + Gestation + smoker + m
+age +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ Length + Headcirc + Gestation + smoker + m
+ppwt +[] 
+ []
+
+[51]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 Birthweight ~ Length + Headcirc + Gestation + smoker + m
+ppwt +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 lm(formula = Birthweight ~ Length + Headcirc + Gestation
+ + smoker +[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 2282--2282
+ []\OT1/cmtt/m/n/10.95 (Intercept)       Length     Headcirc    Gestation      
+ smoker        mppwt[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 2282--2282
+ []   \OT1/cmtt/m/n/10.95 -3.91717      0.05011      0.08611      0.08703     -
+0.16006      0.01198[] 
+ []
+
+[52]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/AF1817C4AB810F64D1FA3389707906630E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [53]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/587171365E883940802B0537D09271720E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (71.15158pt too wide) in paragraph at lines 2375--2375
+[]  \OT1/cmtt/m/n/10.95 X...CrimeRate Youth Southern Education ExpenditureYear0
+ LabourForce Males[] 
+ []
+
+
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 1 45.5          135   0        12.4       69             
+ 540          965[] 
+ []
+
+
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 2 52.3          140   0        10.9       55             
+ 535         1045[] 
+ []
+
+
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 3 56.6          157   1        11.2       47             
+ 512          962[] 
+ []
+
+
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 4 60.3          139   1        11.9       46             
+ 480          968[] 
+ []
+
+
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 5 64.2          126   0        12.2      106             
+ 599          989[] 
+ []
+
+
+Overfull \hbox (71.15158pt too wide) in paragraph at lines 2375--2375
+[]  \OT1/cmtt/m/n/10.95 MoreMales StateSize YouthUnemployment ... ExpenditureYe
+ar10 LabourForce10[] 
+ []
+
+
+Overfull \hbox (13.6647pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 1 0          6         80               ... 71           
+     564[] 
+ []
+
+
+Overfull \hbox (13.6647pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 2 1          6        135               ... 54           
+     540[] 
+ []
+
+
+Overfull \hbox (13.6647pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 3 0         22         97               ... 44           
+     529[] 
+ []
+
+
+Overfull \hbox (13.6647pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 4 0         19        135               ... 41           
+     497[] 
+ []
+
+
+Overfull \hbox (13.6647pt too wide) in paragraph at lines 2375--2375
+[]\OT1/cmtt/m/n/10.95 5 0         40         78               ... 97           
+     602[] 
+ []
+
+
+Overfull \hbox (19.41339pt too wide) in paragraph at lines 2375--2375
+[]  \OT1/cmtt/m/n/10.95 Males10 MoreMales10 StateSize10 YouthUnemploy10 MatureU
+nemploy10[] 
+ []
+
+[54]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/8FEEB8081F5882E150D171C7DCACA6CF0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 ExpenditureYear0     0.337407   0.119796   2.817   0.010
+7 *[] 
+ []
+
+
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 Males               -0.064828   0.036138  -1.794   0.088
+0 .[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 CrimeRate10          0.734102   0.013667  53.715   <2e-1
+6 ***[] 
+ []
+
+[55]
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 ExpenditureYear10   -0.300559   0.129053  -2.329   0.030
+5 *[] 
+ []
+
+
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 Males10              0.057152   0.028958   1.974   0.062
+4 .[] 
+ []
+
+
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 MatureUnemploy10     0.448407   0.214681   2.089   0.049
+7 *[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 2434--2434
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/860BE1F2EDC9D389842E03158BA8A6850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + Education + Expenditu
+reYear0 +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce + Males + MoreMales + StateSize + YouthU
+nemployment +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + Youth10 + Education10 + ExpenditureYea
+r10 +[] 
+ []
+
+
+Overfull \hbox (98.52664pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce10 + Males10 + MoreMales10 + StateSize10 
++ YouthUnemploy10 +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemploy10 + HighYouthUnemploy10 + Wage10 + Be
+lowWage10[] 
+ []
+
+[56]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + Education + Expenditu
+reYear0 +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce + Males + MoreMales + StateSize + YouthU
+nemployment +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + Youth10 + Education10 + ExpenditureYea
+r10 +[] 
+ []
+
+
+Overfull \hbox (98.52664pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce10 + Males10 + MoreMales10 + StateSize10 
++ YouthUnemploy10 +[] 
+ []
+
+[57]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + Education + Expenditu
+reYear0 +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce + Males + MoreMales + StateSize + YouthU
+nemployment +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + Education10 + ExpenditureYear10 + Labo
+urForce10 +[] 
+ []
+
+
+Overfull \hbox (115.7727pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + StateSize10 + YouthUnemploy1
+0 + MatureUnemploy10 +[] 
+ []
+
+[58]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + Education + Expenditu
+reYear0 +[] 
+ []
+
+
+Overfull \hbox (115.7727pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce + Males + StateSize + YouthUnemployment 
++ MatureUnemployment +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 HighYouthUnemploy + Wage + BelowWage + CrimeRate10 +
+ Education10 +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 ExpenditureYear10 + LabourForce10 + Males10 + MoreMa
+les10 +[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize10 + YouthUnemploy10 + MatureUnemploy10 + H
+ighYouthUnemploy10 +[] 
+ []
+
+[59]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + Education + Expenditu
+reYear0 +[] 
+ []
+
+
+Overfull \hbox (115.7727pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce + Males + StateSize + YouthUnemployment 
++ MatureUnemployment +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 HighYouthUnemploy + Wage + BelowWage + CrimeRate10 +
+ Education10 +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 ExpenditureYear10 + LabourForce10 + Males10 + MoreMa
+les10 +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize10 + YouthUnemploy10 + MatureUnemploy10 + B
+elowWage10[] 
+ []
+
+[60]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + ExpenditureYear0 + La
+bourForce +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males + StateSize + YouthUnemployment + MatureUnempl
+oyment +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 HighYouthUnemploy + Wage + BelowWage + CrimeRate10 +
+ Education10 +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 ExpenditureYear10 + LabourForce10 + Males10 + MoreMa
+les10 +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize10 + YouthUnemploy10 + MatureUnemploy10 + B
+elowWage10[] 
+ []
+
+[61]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + ExpenditureYear0 + La
+bourForce +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males + StateSize + YouthUnemployment + MatureUnempl
+oyment +[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 HighYouthUnemploy + Wage + BelowWage + CrimeRate10 +
+ ExpenditureYear10 +[] 
+ []
+
+
+Overfull \hbox (98.52664pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 LabourForce10 + Males10 + MoreMales10 + StateSize10 
++ YouthUnemploy10 +[] 
+ []
+
+[62]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + ExpenditureYear0 + Ma
+les +[] 
+ []
+
+
+Overfull \hbox (104.27533pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize + YouthUnemployment + MatureUnemployment +
+ HighYouthUnemploy +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Wage + BelowWage + CrimeRate10 + ExpenditureYear10 +
+ LabourForce10 +[] 
+ []
+
+
+Overfull \hbox (115.7727pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + StateSize10 + YouthUnemploy1
+0 + MatureUnemploy10 +[] 
+ []
+
+[63]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + ExpenditureYear0 + Ma
+les +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize + MatureUnemployment + HighYouthUnemploy +
+ Wage +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 BelowWage + CrimeRate10 + ExpenditureYear10 + Labour
+Force10 +[] 
+ []
+
+
+Overfull \hbox (115.7727pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + StateSize10 + YouthUnemploy1
+0 + MatureUnemploy10 +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Youth + Southern + ExpenditureYear0 + Ma
+les +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize + MatureUnemployment + HighYouthUnemploy +
+ Wage +[] 
+ []
+
+[64]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 BelowWage + CrimeRate10 + ExpenditureYear10 + Labour
+Force10 +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + StateSize10 + MatureUnemploy
+10 +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + ExpenditureYear10 + LabourForce10 + Ma
+les10 +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MoreMales10 + StateSize10 + MatureUnemploy10 + Below
+Wage10[] 
+ []
+
+[65]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + ExpenditureYear10 + LabourForce10 + Ma
+les10 +[] 
+ []
+
+[66]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + ExpenditureYear10 + Males10 + MoreMale
+s10 +[] 
+ []
+
+[67]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Belo
+wWage +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 CrimeRate10 + ExpenditureYear10 + Males10 + MoreMale
+s10 +[] 
+ []
+
+[68]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + HighYouthUnemploy + Wage + Crim
+eRate10 +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 ExpenditureYear10 + Males10 + MoreMales10 + MatureUn
+employ10[] 
+ []
+
+[69]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + Wage + CrimeRate10 + Expenditur
+eYear10 +[] 
+ []
+
+[70]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + Wage + CrimeRate10 + Expenditur
+eYear10 +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + MatureUnemploy10 + HighYouth
+Unemploy10[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 X...CrimeRate ~ Southern + ExpenditureYear0 + Males + St
+ateSize +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 MatureUnemployment + Wage + CrimeRate10 + Expenditur
+eYear10 +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + MatureUnemploy10 + HighYouth
+Unemploy10 +[] 
+ []
+
+[71]
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 3106--3106
+ []\OT1/cmtt/m/n/10.95 lm(formula = X...CrimeRate ~ Southern + ExpenditureYear0
+ + Males +[] 
+ []
+
+
+Overfull \hbox (110.02402pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 StateSize + MatureUnemployment + Wage + CrimeRate10 
++ ExpenditureYear10 +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 3106--3106
+ []    \OT1/cmtt/m/n/10.95 Males10 + MoreMales10 + MatureUnemploy10 + HighYouth
+Unemploy10 +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []        \OT1/cmtt/m/n/10.95 (Intercept)             Southern     Expenditure
+Year0[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []           \OT1/cmtt/m/n/10.95 26.29289             -2.08933              0.
+33513[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []              \OT1/cmtt/m/n/10.95 Males            StateSize   MatureUnemplo
+yment[] 
+ []
+
+[72]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []           \OT1/cmtt/m/n/10.95 -0.05595             -0.03069             -0.
+40740[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []               \OT1/cmtt/m/n/10.95 Wage          CrimeRate10    ExpenditureY
+ear10[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []           \OT1/cmtt/m/n/10.95 -0.01491              0.73158             -0.
+29560[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []            \OT1/cmtt/m/n/10.95 Males10          MoreMales10     MatureUnemp
+loy10[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 3106--3106
+ []            \OT1/cmtt/m/n/10.95 0.05234             -2.49654              0.
+47887[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/36F6BA40BC0C47E234DA155101DEF3850E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B6A258AAAD9CBDD4511348BC7865923B0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [73] [74]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/B01B2533F0B375DB722EB1E628640FDD0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (53.90552pt too wide) in paragraph at lines 3216--3216
+[]  \OT1/cmtt/m/n/10.95 school sex age address famsize Pstatus Medu Fedu Mjob  
+   Fjob     ...[] 
+ []
+
+
+Overfull \hbox (53.90552pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 1 GP     F   15  R       GT3     T       1    1    at_hom
+e  other    ...[] 
+ []
+
+
+Overfull \hbox (53.90552pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 2 GP     F   15  R       GT3     T       1    1    other 
+   other    ...[] 
+ []
+
+
+Overfull \hbox (53.90552pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 3 GP     F   15  R       GT3     T       2    2    at_hom
+e  other    ...[] 
+ []
+
+
+Overfull \hbox (53.90552pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 4 GP     F   15  R       GT3     T       2    4    servic
+es health   ...[] 
+ []
+
+[75]
+Overfull \hbox (53.90552pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 5 GP     F   15  R       GT3     T       3    3    servic
+es services ...[] 
+ []
+
+
+Overfull \hbox (88.39764pt too wide) in paragraph at lines 3216--3216
+[]  \OT1/cmtt/m/n/10.95 famrel.y freetime.y goout.y Dalc.y Walc.y health.y abse
+nces.y G1.y G2.y G3.y[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 1 3        1          2       1      1      1        4   
+       13   13   13[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 2 3        3          4       2      4      5        2   
+       13   11   11[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 3 4        3          1       1      1      2        8   
+       14   13   12[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 4 4        3          2       1      1      5        2   
+       10   11   10[] 
+ []
+
+
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 3216--3216
+[]\OT1/cmtt/m/n/10.95 5 4        2          1       2      3      3        2   
+       13   13   13[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7030D639DBA7DE7FDDBF910617411EF80E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (17.28877pt too wide) in paragraph at lines 3223--3226
+[]\OT1/cmr/m/n/10.95 Transformar as vari^^Saveis categ^^Soricas em num^^Sericas
+ []As vari^^Saveis categ^^Soricas
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/D1D983062AA1675D52CBE7B107A520380E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/A234E61669ED84472FCB95712D9B2BC60E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+ [76]
+(./_minted-notas-reg-shapiro/5DB0585CF6171D366F15668197395CD30E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [77]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 3345--3345
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+[78]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/88763FA0168C4F17499414E35D41B4FA0E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [79] [80]
+Overfull \hbox (0.79895pt too wide) in paragraph at lines 3433--3433
+ []\OT1/cmtt/m/n/10.95 G2.y              0.808075   0.067577  11.958   <2e-16 *
+**[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 3433--3433
+ []\OT1/cmtt/m/n/10.95 Signif. codes:  0 ^^M***^^M 0.001 ^^M**^^M 0.01 ^^M*^^M 
+0.05 ^^M.^^M 0.1 ^^M ^^M 1[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/7CEC49988744201B8587102340E23B160E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/96484FBC9925A7798D77B64D57E973230E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.y + famrel.y + freetime.y + goout.y + Dalc.
+y + Walc.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.y + famrel.y + freetime.y + goout.y + Dalc.
+y + Walc.y +[] 
+ []
+
+[81]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.y + famrel.y + freetime.y + goout.y + Dalc.
+y + absences.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.y + famrel.y + freetime.y + goout.y + absen
+ces.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.y + famrel.y + freetime.y + absences.y + G1
+.y +[] 
+ []
+
+[82]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+
+Overfull \hbox (6.54764pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.y + famrel.y + absences.y + G1.y + G2.y + G
+3.y[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+[83]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + Fjob + reason + nursery + internet + guardian
+.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+[84] [85]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + reason + nursery + internet + guardian.x + tr
+aveltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + fr
+eetime.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 goout.x + Dalc.x + Walc.x + health.x + absences.x + 
+G1.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G2.x + guardian.y + traveltime.y + studytime.y + fai
+lures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+[86]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + nursery + internet + guardian.x + traveltime.
+x + studytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + freetime.x + goou
+t.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + guardian.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + failures.y + schoolsup.
+y + famsup.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.y + activities.y + higher.y + romantic.y + abse
+nces.y +[] 
+ []
+
+[87] [88]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + nursery + internet + guardian.x + traveltime.
+x + studytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + freetime.x + goou
+t.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + guardian.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + failures.y + schoolsup.
+y + famsup.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 paid.y + activities.y + higher.y + romantic.y + abse
+nces.y +[] 
+ []
+
+[89]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + nursery + internet + guardian.x + traveltime.
+x + studytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + freetime.x + goou
+t.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + guardian.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + failures.y + schoolsup.
+y + famsup.y +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 activities.y + higher.y + romantic.y + absences.y + 
+G2.y +[] 
+ []
+
+[90] [91]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + nursery + internet + guardian.x + traveltime.
+x + studytime.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + activities.x +
+ higher.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + freetime.x + goout.x + Dalc.
+x + Walc.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + guardian.y + t
+raveltime.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+activities.y +[] 
+ []
+
+[92]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Fedu + nursery + internet + guardian.x + traveltime.
+x + studytime.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + activities.x +
+ higher.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + freetime.x + goout.x + Dalc.
+x + Walc.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + guardian.y + t
+raveltime.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+activities.y +[] 
+ []
+
+[93] [94]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Pstatus + Medu + F
+edu +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 nursery + internet + guardian.x + traveltime.x + stu
+dytime.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + activities.x +
+ higher.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + freetime.x + goout.x + Dalc.
+x + Walc.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + guardian.y + t
+raveltime.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+activities.y +[] 
+ []
+
+[95]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Pstatus + Medu + F
+edu +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 nursery + internet + guardian.x + traveltime.x + stu
+dytime.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + activities.x +
+ romantic.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famrel.x + freetime.x + goout.x + Dalc.x + Walc.x + 
+health.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 absences.x + G1.x + G2.x + guardian.y + traveltime.y
+ + studytime.y +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + activities.y +
+ romantic.y +[] 
+ []
+
+[96] [97]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Pstatus + Fedu + n
+ursery +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 internet + guardian.x + traveltime.x + studytime.x +
+ failures.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + activities.x + romantic.x +
+ famrel.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + romantic.y +
+ absences.y +[] 
+ []
+
+[98]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Fedu + nursery + i
+nternet +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 guardian.x + traveltime.x + studytime.x + failures.x
+ + schoolsup.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famsup.x + activities.x + romantic.x + famrel.x + fr
+eetime.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 goout.x + Dalc.x + Walc.x + health.x + absences.x + 
+G1.x +[] 
+ []
+
+[99]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G2.x + guardian.y + traveltime.y + studytime.y + fai
+lures.y +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + romantic.y +
+ absences.y +[] 
+ []
+
+[100]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Fedu + nursery + i
+nternet +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 guardian.x + traveltime.x + studytime.x + failures.x
+ + schoolsup.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famsup.x + activities.x + romantic.x + famrel.x + fr
+eetime.x +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 goout.x + Walc.x + health.x + absences.x + G1.x + G2
+.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 guardian.y + traveltime.y + studytime.y + failures.y
+ + schoolsup.y +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famsup.y + activities.y + romantic.y + absences.y + 
+G2.y +[] 
+ []
+
+[101] [102]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Fedu + nursery + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 activities.x + romantic.x + famrel.x + freetime.x + 
+goout.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Walc.x + health.x + absences.x + G1.x + G2.x + guard
+ian.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + failures.y + schoolsup.
+y + famsup.y +[] 
+ []
+
+[103]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Fedu + nursery + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 activities.x + romantic.x + famrel.x + freetime.x + 
+goout.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Walc.x + health.x + absences.x + G1.x + G2.x + guard
+ian.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + failures.y + schoolsup.
+y + famsup.y +[] 
+ []
+
+[104] [105]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Fedu + nursery + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 activities.x + romantic.x + famrel.x + goout.x + Wal
+c.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + guardian.y + t
+raveltime.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+activities.y +[] 
+ []
+
+[106]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + address + Fedu + nursery + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 activities.x + romantic.x + famrel.x + goout.x + Wal
+c.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + guardian.y + t
+raveltime.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+activities.y +[] 
+ []
+
+[107] [108]
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + Fedu + nursery + guardian.x 
++ traveltime.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+activities.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + goout.x + Walc.x + health.x 
++ absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + absences.y +
+ G2.y[] 
+ []
+
+[109]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + Fedu + guardian.x + travelti
+me.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+activities.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + goout.x + Walc.x + health.x 
++ absences.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + absences.y +
+ G2.y[] 
+ []
+
+[110] [111]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + sex + age + Fedu + guardian.x + travelti
+me.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+activities.x +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + Walc.x + health.x + absences
+.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + absences.y +
+ G2.y[] 
+ []
+
+[112]
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + age + Fedu + guardian.x + traveltime.x +
+ studytime.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + activities.x +
+ romantic.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famrel.x + Walc.x + health.x + absences.x + G1.x + G
+2.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 guardian.y + traveltime.y + studytime.y + failures.y
+ + schoolsup.y +[] 
+ []
+
+[113] [114]
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + age + Fedu + guardian.x + traveltime.x +
+ studytime.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + activities.x + romantic.x +
+ famrel.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Walc.x + health.x + absences.x + G1.x + G2.x + guard
+ian.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + failures.y + schoolsup.
+y + famsup.y +[] 
+ []
+
+[115]
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + age + Fedu + guardian.x + traveltime.x +
+ studytime.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + activities.x + romantic.x +
+ famrel.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Walc.x + health.x + absences.x + G1.x + G2.x + guard
+ian.y +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + schoolsup.y + famsup.y 
++ activities.y +[] 
+ []
+
+[116] [117]
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ school + age + guardian.x + traveltime.x + studyt
+ime.x +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + activities.x + romantic.x +
+ famrel.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 Walc.x + health.x + absences.x + G1.x + G2.x + guard
+ian.y +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y + studytime.y + schoolsup.y + famsup.y 
++ activities.y +[] 
+ []
+
+[118]
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ age + guardian.x + traveltime.x + studytime.x + s
+choolsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famsup.x + activities.x + romantic.x + famrel.x + Wa
+lc.x +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + guardian.y + t
+raveltime.y +[] 
+ []
+
+[119]
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 studytime.y + schoolsup.y + famsup.y + activities.y 
++ absences.y +[] 
+ []
+
+[120]
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ age + guardian.x + traveltime.x + studytime.x + s
+choolsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famsup.x + activities.x + romantic.x + famrel.x + Wa
+lc.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 absences.x + G1.x + G2.x + guardian.y + traveltime.y
+ + studytime.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + absences.y +
+ G2.y[] 
+ []
+
+[121]
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 G3.x ~ age + guardian.x + traveltime.x + studytime.x + s
+choolsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 famsup.x + activities.x + famrel.x + Walc.x + absenc
+es.x +[] 
+ []
+
+[122]
+Overfull \hbox (87.02927pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + guardian.y + traveltime.y + studytime.
+y + schoolsup.y +[] 
+ []
+
+[123]
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 5184--5184
+ []\OT1/cmtt/m/n/10.95 lm(formula = G3.x ~ age + guardian.x + traveltime.x + st
+udytime.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + activities.x + famrel.x + W
+alc.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 absences.x + G1.x + G2.x + guardian.y + traveltime.y
+ + studytime.y +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + activities.y + absences.y +
+ G2.y,[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []     \OT1/cmtt/m/n/10.95 (Intercept)               age  guardian.xmother   g
+uardian.xother[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []        \OT1/cmtt/m/n/10.95 -1.24333          -0.21277          -3.87959    
+       0.11859[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.x       studytime.x    schoolsup.xyes    
+   famsup.xyes[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []         \OT1/cmtt/m/n/10.95 2.75836           4.91618           5.87810    
+      -9.70780[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ [] \OT1/cmtt/m/n/10.95 activities.xyes          famrel.x            Walc.x    
+    absences.x[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []        \OT1/cmtt/m/n/10.95 -6.14135           0.40737           0.15800    
+       0.05756[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []            \OT1/cmtt/m/n/10.95 G1.x              G2.x  guardian.ymother   g
+uardian.yother[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []         \OT1/cmtt/m/n/10.95 0.16538           0.93793           4.24692    
+            NA[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []    \OT1/cmtt/m/n/10.95 traveltime.y       studytime.y    schoolsup.yyes    
+   famsup.yyes[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 5184--5184
+ []        \OT1/cmtt/m/n/10.95 -2.63578          -5.09303          -5.38131    
+       9.83361[] 
+ []
+
+\openout3 = `notas-reg-shapiro.pyg'.
+
+[124]
+(./_minted-notas-reg-shapiro/6FA2AD8B7D3CAB5AF8C03E18F22D09610E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/140D85D3970C3CB946E94242408A69E10E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.y + romantic.y + famrel.y + freetime.y + goou
+t.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.y + romantic.y + famrel.y + freetime.y + goou
+t.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.y + romantic.y + famrel.y + freetime.y + goou
+t.y +[] 
+ []
+
+[125]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.y + romantic.y + famrel.y + freetime.y + goou
+t.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.y + romantic.y + famrel.y + freetime.y + abse
+nces.y +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.y + romantic.y + famrel.y + absences.y + G1.y
+ + G2.y[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + Fjob + reason + nursery + internet + g
+uardian.x +[] 
+ []
+
+[126]
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+[127]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + nursery + internet + guardian
+.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 traveltime.x + studytime.x + failures.x + schoolsup.
+x + famsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + romantic.x + famr
+el.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 freetime.x + goout.x + Dalc.x + Walc.x + health.x + 
+absences.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + traveltime.y + stu
+dytime.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + paid.y + activ
+ities.y +[] 
+ []
+
+[128]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + fr
+eetime.x +[] 
+ []
+
+[129]
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 goout.x + Dalc.x + Walc.x + health.x + absences.x + 
+G1.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G2.x + G3.x + guardian.y + traveltime.y + studytime.
+y + failures.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + paid.y + activities.y + hig
+her.y +[] 
+ []
+
+[130]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + go
+out.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + G3.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 guardian.y + traveltime.y + studytime.y + failures.y
+ + schoolsup.y +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famsup.y + paid.y + activities.y + higher.y + romant
+ic.y +[] 
+ []
+
+[131]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + go
+out.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + G3.x +[] 
+ []
+
+[132]
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 guardian.y + traveltime.y + studytime.y + failures.y
+ + schoolsup.y +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famsup.y + paid.y + higher.y + romantic.y + absences
+.y +[] 
+ []
+
+[133]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + go
+out.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + G3.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 guardian.y + traveltime.y + studytime.y + failures.y
+ + schoolsup.y +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famsup.y + higher.y + romantic.y + absences.y + G1.y
+ + G2.y[] 
+ []
+
+[134] [135]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + go
+out.x +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + Walc.x + health.x + absences.x + G1.x + G2.
+x + G3.x +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 guardian.y + studytime.y + failures.y + schoolsup.y 
++ famsup.y +[] 
+ []
+
+[136]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + go
+out.x +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Dalc.x + health.x + absences.x + G1.x + G2.x + G3.x 
++ guardian.y +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+higher.y +[] 
+ []
+
+[137] [138]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Fedu + Mjob + reason + internet + guardian.x + trave
+ltime.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.x + failures.x + schoolsup.x + famsup.x + 
+paid.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + romantic.x + famrel.x + go
+out.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + G2.x + G3.x + guardia
+n.y +[] 
+ []
+
+
+Overfull \hbox (46.78845pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+higher.y +[] 
+ []
+
+[139]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Mjob + reason + internet + guardian.x + traveltime.x
+ + studytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + goout.x + health.
+x + absences.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + studytime.y + fail
+ures.y +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + higher.y + romantic.y + abs
+ences.y +[] 
+ []
+
+[140] [141]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + address + famsize + Pstatus 
++ Medu +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Mjob + reason + internet + guardian.x + traveltime.x
+ + studytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + goout.x + health.
+x + absences.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + studytime.y + fail
+ures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + romantic.y + absences.y + G
+1.y +[] 
+ []
+
+[142] [143]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + stud
+ytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + goout.x + health.
+x + absences.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + studytime.y + fail
+ures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + romantic.y + absences.y + G
+1.y +[] 
+ []
+
+[144]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + stud
+ytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + health.x + absenc
+es.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G2.x + G3.x + guardian.y + studytime.y + fail
+ures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + romantic.y + absences.y + G
+1.y +[] 
+ []
+
+[145] [146]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + stud
+ytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + health.x + absenc
+es.x +[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + G3.x + guardian.y + studytime.y + failures.y 
++ schoolsup.y +[] 
+ []
+
+[147]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + stud
+ytime.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.x + schoolsup.x + famsup.x + paid.x + activ
+ities.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 higher.x + romantic.x + famrel.x + health.x + absenc
+es.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + guardian.y + studytime.y + failures.y + schoo
+lsup.y +[] 
+ []
+
+[148] [149]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + paid.x + activities.x + hig
+her.x +[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + health.x + absences.x + G1.x
+ + guardian.y +[] 
+ []
+
+
+Overfull \hbox (58.28583pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 studytime.y + failures.y + schoolsup.y + famsup.y + 
+romantic.y +[] 
+ []
+
+[150]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+[151]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + paid.x + activities.x + hig
+her.x +[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 romantic.x + famrel.x + health.x + absences.x + G1.x
+ + guardian.y +[] 
+ []
+
+
+Overfull \hbox (52.53714pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 failures.y + schoolsup.y + famsup.y + romantic.y + a
+bsences.y +[] 
+ []
+
+[152]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + paid.x + activities.x + hig
+her.x +[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famrel.x + health.x + absences.x + G1.x + guardian.y
+ + failures.y +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.y + famsup.y + romantic.y + absences.y + G
+1.y +[] 
+ []
+
+[153] [154]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + paid.x + activities.x + hig
+her.x +[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famrel.x + health.x + absences.x + G1.x + guardian.y
+ + failures.y +[] 
+ []
+
+[155]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + paid.x + activities.x + hig
+her.x +[] 
+ []
+
+
+Overfull \hbox (75.53189pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famrel.x + health.x + absences.x + G1.x + guardian.y
+ + failures.y +[] 
+ []
+
+[156] [157]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + famsup.x + paid.x + activities.x + hig
+her.x +[] 
+ []
+
+
+Overfull \hbox (81.28058pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 famrel.x + health.x + absences.x + G1.x + failures.y
+ + schoolsup.y +[] 
+ []
+
+[158]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + guardian.x + traveltime.x + fail
+ures.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 schoolsup.x + paid.x + activities.x + higher.x + fam
+rel.x +[] 
+ []
+
+
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 health.x + absences.x + G1.x + failures.y + schoolsu
+p.y +[] 
+ []
+
+[159] [160]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 paid.x + activities.x + higher.x + famrel.x + health
+.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 absences.x + G1.x + failures.y + schoolsup.y + absen
+ces.y +[] 
+ []
+
+[161]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + higher.x + famrel.x + health.x + abse
+nces.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + failures.y + schoolsup.y + absences.y + G1.y 
++ G2.y[] 
+ []
+
+[162] [163]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + famrel.x + health.x + absences.x + G1
+.x +[] 
+ []
+
+[164]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + famrel.x + absences.x + G1.x + failur
+es.y +[] 
+ []
+
+[165] [166]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 activities.x + absences.x + G1.x + failures.y + scho
+olsup.y +[] 
+ []
+
+[167]
+Overfull \hbox (18.04501pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + famsize + Pstatus + Medu + M
+job +[] 
+ []
+
+[168]
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 absences.x + G1.x + failures.y + schoolsup.y + absen
+ces.y +[] 
+ []
+
+[169]
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + Pstatus + Medu + Mjob + reas
+on +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 internet + traveltime.x + failures.x + schoolsup.x +
+ absences.x +[] 
+ []
+
+
+Overfull \hbox (23.7937pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + failures.y + schoolsup.y + absences.y + G1.y 
++ G2.y[] 
+ []
+
+[170] [171]
+Overfull \hbox (12.29633pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 G3.y ~ school + sex + age + Pstatus + Medu + Mjob + reas
+on +[] 
+ []
+
+
+Overfull \hbox (64.03452pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 internet + traveltime.x + failures.x + schoolsup.x +
+ absences.x +[] 
+ []
+
+
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 G1.x + failures.y + schoolsup.y + absences.y + G1.y 
++ G2.y +[] 
+ []
+
+[172]
+Overfull \hbox (35.29108pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 lm(formula = G3.y ~ school + sex + age + Pstatus + Medu 
++ Mjob +[] 
+ []
+
+
+Overfull \hbox (41.03976pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 reason + internet + traveltime.x + failures.x + scho
+olsup.x +[] 
+ []
+
+
+Overfull \hbox (29.54239pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 absences.x + G1.x + failures.y + schoolsup.y + absen
+ces.y +[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []     \OT1/cmtt/m/n/10.95 (Intercept)          schoolMS              sexM    
+           age[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []        \OT1/cmtt/m/n/10.95 -0.87412          -0.83115          -0.37189    
+       0.09974[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []        \OT1/cmtt/m/n/10.95 PstatusT              Medu        Mjobhealth    
+     Mjobother[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []        \OT1/cmtt/m/n/10.95 -0.40567          -0.12478           0.18039    
+      -0.29048[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []    \OT1/cmtt/m/n/10.95 Mjobservices       Mjobteacher        reasonhome    
+   reasonother[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []         \OT1/cmtt/m/n/10.95 0.09746           0.26072           0.15733    
+      -0.67047[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []\OT1/cmtt/m/n/10.95 reasonreputation       internetyes      traveltime.x    
+    failures.x[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []        \OT1/cmtt/m/n/10.95 -0.03474           0.32879           0.16532    
+      -0.24495[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []  \OT1/cmtt/m/n/10.95 schoolsup.xyes        absences.x              G1.x    
+    failures.y[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []        \OT1/cmtt/m/n/10.95 -1.70934          -0.02110           0.04075    
+      -0.34366[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []  \OT1/cmtt/m/n/10.95 schoolsup.yyes        absences.y              G1.y    
+          G2.y[] 
+ []
+
+
+Overfull \hbox (69.7832pt too wide) in paragraph at lines 7151--7151
+ []         \OT1/cmtt/m/n/10.95 1.59120           0.03221           0.12161    
+       0.84698[] 
+ []
+
+[173]
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/1C234F60C2126915F5FE70886CBDA1530E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/ED76FBFFCC647FFCC41893EB8C41CE040E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex)
+\openout3 = `notas-reg-shapiro.pyg'.
+
+
+(./_minted-notas-reg-shapiro/BF12239E5A5E427E058766DF665A54220E4B73E39843AEC3FE
+77FEAB7FE80729.pygtex) [174] (./notas-reg-shapiro.aux)
+Package rerunfilecheck Info: File `notas-reg-shapiro.out' has not changed.
+(rerunfilecheck)             Checksum: 7F7B3A6CDEA7E05578A83DAC9DF182F6;13567.
+runsystem(rm notas-reg-shapiro.pyg)...executed.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 13728 strings out of 478994
+ 244778 string characters out of 5864750
+ 664718 words of memory out of 5000000
+ 30427 multiletter control sequences out of 15000+600000
+ 410379 words of font info for 54 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,6n,74p,1269b,599s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmtt8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+
+Output written on notas-reg-shapiro.pdf (174 pages, 344842 bytes).
+PDF statistics:
+ 1219 PDF objects out of 1440 (max. 8388607)
+ 1022 compressed objects within 11 object streams
+ 283 named destinations out of 1000 (max. 500000)
+ 449 words of extra memory for PDF output out of 10000 (max. 10000000)
+

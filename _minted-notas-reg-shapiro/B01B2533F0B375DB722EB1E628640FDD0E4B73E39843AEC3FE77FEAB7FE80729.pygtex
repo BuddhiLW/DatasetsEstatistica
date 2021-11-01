@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{data\PYGZus{}mat}\PYG{o}{=}\PYG{n+nf}{read.table}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}./data/csv/student\PYGZhy{}mat.csv\PYGZdq{}}\PYG{p}{,}\PYG{n}{sep}\PYG{o}{=}\PYG{l+s}{\PYGZdq{};\PYGZdq{}}\PYG{p}{,}\PYG{n}{header}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}
+\PYG{n}{data\PYGZus{}por}\PYG{o}{=}\PYG{n+nf}{read.table}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}./data/csv/student\PYGZhy{}por.csv\PYGZdq{}}\PYG{p}{,}\PYG{n}{sep}\PYG{o}{=}\PYG{l+s}{\PYGZdq{};\PYGZdq{}}\PYG{p}{,}\PYG{n}{header}\PYG{o}{=}\PYG{k+kc}{TRUE}\PYG{p}{)}
+
+\PYG{n}{data}\PYG{o}{=}\PYG{n+nf}{merge}\PYG{p}{(}\PYG{n}{data\PYGZus{}mat}\PYG{p}{,}\PYG{n}{data\PYGZus{}por}\PYG{p}{,}\PYG{n}{by}\PYG{o}{=}\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}school\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}sex\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}age\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}address\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}famsize\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Pstatus\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Medu\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Fedu\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Mjob\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}Fjob\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}reason\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}nursery\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}internet\PYGZdq{}}\PYG{p}{))}
+\PYG{n+nf}{print}\PYG{p}{(}\PYG{n+nf}{nrow}\PYG{p}{(}\PYG{n}{data}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} 382 dados}
+
+\PYG{n+nf}{head}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,}\PYG{l+m}{5}\PYG{p}{)}
+\end{Verbatim}

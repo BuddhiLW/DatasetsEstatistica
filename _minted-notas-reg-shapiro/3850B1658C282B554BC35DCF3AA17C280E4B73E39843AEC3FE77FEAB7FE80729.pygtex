@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{life\PYGZus{}2015\PYGZus{}clean}\PYG{o}{\PYGZdl{}}\PYG{n}{Status} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{as.factor}\PYG{p}{(}\PYG{n}{life\PYGZus{}2015\PYGZus{}clean}\PYG{o}{\PYGZdl{}}\PYG{n}{Status}\PYG{p}{))}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{} life\PYGZus{}2015\PYGZus{}clean \PYGZlt{}\PYGZhy{} na.omit(life\PYGZus{}2015\PYGZus{}clean) \PYGZsh{}\PYGZsh{} eliminando muitos dados.}
+\PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{life\PYGZus{}2015\PYGZus{}clean}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{data} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{read.csv}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}./data/ANOVA\PYGZhy{}Multipla/caffeine\PYGZus{}cola.txt\PYGZsq{}}\PYG{p}{,} \PYG{n}{sep}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nf}{head}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,}\PYG{l+m}{5}\PYG{p}{)}
+\end{Verbatim}

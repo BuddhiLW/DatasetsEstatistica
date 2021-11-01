@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{X...CrimeRate} \PYG{o}{\PYGZti{}} \PYG{n}{Southern} \PYG{o}{+} \PYG{n}{ExpenditureYear0} \PYG{o}{+} \PYG{n}{Males} \PYG{o}{+}
+    \PYG{n}{StateSize} \PYG{o}{+} \PYG{n}{MatureUnemployment} \PYG{o}{+} \PYG{n}{Wage} \PYG{o}{+} \PYG{n}{CrimeRate10} \PYG{o}{+} \PYG{n}{ExpenditureYear10} \PYG{o}{+}
+    \PYG{n}{Males10} \PYG{o}{+} \PYG{n}{MoreMales10} \PYG{o}{+} \PYG{n}{MatureUnemploy10} \PYG{o}{+} \PYG{n}{HighYouthUnemploy10} \PYG{o}{+}
+    \PYG{n}{LabourForce10}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{rating} \PYG{o}{\PYGZti{}} \PYG{n}{complaints} \PYG{o}{+} \PYG{n}{learning}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
+\end{Verbatim}

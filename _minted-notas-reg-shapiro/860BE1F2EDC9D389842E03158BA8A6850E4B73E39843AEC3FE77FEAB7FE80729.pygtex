@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{stepAIC}\PYG{p}{(}\PYG{n}{modreg\PYGZus{}trein}\PYG{p}{,} \PYG{n}{direction}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}both\PYGZdq{}}\PYG{p}{,} \PYG{n}{keep}\PYG{o}{=}\PYG{k+kc}{NULL}\PYG{p}{)}
+\end{Verbatim}

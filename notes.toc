@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}{\bfseries \sffamily DONE} Monitoria Estatística I, II}{1}{section.1}%
+\contentsline {section}{\numberline {2}Estatística - Parte 1}{1}{section.2}%
+\contentsline {section}{\numberline {3}Estatística - Parte 2}{2}{section.3}%
+\contentsline {section}{\numberline {4}Novos Datasets}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Análise de Regressão Linear Múltipla}{2}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Análise de Regressão Logística Múltipla}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Análise de Variância Múltipla}{3}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Análise de Agrupamento}{3}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Análise Discriminante}{3}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Análise de Componentes Principais (PCA)}{3}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Análise Fatorial}{3}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Análise de Correspondência.}{3}{subsection.4.8}%
+\contentsline {section}{\numberline {5}To look forward}{3}{section.5}%
+\contentsline {section}{\numberline {6}Segunda reunião}{4}{section.6}%
+\contentsline {section}{\numberline {7}Terceira reunião}{4}{section.7}%
+\contentsline {section}{\numberline {8}R}{4}{section.8}%

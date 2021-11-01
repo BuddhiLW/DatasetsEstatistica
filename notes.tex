@@ -1,0 +1,152 @@
+% Created 2021-10-06 Wed 10:18
+% Intended LaTeX compiler: pdflatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.4.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{{\bfseries\sffamily DONE} Monitoria Estatística I, II}
+\label{sec:org0042bf4}
+DEADLINE: \textit{<2021-08-15 Sun> } SCHEDULED: \textit{<2021-08-12 Thu>}
+\section{Estatística - Parte 1}
+\label{sec:orgefc5b03}
+\begin{itemize}
+\item Distribuicao conjunta
+\item Esperança conjunta
+\item Qualidade
+\item Chi-quadrado
+\item Logística
+\end{itemize}
+
+\section{Estatística - Parte 2}
+\label{sec:orga5e3172}
+\begin{itemize}
+\item Escolha de dados
+\item Suporte para fazer o trabalho
+\item Correção
+\end{itemize}
+
+\section{Novos Datasets}
+\label{sec:orgd552f8b}
+\subsection{Análise de Regressão Linear Múltipla}
+\label{sec:org321b6cb}
+\begin{itemize}
+\item \href{data/csv/heart.csv}{Heart Health}
+\begin{itemize}
+\item Prever uma contínua que estima saúde.
+\end{itemize}
+\item \href{data/Life\_Expectancy\_Data.csv}{Life Expectancy}
+\begin{itemize}
+\item Dados de todos países.
+\item Dividir em até 5 anos.
+\end{itemize}
+\item \href{https://r-data.pmagunia.com/dataset/r-dataset-package-plm-cigar}{Consumo de Cigarro}
+\begin{itemize}
+\item References
+\begin{itemize}
+\item Baltagi, Badi H. (2001) Econometric Analysis of Panel Data, 2nd ed., John Wiley and Sons.
+\item Baltagi, Badi H. (2013) Econometric Analysis of Panel Data, 5th ed., John Wiley and Sons.
+\item Baltagi, B.H. and D. Levin (1992) “Cigarette taxation: raising revenues and reducing consumption”, Structural Changes and Economic Dynamics, 3(2), pp. 321–335.
+\item Baltagi, B.H., J.M. Griffin and W. Xiong (2000) “To pool or not to pool: homogeneous versus heterogeneous estimators applied to cigarette demand”, Review of Economics and Statistics, 82(1), pp. 117–126.
+\end{itemize}
+\item Prever quantidade de venda.
+\end{itemize}
+\item \href{https://r-data.pmagunia.com/dataset/npk}{Nitrogenio-Fosforo-Potassio}
+\begin{itemize}
+\item Categóricas 1,0-> Contínuo
+\end{itemize}
+\item \href{https://r-data.pmagunia.com/dataset/openintro-statistics-dataset-ciafactbook}{Dados sobre países - CIA}
+\begin{itemize}
+\item Prever taxa de mortalidade.
+\end{itemize}
+\end{itemize}
+
+\subsection{Análise de Regressão Logística Múltipla}
+\label{sec:org6230365}
+\begin{itemize}
+\item \href{data/heart\_failure\_clinical\_records\_dataset.csv}{Infarto} (Heart failure)
+\item \href{data/csv/Churn\_Modelling.csv}{Exit-rate from jobs}
+\end{itemize}
+\subsection{Análise de Variância Múltipla}
+\label{sec:org0feb30f}
+\subsection{Análise de Agrupamento}
+\label{sec:orgb33dfdf}
+\begin{itemize}
+\item Carangueijos
+\item Café
+\item Cerveja
+\end{itemize}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{julia}
+using Pkg
+\end{minted}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{julia}
+Pkg.add("RDatasets")
+\end{minted}
+
+
+\subsection{Análise Discriminante}
+\label{sec:org37065b7}
+\subsection{Análise de Componentes Principais (PCA)}
+\label{sec:orgdea26dc}
+\begin{itemize}
+\item 
+\end{itemize}
+\subsection{Análise Fatorial}
+\label{sec:orgde7d839}
+\subsection{Análise de Correspondência.}
+\label{sec:org9c86b73}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-julia}
+1
+\end{minted}
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+1+3
+\end{minted}
+
+
+\begin{minted}[frame=lines,fontsize=\scriptsize,linenos=true]{ein-r}
+haireye <- margin.table(HairEyeColor, 1:2)
+library(ca)
+(haireye.ca <- ca(haireye))
+\end{minted}
+
+
+\section{To look forward}
+\label{sec:org07e090d}
+\begin{itemize}
+\item \href{Literature/Article-data/fgene-12-690366.pdf}{Disease Prevalence} -
+\href{data/xlsx/disease-prevalence.xlsx}{file:\textasciitilde{}/PP/MonitoriaEstatistica/data/xlsx/disease-prevalence.xlsx}
+\item PCA/SMOTE: \href{https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets}{Insurance Analysis}
+\end{itemize}
+\section{Segunda reunião}
+\label{sec:org77e14ad}
+\section{Terceira reunião}
+\label{sec:org95b92c2}
+\section{R}
+\label{sec:org90fc2ac}
+\end{document}

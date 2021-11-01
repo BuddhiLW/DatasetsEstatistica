@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{data} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{data}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Computers\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nf}{head}\PYG{p}{(}\PYG{n}{data}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{shapiro.test}\PYG{p}{(}\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC\PYGZus{}x}\PYG{o}{\PYGZdl{}}\PYG{n}{residuals}\PYG{p}{)}
+\end{Verbatim}
