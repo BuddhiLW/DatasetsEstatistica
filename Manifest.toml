@@ -39,6 +39,14 @@ git-tree-sha1 = "4ce9393e871aca86cc457d9f66976c3da6902ea7"
 uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
 version = "1.4.0"
 
+[[ClassImbalance]]
+deps = ["Compat", "DataFrames", "Distributions", "LinearAlgebra", "Random", "Statistics", "StatsBase"]
+git-tree-sha1 = "f2e8d0cb34fe4dfc8868e3dd40a63d8c5463a3a0"
+repo-rev = "master"
+repo-url = "https://github.com/BuddhiLW/ClassImbalance.jl"
+uuid = "04a18a73-7590-580c-b363-eeca0919eb2a"
+version = "0.8.8"
+
 [[CodecZlib]]
 deps = ["TranscodingStreams", "Zlib_jll"]
 git-tree-sha1 = "ded953804d019afa9a3f98981d99b33e3db7b6da"

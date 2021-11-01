@@ -1,5 +1,6 @@
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+ClassImbalance = "04a18a73-7590-580c-b363-eeca0919eb2a"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
 MLBase = "f0e99cf1-93fa-52ec-9ecc-5026115318e0"
