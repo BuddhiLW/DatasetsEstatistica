@@ -1,0 +1,206 @@
+* DONE Monitoria Estatística I, II
+CLOSED: [2021-08-18 Wed 11:20]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2021-08-18 Wed 11:20]
+:END:
+DEADLINE: <2021-08-15 Sun> SCHEDULED: <2021-08-12 Thu>
+* Estatística - Parte 1
+- Distribuicao conjunta
+- Esperança conjunta
+- Qualidade
+- Chi-quadrado
+- Logística
+
+* Estatística - Parte 2
+- Escolha de dados
+- Suporte para fazer o trabalho
+- Correção
+
+* Novos Datasets
+** Análise de Regressão Linear Múltipla
+- [[file:data/csv/heart.csv::age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target][Heart Health]]
+  + Prever uma contínua que estima saúde.
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-ecdat-computers][Preço de Computadores 1993-1995]]
+- [[file:data/Life_Expectancy_Data.csv::Country,Year,Status,Life expectancy ,Adult Mortality,infant deaths,Alcohol,percentage expenditure,Hepatitis B,Measles , BMI ,under-five deaths ,Polio,Total expenditure,Diphtheria , HIV/AIDS,GDP,Population, thinness 1-19 years, thinness 5-9 years,Income composition of resources,Schooling][Expectativa de Vida por País]]
+  + Dados de todos países.
+  + Dividir em até 5 anos.
+  + *Modelar a variável expectativa de vida* 
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-plm-cigar][Consumo de Cigarro]]
+  + Referencias
+    * Baltagi, Badi H. (2001) Econometric Analysis of Panel Data, 2nd ed., John Wiley and Sons.
+    * Baltagi, Badi H. (2013) Econometric Analysis of Panel Data, 5th ed., John Wiley and Sons.
+    * Baltagi, B.H. and D. Levin (1992) “Cigarette taxation: raising revenues and reducing consumption”, Structural Changes and Economic Dynamics, 3(2), pp. 321–335.
+    * Baltagi, B.H., J.M. Griffin and W. Xiong (2000) “To pool or not to pool: homogeneous versus heterogeneous estimators applied to cigarette demand”, Review of Economics and Statistics, 82(1), pp. 117–126.
+  + Dados: anos 1963-1992
+    - State: estados norte americanos, $\{1,2,3, \ldots, 51\}$.
+    - Year: Anos 63-92.
+    - Price: preço do maço.
+    - Pop: população de fumantes.
+    - Pop16: população acima de 16.
+    - CPI: índice do preço (ideal) dado pelo consumidor.
+    - NDI: Salário líquido per capta.
+    - Sales: venda de cigarro por maço.
+    - Pimin: preço mínimo de cigarro em estados vizinhos.
+  + *Prever quantidade de venda (sales)*.
+- [[https://r-data.pmagunia.com/dataset/npk][Nitrogenio-Fosforo-Potassio]]
+  + Categóricas 1,0-> Contínuo
+  + Dados:
+    - Aplicação de Nitrogênio.
+    - Aplicação de Fósforo.
+    - Aplicação de Potássio.
+    - Número do Canteiro.
+  + *Prever yield (desenvolvimento das Ervilhas)*
+- [[https://www.openintro.org/data/index.php?data=gifted][Inteligência de prodígios]]
+  + Dados:
+    1. IQ da Criança.
+    2. IQ Pai.
+    3. IQ Mãe.
+    4. Período em meses até primeiras palavras.
+    5. Período em meses até contar até dez.
+    6. Tempo passado, pelos pais, lendo livros, semanalmente.
+    7. Tempo passado assistindo programas educativos, semanalmente.
+    8. Tempo assistindo cartoons, semanalmente
+  + *Modele o IQ da criança com as outras variáveis*
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-mosaicdata-sat][SAT - Professores]]
+  + Qualidade de vida de professor implica maior nota SAT?
+  + Dados:
+    - State: estado norte americano
+    - Expend: termo médio de aula assistida diária.
+    - Ratio: razão de alunos por professor.
+    - Salary: salário do professor médio, anual.
+    - Frac: percentagem de alunos elegíveis a participar do SAT.
+    - Verbal: nota pra proficiência verbal no SAT.
+    - Math: nota para proficiência em exatadas no SAT.
+    - SAT: nota geral do SAT final.
+  + *Prever variável SAT (nota geral)*
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-robustbase-toxicity][Toxicidade]]
+  + Dados:
+    - toxicity
+    toxicidade  aquática, definida como o $log(\textrm{IGC50}^{-1})$; tipicamente, a "reposta".
+    - logKow
+      log Kow, coeficiente de parcionamento
+    - pKa
+      pKa: constante dissociativa
+    - ELUMO
+      Energia do menor orbital molecular ocupado  
+    - Ecarb
+      Estado eletrotopolófico do grupo carboxílico
+    - Emet
+      Estado eletrotopolófico do grupo metil
+    - RM
+      Reflectibilidade Molar
+    - IR
+      Index de Refração
+    - Ts
+      Tensão superficial
+    - P
+      Polaridade
+  + *Prever nível de toxicidade aquática de ácidos caboxílicos, baseado nos outros descritores moleculares.*
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-stat2data-fertility][Fertilidade Feminina]]
+  + Dados:
+    - Idade
+    - LowAFC: Conta da menor quantidade de folículos antrais.
+    - MeanAFC: Média de folículos antrais.
+    - FSH: Máxima quantidade de níveis de hormônios estimulantes aos folículos.
+    - E2: Nível de fertilidade.
+    - MaxE2: Máximo nível de fertilidade.
+    - MaxDailyGn: Nível máximo de gonadotrofina.
+    - TotalGn: Nível total de gonadotrofina.
+    - Oocytes: Quantidade de ovócitos/oócitos.
+    - Embryos: Quantidade de embriões.
+  + *Prever MeanAFC* o qual diretamente empacta a habilidade de ter filhos.
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-attitude][Atitudes em relação à empresa]]
+  + Dados: (em percentagem)
+    - Complaints: percentagem de resoluções de reclamações.
+    - Privileges: percentagem de intolerância de privilégios.
+    - Learning: percentagem de oportunidade de aprendizado.
+    - Raises: percetagem de aumento correspondente à perfôrmance.
+    - Critical: percentagem de atitudes e críticas exacerbadas.
+    - Advancel: percentadem de evolução percebida da empresa e posto.
+    - Rating: avaliação geral positiva da empresa
+  + *Modelar e predizer o rating*
+- [[https://r-data.pmagunia.com/dataset/r-dataset-package-datasets-lifecyclesavings][Hipótese de ciclos-de-economia salarial]]
+  + Dados:
+    - Sr: valor agregado à economia particular (razão entre valor total de economias e salário líquido)
+    - Pop15: população sob quinze anos de idade.
+    - Pop75: população acima de setenta e cinco anos de idade.
+    - dpi: valor de salário líquido per-capita médio.
+    - ddpi: taxa de crescimento de dpi.
+  + *Predizer =sr=, a partir das outra variáveis*
+    - Hipótese formulada por Franco Modigliani 1960-1970, de que essas
+      variáveis eram explicativas do fenômeno 'sr'.
+- 
+*** A fazer
+**** TODO Separar anos de Expectativa de Vida
+
+** Análise de Regressão Logística Múltipla
+# - Dados de Bioestatística
+- [[file:data/heart_failure_clinical_records_dataset.csv::age,anaemia,creatinine_phosphokinase,diabetes,ejection_fraction,high_blood_pressure,platelets,serum_creatinine,serum_sodium,sex,smoking,time,DEATH_EVENT][Infarto]] (Heart failure)
+- [[file:data/csv/Churn_Modelling.csv::RowNumber,CustomerId,Surname,CreditScore,Geography,Gender,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,Exited][Exit-rate from jobs]]
+** Análise de Variância Múltipla
+** Análise de Agrupamento
+- Carangueijos
+- Café
+- Cerveja
+
+  #+begin_src julia :session main :result output
+    using Pkg
+  #+end_src
+
+  #+begin_src julia :session main :result output
+    Pkg.add("RDatasets")
+  #+end_src
+
+
+** Análise Discriminante
+** Análise de Componentes Principais (PCA)
+- 
+** Análise Fatorial
+** Análise de Correspondência.
+
+#+NAME: 4c73d68d-2f97-491a-935f-a2aa697da70b
+#+begin_src ein-julia :session localhost :results output
+  1
+#+end_src
+
+#+RESULTS: 4c73d68d-2f97-491a-935f-a2aa697da70b
+: [....]
+
+#+NAME: 9878e099-75d7-4862-b984-050c7f0aae72
+#+begin_src ein-r :session localhost :results output
+  1+3
+#+end_src
+
+#+RESULTS: 9878e099-75d7-4862-b984-050c7f0aae72
+: [....]
+
+   
+#+NAME: ce7c0bad-5b4f-45ca-8207-4e5bb23edd0b
+#+begin_src ein-r :session localhost :results output
+  haireye <- margin.table(HairEyeColor, 1:2)
+  library(ca)
+  (haireye.ca <- ca(haireye))
+#+end_src
+
+#+RESULTS: ce7c0bad-5b4f-45ca-8207-4e5bb23edd0b
+: [....]
+
+* To look forward
+- [[file:Literature/Article-data/fgene-12-690366.pdf::%PDF-1.6][Disease Prevalence]] -
+  [[file:data/xlsx/disease-prevalence.xlsx][file:~/PP/MonitoriaEstatistica/data/xlsx/disease-prevalence.xlsx]]
+- PCA/SMOTE: [[https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets][Insurance Analysis]]
+* Segunda reunião
+* Terceira reunião
+* R 
+* Quinta reunião 
+** Trab 1
+- 
+** Trab 2
+- 13 - 22 Nov
+  
+** Trab 3
+
+- 22 - 06 Dez
+
+** Apresentação
+- 06 - 15 Dez

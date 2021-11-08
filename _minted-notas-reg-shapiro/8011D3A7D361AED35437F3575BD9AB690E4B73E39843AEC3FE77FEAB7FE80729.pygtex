@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{categoricalToNumeric}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}screen\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}cd\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}multi\PYGZsq{}}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}premium\PYGZsq{}}\PYG{p}{)}
-\end{Verbatim}

@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{data} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{read.csv}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}./data/csv/toxicity.csv\PYGZsq{}}\PYG{p}{)}
-\PYG{n+nf}{head}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,}\PYG{l+m}{5}\PYG{p}{)}
-\end{Verbatim}

@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{r} \PYG{o}{=} \PYG{n+nf}{getOption}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}repos\PYGZdq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} hard code the BR repo for CRAN}
-\PYG{n}{r}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}CRAN\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}https://vps.fmvz.usp.br/CRAN/\PYGZdq{}} \PYG{c+c1}{\PYGZsh{} usp repository}
-\PYG{n+nf}{options}\PYG{p}{(}\PYG{n}{repos} \PYG{o}{=} \PYG{n}{r}\PYG{p}{)}
-\PYG{c+c1}{\PYGZsh{}\PYGZsh{} rm(r)}
-\end{Verbatim}

@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{categoricalToNumeric2} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{function}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,}\PYG{k+kc}{...}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-  \PYG{n+nf}{for}\PYG{p}{(}\PYG{n}{i} \PYG{n}{in} \PYG{n+nf}{colnames}\PYG{p}{(}\PYG{n}{data}\PYG{p}{))} \PYG{p}{\PYGZob{}}
-    \PYG{n}{data}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{as.numeric}\PYG{p}{(}\PYG{n+nf}{as.factor}\PYG{p}{(}\PYG{n}{data}\PYG{o}{\PYGZdl{}}\PYG{n}{i}\PYG{p}{))}
-  \PYG{p}{\PYGZcb{}}
-  \PYG{n+nf}{summary}\PYG{p}{(}\PYG{n}{data}\PYG{p}{)}
-\PYG{p}{\PYGZcb{}}
-\PYG{n+nf}{categoricalToNumeric2}\PYG{p}{(}\PYG{n}{data}\PYG{p}{)}
-\end{Verbatim}

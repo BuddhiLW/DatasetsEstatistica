@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{life\PYGZus{}2015\PYGZus{}clean} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{subset}\PYG{p}{(}\PYG{n}{life\PYGZus{}2015}\PYG{p}{,} \PYG{n}{select}\PYG{o}{=\PYGZhy{}}\PYG{n+nf}{c}\PYG{p}{(}\PYG{n}{Country}\PYG{p}{,} \PYG{n}{Year}\PYG{p}{))}
-\PYG{c+c1}{\PYGZsh{}\PYGZsh{} life\PYGZus{}2015\PYGZus{}clean \PYGZlt{}\PYGZhy{} na.omit(life\PYGZus{}2015\PYGZus{}clean)}
-\end{Verbatim}

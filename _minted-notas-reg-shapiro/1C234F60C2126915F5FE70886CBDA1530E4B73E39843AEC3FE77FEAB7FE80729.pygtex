@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC\PYGZus{}y} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{G3.y} \PYG{o}{\PYGZti{}} \PYG{n}{school} \PYG{o}{+} \PYG{n}{sex} \PYG{o}{+} \PYG{n}{age} \PYG{o}{+} \PYG{n}{Pstatus} \PYG{o}{+} \PYG{n}{Medu} \PYG{o}{+} \PYG{n}{Mjob} \PYG{o}{+}
-    \PYG{n}{reason} \PYG{o}{+} \PYG{n}{internet} \PYG{o}{+} \PYG{n}{traveltime.x} \PYG{o}{+} \PYG{n}{failures.x} \PYG{o}{+} \PYG{n}{schoolsup.x} \PYG{o}{+}
-    \PYG{n}{absences.x} \PYG{o}{+} \PYG{n}{G1.x} \PYG{o}{+} \PYG{n}{failures.y} \PYG{o}{+} \PYG{n}{schoolsup.y} \PYG{o}{+} \PYG{n}{absences.y} \PYG{o}{+}
-    \PYG{n}{G1.y} \PYG{o}{+} \PYG{n}{G2.y} \PYG{o}{+} \PYG{n}{activities.y}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
-\end{Verbatim}

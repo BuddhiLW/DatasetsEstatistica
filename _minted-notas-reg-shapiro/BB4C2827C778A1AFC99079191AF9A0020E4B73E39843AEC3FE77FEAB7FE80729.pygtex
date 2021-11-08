@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{sat} \PYG{o}{\PYGZti{}} \PYG{n}{expend} \PYG{o}{+} \PYG{n}{salary} \PYG{o}{+} \PYG{n}{frac} \PYG{o}{+} \PYG{n}{verbal} \PYG{o}{+} \PYG{n}{math}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
-\end{Verbatim}

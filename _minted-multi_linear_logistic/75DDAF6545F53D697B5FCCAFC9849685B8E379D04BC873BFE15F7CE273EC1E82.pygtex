@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-  \PYG{n}{heart\PYGZus{}data} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{readr}\PYG{o}{::}\PYG{n+nf}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZti{}/PP/MonitoriaEstatistica/data/csv/infarto\PYGZus{}logistica.csv\PYGZdq{}}\PYG{p}{)}
-  \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}}\PYG{n}{janitor}\PYG{o}{::}\PYG{n+nf}{clean\PYGZus{}names}\PYG{p}{()} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}} \PYG{n}{janitor}\PYG{o}{::}\PYG{n+nf}{remove\PYGZus{}empty}\PYG{p}{(}\PYG{n}{which} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}rows\PYGZdq{}}\PYG{p}{)}
-  \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}} \PYG{n+nf}{as.data.frame}\PYG{p}{()} \PYG{o}{\PYGZpc{}\PYGZgt{}\PYGZpc{}} \PYG{n+nf}{na.omit}\PYG{p}{()}
-\end{Verbatim}

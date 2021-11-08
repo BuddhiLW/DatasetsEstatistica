@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{price} \PYG{o}{\PYGZti{}} \PYG{n}{speed} \PYG{o}{+} \PYG{n}{hd} \PYG{o}{+} \PYG{n}{ram} \PYG{o}{+} \PYG{n}{screen} \PYG{o}{+} \PYG{n}{cd} \PYG{o}{+} \PYG{n}{multi} \PYG{o}{+}
-    \PYG{n}{premium} \PYG{o}{+} \PYG{n}{ads} \PYG{o}{+} \PYG{n}{trend}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
-\end{Verbatim}

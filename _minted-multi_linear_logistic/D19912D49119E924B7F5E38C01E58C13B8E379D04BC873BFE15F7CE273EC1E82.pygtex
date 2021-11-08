@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{install.packages}\PYG{p}{(}\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}tidyverse\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}janitor\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}glmnet\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}ggthemes\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}patchwork\PYGZdq{}}\PYG{p}{))}
-\end{Verbatim}

@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{score} \PYG{o}{\PYGZti{}} \PYG{n}{fatheriq} \PYG{o}{+} \PYG{n}{motheriq} \PYG{o}{+} \PYG{n}{read} \PYG{o}{+} \PYG{n}{edutv} \PYG{o}{+} \PYG{n}{cartoons}\PYG{p}{,}
-    \PYG{n}{data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{)}
-\end{Verbatim}

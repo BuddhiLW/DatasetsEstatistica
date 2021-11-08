@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{cigarro\PYGZus{}clean} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{subset}\PYG{p}{(}\PYG{n}{cigarro}\PYG{p}{,} \PYG{n}{select}\PYG{o}{=\PYGZhy{}}\PYG{n+nf}{c}\PYG{p}{(}\PYG{n}{year}\PYG{p}{,} \PYG{n}{cpi}\PYG{p}{))}
-\end{Verbatim}

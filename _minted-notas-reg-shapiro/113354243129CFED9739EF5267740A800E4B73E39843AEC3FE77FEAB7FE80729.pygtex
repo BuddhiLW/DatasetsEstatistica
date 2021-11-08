@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{modreg\PYGZus{}trein\PYGZus{}AIC} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{lm}\PYG{p}{(}\PYG{n}{formula} \PYG{o}{=} \PYG{n}{sales} \PYG{o}{\PYGZti{}} \PYG{n}{price} \PYG{o}{+} \PYG{n}{pop} \PYG{o}{+} \PYG{n}{pop16}\PYG{p}{,} \PYG{n}{data} \PYG{o}{=} \PYG{n}{cigarro\PYGZus{}clean}\PYG{p}{)}
-\end{Verbatim}

@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nf}{install.packages}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}datasets\PYGZdq{}}\PYG{p}{,}\PYG{n}{mirror}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}https://vps.fmvz.usp.br/CRAN/\PYGZdq{}}\PYG{p}{)}
-\end{Verbatim}

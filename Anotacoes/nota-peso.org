@@ -1,0 +1,1103 @@
+* [[https://www.sheffield.ac.uk/mash/statistics/datasets][Peso ao Nascimento]]  (normal)
++ *Modelar peso ao nascimento (libras) (=Birthweight=) a partir das variáveis*.
+** Dados sobre o =Conjunto=
+ + Dados:
+   - lowbwt: baixo peso ao nascer. 
+   - ID: Identificador
+   - mage35: mãe mais velha do que 35 anos.
+   - fnocig: número de cigarros fumado pelo pai diariamente.
+   - fheight: peso do pai (kg)
+   - fedyrs: quantidade de anos de educação do pai
+   - fage: idade do pai
+   - mppwt: peso da mãe pré gravidez.
+   - mheight: tamanho da mãe (cm).
+   - mnocig: número de cigarros fumados diariamente pela mãe.
+   - Motherage: idade da mãe.
+   - Gestation Smoker: fumante durante gestação 
+   - headcirumfer: circunferência da cabeça
+   - length: tamanho (cm)
+** Invocação de conjuto, por arquivo local
+
+Dado que você copiou os conjunto(s) de dado(s) para um diretório
+local, pode-se chamar o conjunto [[https://drive.google.com/file/d/1xv2lCPsj04FjGPQ_BgPS9mrTIjBcyHQk/view?usp=sharing][Birth Weight]] da seguinte maneira.
+
+#+NAME: faf49cb0-5462-42a7-8825-0cf42b057ea8
+#+begin_src ein-r :session localhost :results output :exports both
+  data <- read.csv('../data/csv/Birthweight_reduced_kg_R.csv')
+  head(data,5)
+#+end_src
+
+#+RESULTS: faf49cb0-5462-42a7-8825-0cf42b057ea8
+#+begin_example
+  ID   Length Birthweight Headcirc Gestation smoker mage mnocig mheight mppwt
+1 1360 56     4.55        34       44        0      20   0      162     57   
+2 1016 53     4.32        36       40        0      19   0      171     62   
+3  462 58     4.10        39       41        0      35   0      172     58   
+4 1187 53     4.07        38       44        0      20   0      174     68   
+5  553 54     3.94        37       42        0      24   0      175     66   
+  fage fedyrs fnocig fheight lowbwt mage35
+1 23   10     35     179     0      0     
+2 19   12      0     183     0      0     
+3 31   16     25     185     0      1     
+4 26   14     25     189     0      0     
+5 30   12      0     184     0      0     
+#+end_example
+
+** Regressão e Teste de Shapiro (normal)
+
+*** Regressão linear
+Agora que todas variáveis se tornaram numéricas, vamos aplicar a regressão linear múltipla,
+
+#+NAME: 8fb75c7d-4a1f-4f5d-974a-8e62f4073bac
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  modreg_trein <- lm(Birthweight ~ . , data)
+  summary(modreg_trein)
+#+end_src
+
+#+RESULTS: 8fb75c7d-4a1f-4f5d-974a-8e62f4073bac
+#+begin_example
+
+Call:
+lm(formula = Birthweight ~ ., data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.47678 -0.20907 -0.02438  0.20960  0.60017 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -3.830e+00  2.169e+00  -1.766  0.08916 . 
+X...ID      -6.808e-05  1.394e-04  -0.488  0.62931   
+Length       5.171e-02  3.888e-02   1.330  0.19503   
+Headcirc     8.688e-02  2.997e-02   2.899  0.00751 **
+Gestation    9.189e-02  3.219e-02   2.855  0.00834 **
+smoker      -2.320e-01  1.738e-01  -1.335  0.19353   
+mage         1.746e-02  2.904e-02   0.601  0.55293   
+mnocig       2.143e-03  7.078e-03   0.303  0.76442   
+mheight      1.366e-03  1.473e-02   0.093  0.92680   
+mppwt        9.371e-03  1.156e-02   0.811  0.42498   
+fage        -1.079e-02  1.977e-02  -0.546  0.58985   
+fedyrs      -3.636e-03  3.185e-02  -0.114  0.90998   
+fnocig       2.041e-03  4.311e-03   0.473  0.63991   
+fheight     -1.543e-02  9.951e-03  -1.550  0.13317   
+lowbwt      -1.612e-02  2.558e-01  -0.063  0.95023   
+mage35      -5.557e-01  3.669e-01  -1.515  0.14194   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3349 on 26 degrees of freedom
+Multiple R-squared:  0.805,	Adjusted R-squared:  0.6925 
+F-statistic: 7.156 on 15 and 26 DF,  p-value: 7.497e-06
+
+#+end_example
+
+*** StepAIC
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  library(MASS)
+#+end_src
+
+#+RESULTS: 2a9c6b83-520d-40c3-a56f-52df66b075d6
+
+#+NAME: 536d4c15-9e78-4dc3-a062-346efed9454c
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+  stepAIC(modreg_trein, direction="both", keep=NULL)
+#+end_src
+
+#+RESULTS: 536d4c15-9e78-4dc3-a062-346efed9454c
+#+begin_example
+Start:  AIC=-80.04
+Birthweight ~ X...ID + Length + Headcirc + Gestation + smoker + 
+    mage + mnocig + mheight + mppwt + fage + fedyrs + fnocig + 
+    fheight + lowbwt + mage35
+
+            Df Sum of Sq    RSS     AIC
+- lowbwt     1   0.00045 2.9160 -82.033
+- mheight    1   0.00096 2.9166 -82.025
+- fedyrs     1   0.00146 2.9171 -82.018
+- mnocig     1   0.01028 2.9259 -81.891
+- fnocig     1   0.02513 2.9407 -81.679
+- X...ID     1   0.02676 2.9423 -81.655
+- fage       1   0.03341 2.9490 -81.561
+- mage       1   0.04053 2.9561 -81.459
+- mppwt      1   0.07368 2.9893 -80.991
+<none>                   2.9156 -80.039
+- Length     1   0.19840 3.1140 -79.274
+- smoker     1   0.19978 3.1154 -79.256
+- mage35     1   0.25725 3.1728 -78.488
+- fheight    1   0.26951 3.1851 -78.326
+- Gestation  1   0.91410 3.8297 -70.585
+- Headcirc   1   0.94251 3.8581 -70.275
+
+Step:  AIC=-82.03
+Birthweight ~ X...ID + Length + Headcirc + Gestation + smoker + 
+    mage + mnocig + mheight + mppwt + fage + fedyrs + fnocig + 
+    fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+- mheight    1   0.00075 2.9168 -84.022
+- fedyrs     1   0.00143 2.9175 -84.012
+- mnocig     1   0.01182 2.9279 -83.863
+- fnocig     1   0.02542 2.9415 -83.668
+- X...ID     1   0.02842 2.9445 -83.625
+- fage       1   0.03396 2.9500 -83.546
+- mage       1   0.04337 2.9594 -83.413
+- mppwt      1   0.08027 2.9963 -82.892
+<none>                   2.9160 -82.033
+- smoker     1   0.21097 3.1270 -81.099
+- Length     1   0.25810 3.1741 -80.471
+- fheight    1   0.28692 3.2030 -80.091
++ lowbwt     1   0.00045 2.9156 -80.039
+- mage35     1   0.31943 3.2355 -79.667
+- Headcirc   1   0.95078 3.8668 -72.180
+- Gestation  1   0.95523 3.8713 -72.132
+
+Step:  AIC=-84.02
+Birthweight ~ X...ID + Length + Headcirc + Gestation + smoker + 
+    mage + mnocig + mppwt + fage + fedyrs + fnocig + fheight + 
+    mage35
+
+            Df Sum of Sq    RSS     AIC
+- fedyrs     1   0.00180 2.9186 -85.996
+- mnocig     1   0.01321 2.9300 -85.832
+- fnocig     1   0.02471 2.9415 -85.668
+- X...ID     1   0.03082 2.9476 -85.580
+- fage       1   0.04532 2.9621 -85.374
+- mage       1   0.04921 2.9660 -85.319
+<none>                   2.9168 -84.022
+- mppwt      1   0.15874 3.0755 -83.796
+- smoker     1   0.21100 3.1278 -83.088
+- fheight    1   0.29026 3.2070 -82.037
++ mheight    1   0.00075 2.9160 -82.033
++ lowbwt     1   0.00023 2.9166 -82.025
+- Length     1   0.31002 3.2268 -81.779
+- mage35     1   0.32964 3.2464 -81.525
+- Gestation  1   1.00467 3.9215 -73.591
+- Headcirc   1   1.01254 3.9293 -73.507
+
+Step:  AIC=-86
+Birthweight ~ X...ID + Length + Headcirc + Gestation + smoker + 
+    mage + mnocig + mppwt + fage + fnocig + fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+- mnocig     1   0.01179 2.9304 -87.827
+- X...ID     1   0.03449 2.9531 -87.502
+- fnocig     1   0.03474 2.9533 -87.499
+- fage       1   0.04466 2.9632 -87.358
+- mage       1   0.04776 2.9663 -87.314
+<none>                   2.9186 -85.996
+- mppwt      1   0.15814 3.0767 -85.780
+- smoker     1   0.20920 3.1278 -85.088
++ fedyrs     1   0.00180 2.9168 -84.022
++ mheight    1   0.00112 2.9175 -84.012
++ lowbwt     1   0.00017 2.9184 -83.998
+- Length     1   0.31615 3.2347 -83.676
+- fheight    1   0.31819 3.2368 -83.650
+- mage35     1   0.32792 3.2465 -83.524
+- Gestation  1   1.00289 3.9215 -75.590
+- Headcirc   1   1.01344 3.9320 -75.478
+
+Step:  AIC=-87.83
+Birthweight ~ X...ID + Length + Headcirc + Gestation + smoker + 
+    mage + mppwt + fage + fnocig + fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+- X...ID     1   0.03286 2.9632 -89.358
+- fnocig     1   0.03512 2.9655 -89.326
+- fage       1   0.04919 2.9796 -89.127
+- mage       1   0.05435 2.9847 -89.055
+<none>                   2.9304 -87.827
+- mppwt      1   0.17775 3.1081 -87.353
+- smoker     1   0.27581 3.2062 -86.049
++ mnocig     1   0.01179 2.9186 -85.996
++ mheight    1   0.00232 2.9281 -85.860
++ lowbwt     1   0.00119 2.9292 -85.844
++ fedyrs     1   0.00038 2.9300 -85.832
+- Length     1   0.30965 3.2400 -85.608
+- mage35     1   0.32139 3.2518 -85.456
+- fheight    1   0.33264 3.2630 -85.311
+- Headcirc   1   1.00248 3.9329 -77.469
+- Gestation  1   1.08456 4.0149 -76.601
+
+Step:  AIC=-89.36
+Birthweight ~ Length + Headcirc + Gestation + smoker + mage + 
+    mppwt + fage + fnocig + fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+- fage       1   0.03185 2.9951 -90.909
+- mage       1   0.03474 2.9980 -90.869
+- fnocig     1   0.04184 3.0051 -90.769
+<none>                   2.9632 -89.358
+- mppwt      1   0.19808 3.1613 -88.641
+- smoker     1   0.25291 3.2161 -87.918
++ X...ID     1   0.03286 2.9304 -87.827
+- Length     1   0.27680 3.2400 -87.608
++ mnocig     1   0.01015 2.9531 -87.502
++ mheight    1   0.00653 2.9567 -87.451
+- mage35     1   0.29055 3.2538 -87.430
++ lowbwt     1   0.00271 2.9605 -87.397
++ fedyrs     1   0.00266 2.9606 -87.396
+- fheight    1   0.32404 3.2873 -87.000
+- Headcirc   1   1.10049 4.0637 -78.094
+- Gestation  1   1.11010 4.0733 -77.995
+
+Step:  AIC=-90.91
+Birthweight ~ Length + Headcirc + Gestation + smoker + mage + 
+    mppwt + fnocig + fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+- mage       1   0.00479 2.9999 -92.842
+- fnocig     1   0.03316 3.0283 -92.447
+<none>                   2.9951 -90.909
+- mppwt      1   0.20782 3.2029 -90.092
++ fage       1   0.03185 2.9632 -89.358
+- mage35     1   0.27044 3.2655 -89.278
++ mheight    1   0.01967 2.9754 -89.186
+- Length     1   0.28104 3.2761 -89.142
++ X...ID     1   0.01552 2.9796 -89.127
++ mnocig     1   0.01411 2.9810 -89.108
+- smoker     1   0.28593 3.2810 -89.080
+- fheight    1   0.29391 3.2890 -88.978
++ lowbwt     1   0.00210 2.9930 -88.939
++ fedyrs     1   0.00099 2.9941 -88.923
+- Gestation  1   1.08113 4.0762 -79.965
+- Headcirc   1   1.08377 4.0789 -79.938
+
+Step:  AIC=-92.84
+Birthweight ~ Length + Headcirc + Gestation + smoker + mppwt + 
+    fnocig + fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+- fnocig     1   0.04110 3.0410 -94.271
+<none>                   2.9999 -92.842
+- mppwt      1   0.24205 3.2419 -91.583
+- Length     1   0.27708 3.2770 -91.132
+- smoker     1   0.28184 3.2817 -91.071
++ mnocig     1   0.01556 2.9843 -91.060
++ mheight    1   0.01466 2.9852 -91.048
++ X...ID     1   0.01286 2.9870 -91.022
++ mage       1   0.00479 2.9951 -90.909
++ lowbwt     1   0.00413 2.9958 -90.900
++ fage       1   0.00191 2.9980 -90.869
++ fedyrs     1   0.00001 2.9999 -90.842
+- fheight    1   0.32021 3.3201 -90.582
+- mage35     1   0.42322 3.4231 -89.299
+- Gestation  1   1.10582 4.1057 -81.662
+- Headcirc   1   1.15094 4.1508 -81.203
+
+Step:  AIC=-94.27
+Birthweight ~ Length + Headcirc + Gestation + smoker + mppwt + 
+    fheight + mage35
+
+            Df Sum of Sq    RSS     AIC
+<none>                   3.0410 -94.271
+- smoker     1   0.24149 3.2825 -93.061
+- mppwt      1   0.24976 3.2907 -92.955
++ fnocig     1   0.04110 2.9999 -92.842
+- fheight    1   0.28072 3.3217 -92.562
++ X...ID     1   0.01742 3.0236 -92.512
++ mnocig     1   0.01619 3.0248 -92.495
++ mage       1   0.01273 3.0283 -92.447
++ mheight    1   0.00774 3.0332 -92.378
++ fedyrs     1   0.00281 3.0382 -92.309
++ lowbwt     1   0.00031 3.0407 -92.275
++ fage       1   0.00011 3.0409 -92.272
+- Length     1   0.32176 3.3627 -92.046
+- mage35     1   0.47313 3.5141 -90.197
+- Gestation  1   1.06836 4.1093 -83.625
+- Headcirc   1   1.15478 4.1958 -82.751
+
+Call:
+lm(formula = Birthweight ~ Length + Headcirc + Gestation + smoker + 
+    mppwt + fheight + mage35, data = data)
+
+Coefficients:
+(Intercept)       Length     Headcirc    Gestation       smoker        mppwt  
+   -3.91717      0.05011      0.08611      0.08703     -0.16006      0.01198  
+    fheight       mage35  
+   -0.01274     -0.38636  
+
+#+end_example
+
+Assim, utilizaremos a seguinte fórmula:
+#+NAME: e79cedbb-e7b0-40da-b14b-f53f27ac4b28
+#+begin_src ein-r :session localhost :results output :exports both :eval no
+modreg_trein_AIC <- lm(formula = Birthweight ~ Length + Headcirc + Gestation + smoker + 
+    mppwt + fheight + mage35, data = data)
+#+end_src
+
+*** Teste de Shapiro 
+Finalmente, aplicar o teste de =shapiro= nos resíduos
+
+#+NAME: 15296fc8-510a-4eb3-af4c-7d2d881a0807
+#+begin_src ein-r :session localhost :results output :exports both :eval no 
+  shapiro.test(modreg_trein_AIC$residuals)
+#+end_src
+
+#+RESULTS: 15296fc8-510a-4eb3-af4c-7d2d881a0807
+: 
+: 	Shapiro-Wilk normality test
+: 
+: data:  modreg_trein_AIC$residuals
+: W = 0.95885, p-value = 0.1343
+: 
+
+p-value = 0.1343 <=> p-value maior que 0.05 => não rejeitamos H0, em que, H0: resíduo distribuido normalmente.
+
+Portanto, o resíduo é distribuido normalmente.
+
+** Matrix Corelação
+*** Biblioteca ggplot para correlações
+#+NAME: dadda977-b446-4f5d-95e7-647fc7f55abe
+#+begin_src ein-r :session localhost :results output
+  install.packages("ggcorrplot")                      # Install ggcorrplot package
+  library("ggcorrplot")
+#+end_src
+
+#+RESULTS: dadda977-b446-4f5d-95e7-647fc7f55abe
+: 
+: 
+
+#+NAME: 19b6d3e3-f3bd-455f-882e-1bfb204854cd
+#+begin_src ein-r :session localhost :results output
+  library("ggcorrplot")
+#+end_src
+
+#+RESULTS: 19b6d3e3-f3bd-455f-882e-1bfb204854cd
+
+*** Computação de Correlações
+[[https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cor][Documentação comando 'cor']]
+
+****** Sobre o argumento =use=
+#+begin_quote
+*use* :
+
+an optional character string giving a method for computing covariances in the presence of missing values. This must be (an abbreviation of) one of the strings =everything=, =all.obs=, =complete.obs=, =na.or.complete=, or =pairwise.complete.obs=.
+#+end_quote
+
+****** O padrão:
+#+begin_quote
+*var* is just another interface to *cov*, where =na.rm= is used to determine the default for use when that is unspecified. If =na.rm= is *TRUE* then the complete observations (rows) are used (use = =na.or.complete=) to compute the variance. *Otherwise, by default use* =everything=.
+#+end_quote
+
+
+***** everything 
+#+NAME: f8a16d3f-8b5b-4e85-bd5f-adb58c05faff
+#+begin_src ein-r :session localhost :results output
+cor(life_2015_clean, use=c("everything"), method=c("pearson"))
+#+end_src
+
+#+RESULTS: f8a16d3f-8b5b-4e85-bd5f-adb58c05faff
+#+begin_example
+                                Status      Life.expectancy Adult.Mortality
+Status                           1.00000000 -0.51665706      0.36900245    
+Life.expectancy                 -0.51665706  1.00000000     -0.77911947    
+Adult.Mortality                  0.36900245 -0.77911947      1.00000000    
+infant.deaths                    0.12475177 -0.24128954      0.18820516    
+Alcohol                                  NA          NA              NA    
+percentage.expenditure           0.04007271  0.04396412     -0.04292988    
+Hepatitis.B                              NA          NA              NA    
+Measles                          0.08132356 -0.07461652      0.05119611    
+BMI                                      NA          NA              NA    
+under.five.deaths                0.12910096 -0.27192105      0.21200356    
+Polio                           -0.22570246  0.51560179     -0.37239163    
+Total.expenditure                        NA          NA              NA    
+Diphtheria                      -0.22111474  0.50029997     -0.32268845    
+HIV.AIDS                         0.19246269 -0.60834494      0.62101164    
+GDP                                      NA          NA              NA    
+Population                               NA          NA              NA    
+thinness..1.19.years                     NA          NA              NA    
+thinness.5.9.years                       NA          NA              NA    
+Income.composition.of.resources          NA          NA              NA    
+Schooling                                NA          NA              NA    
+                                infant.deaths Alcohol percentage.expenditure
+Status                           0.12475177   NA       0.040072707          
+Life.expectancy                 -0.24128954   NA       0.043964121          
+Adult.Mortality                  0.18820516   NA      -0.042929879          
+infant.deaths                    1.00000000   NA      -0.014261921          
+Alcohol                                  NA    1                NA          
+percentage.expenditure          -0.01426192   NA       1.000000000          
+Hepatitis.B                              NA   NA                NA          
+Measles                          0.80085889   NA      -0.014628987          
+BMI                                      NA   NA                NA          
+under.five.deaths                0.99419572   NA      -0.014618671          
+Polio                           -0.12972895   NA       0.002149597          
+Total.expenditure                        NA   NA                NA          
+Diphtheria                      -0.11798926   NA       0.034701325          
+HIV.AIDS                         0.09583712   NA      -0.036393365          
+GDP                                      NA   NA                NA          
+Population                               NA   NA                NA          
+thinness..1.19.years                     NA   NA                NA          
+thinness.5.9.years                       NA   NA                NA          
+Income.composition.of.resources          NA   NA                NA          
+Schooling                                NA   NA                NA          
+                                Hepatitis.B Measles     BMI under.five.deaths
+Status                          NA           0.08132356 NA   0.12910096      
+Life.expectancy                 NA          -0.07461652 NA  -0.27192105      
+Adult.Mortality                 NA           0.05119611 NA   0.21200356      
+infant.deaths                   NA           0.80085889 NA   0.99419572      
+Alcohol                         NA                   NA NA           NA      
+percentage.expenditure          NA          -0.01462899 NA  -0.01461867      
+Hepatitis.B                      1                   NA NA           NA      
+Measles                         NA           1.00000000 NA   0.76490826      
+BMI                             NA                   NA  1           NA      
+under.five.deaths               NA           0.76490826 NA   1.00000000      
+Polio                           NA          -0.02834186 NA  -0.14745749      
+Total.expenditure               NA                   NA NA           NA      
+Diphtheria                      NA          -0.00162315 NA  -0.13786287      
+HIV.AIDS                        NA          -0.02657996 NA   0.12260442      
+GDP                             NA                   NA NA           NA      
+Population                      NA                   NA NA           NA      
+thinness..1.19.years            NA                   NA NA           NA      
+thinness.5.9.years              NA                   NA NA           NA      
+Income.composition.of.resources NA                   NA NA           NA      
+Schooling                       NA                   NA NA           NA      
+                                Polio        Total.expenditure Diphtheria 
+Status                          -0.225702463 NA                -0.22111474
+Life.expectancy                  0.515601795 NA                 0.50029997
+Adult.Mortality                 -0.372391627 NA                -0.32268845
+infant.deaths                   -0.129728947 NA                -0.11798926
+Alcohol                                   NA NA                         NA
+percentage.expenditure           0.002149597 NA                 0.03470133
+Hepatitis.B                               NA NA                         NA
+Measles                         -0.028341859 NA                -0.00162315
+BMI                                       NA NA                         NA
+under.five.deaths               -0.147457487 NA                -0.13786287
+Polio                            1.000000000 NA                 0.66163532
+Total.expenditure                         NA  1                         NA
+Diphtheria                       0.661635315 NA                 1.00000000
+HIV.AIDS                        -0.403232519 NA                -0.44141288
+GDP                                       NA NA                         NA
+Population                                NA NA                         NA
+thinness..1.19.years                      NA NA                         NA
+thinness.5.9.years                        NA NA                         NA
+Income.composition.of.resources           NA NA                         NA
+Schooling                                 NA NA                         NA
+                                HIV.AIDS    GDP Population thinness..1.19.years
+Status                           0.19246269 NA  NA         NA                  
+Life.expectancy                 -0.60834494 NA  NA         NA                  
+Adult.Mortality                  0.62101164 NA  NA         NA                  
+infant.deaths                    0.09583712 NA  NA         NA                  
+Alcohol                                  NA NA  NA         NA                  
+percentage.expenditure          -0.03639336 NA  NA         NA                  
+Hepatitis.B                              NA NA  NA         NA                  
+Measles                         -0.02657996 NA  NA         NA                  
+BMI                                      NA NA  NA         NA                  
+under.five.deaths                0.12260442 NA  NA         NA                  
+Polio                           -0.40323252 NA  NA         NA                  
+Total.expenditure                        NA NA  NA         NA                  
+Diphtheria                      -0.44141288 NA  NA         NA                  
+HIV.AIDS                         1.00000000 NA  NA         NA                  
+GDP                                      NA  1  NA         NA                  
+Population                               NA NA   1         NA                  
+thinness..1.19.years                     NA NA  NA          1                  
+thinness.5.9.years                       NA NA  NA         NA                  
+Income.composition.of.resources          NA NA  NA         NA                  
+Schooling                                NA NA  NA         NA                  
+                                thinness.5.9.years
+Status                          NA                
+Life.expectancy                 NA                
+Adult.Mortality                 NA                
+infant.deaths                   NA                
+Alcohol                         NA                
+percentage.expenditure          NA                
+Hepatitis.B                     NA                
+Measles                         NA                
+BMI                             NA                
+under.five.deaths               NA                
+Polio                           NA                
+Total.expenditure               NA                
+Diphtheria                      NA                
+HIV.AIDS                        NA                
+GDP                             NA                
+Population                      NA                
+thinness..1.19.years            NA                
+thinness.5.9.years               1                
+Income.composition.of.resources NA                
+Schooling                       NA                
+                                Income.composition.of.resources Schooling
+Status                          NA                              NA       
+Life.expectancy                 NA                              NA       
+Adult.Mortality                 NA                              NA       
+infant.deaths                   NA                              NA       
+Alcohol                         NA                              NA       
+percentage.expenditure          NA                              NA       
+Hepatitis.B                     NA                              NA       
+Measles                         NA                              NA       
+BMI                             NA                              NA       
+under.five.deaths               NA                              NA       
+Polio                           NA                              NA       
+Total.expenditure               NA                              NA       
+Diphtheria                      NA                              NA       
+HIV.AIDS                        NA                              NA       
+GDP                             NA                              NA       
+Population                      NA                              NA       
+thinness..1.19.years            NA                              NA       
+thinness.5.9.years              NA                              NA       
+Income.composition.of.resources  1                              NA       
+Schooling                       NA                               1       
+#+end_example
+
+***** all.obs
+#+NAME: 733ad23b-aabf-42c7-8c2b-0be8dd6de28e
+#+begin_src ein-r :session localhost :results output
+cor(life_2015_clean, use=c("all.obs"), method=c("pearson"))
+#+end_src
+
+#+RESULTS: 733ad23b-aabf-42c7-8c2b-0be8dd6de28e
+: Error in cor(life_2015_clean, use = c("all.obs"), method = c("pearson")): missing observations in cov/cor
+: Traceback:
+: 
+: 1. cor(life_2015_clean, use = c("all.obs"), method = c("pearson"))
+
+***** complete.obs
+#+NAME: 6ff1f585-7887-4c61-a529-7edb0db7a9ce
+#+begin_src ein-r :session localhost :results output
+cor(life_2015_clean, use=c("complete.obs"), method=c("pearson"))
+#+end_src
+
+#+RESULTS: 6ff1f585-7887-4c61-a529-7edb0db7a9ce
+#+begin_example
+
+                                Status Life.expectancy Adult.Mortality
+Status                           1     NA              NA             
+Life.expectancy                 NA      1              -1             
+Adult.Mortality                 NA     -1               1             
+infant.deaths                   NA     -1               1             
+Alcohol                         NA      1              -1             
+percentage.expenditure          NA      1              -1             
+Hepatitis.B                     NA      1              -1             
+Measles                         NA     -1               1             
+BMI                             NA      1              -1             
+under.five.deaths               NA     -1               1             
+Polio                           NA      1              -1             
+Total.expenditure               NA     -1               1             
+Diphtheria                      NA      1              -1             
+HIV.AIDS                        NA     NA              NA             
+GDP                             NA      1              -1             
+Population                      NA     -1               1             
+thinness..1.19.years            NA     -1               1             
+thinness.5.9.years              NA     -1               1             
+Income.composition.of.resources NA      1              -1             
+Schooling                       NA      1              -1             
+                                infant.deaths Alcohol percentage.expenditure
+Status                          NA            NA      NA                    
+Life.expectancy                 -1             1       1                    
+Adult.Mortality                  1            -1      -1                    
+infant.deaths                    1            -1      -1                    
+Alcohol                         -1             1       1                    
+percentage.expenditure          -1             1       1                    
+Hepatitis.B                     -1             1       1                    
+Measles                          1            -1      -1                    
+BMI                             -1             1       1                    
+under.five.deaths                1            -1      -1                    
+Polio                           -1             1       1                    
+Total.expenditure                1            -1      -1                    
+Diphtheria                      -1             1       1                    
+HIV.AIDS                        NA            NA      NA                    
+GDP                             -1             1       1                    
+Population                       1            -1      -1                    
+thinness..1.19.years             1            -1      -1                    
+thinness.5.9.years               1            -1      -1                    
+Income.composition.of.resources -1             1       1                    
+Schooling                       -1             1       1                    
+                                Hepatitis.B Measles BMI under.five.deaths Polio
+Status                          NA          NA      NA  NA                NA   
+Life.expectancy                  1          -1       1  -1                 1   
+Adult.Mortality                 -1           1      -1   1                -1   
+infant.deaths                   -1           1      -1   1                -1   
+Alcohol                          1          -1       1  -1                 1   
+percentage.expenditure           1          -1       1  -1                 1   
+Hepatitis.B                      1          -1       1  -1                 1   
+Measles                         -1           1      -1   1                -1   
+BMI                              1          -1       1  -1                 1   
+under.five.deaths               -1           1      -1   1                -1   
+Polio                            1          -1       1  -1                 1   
+Total.expenditure               -1           1      -1   1                -1   
+Diphtheria                       1          -1       1  -1                 1   
+HIV.AIDS                        NA          NA      NA  NA                NA   
+GDP                              1          -1       1  -1                 1   
+Population                      -1           1      -1   1                -1   
+thinness..1.19.years            -1           1      -1   1                -1   
+thinness.5.9.years              -1           1      -1   1                -1   
+Income.composition.of.resources  1          -1       1  -1                 1   
+Schooling                        1          -1       1  -1                 1   
+                                Total.expenditure Diphtheria HIV.AIDS GDP
+Status                          NA                NA         NA       NA 
+Life.expectancy                 -1                 1         NA        1 
+Adult.Mortality                  1                -1         NA       -1 
+infant.deaths                    1                -1         NA       -1 
+Alcohol                         -1                 1         NA        1 
+percentage.expenditure          -1                 1         NA        1 
+Hepatitis.B                     -1                 1         NA        1 
+Measles                          1                -1         NA       -1 
+BMI                             -1                 1         NA        1 
+under.five.deaths                1                -1         NA       -1 
+Polio                           -1                 1         NA        1 
+Total.expenditure                1                -1         NA       -1 
+Diphtheria                      -1                 1         NA        1 
+HIV.AIDS                        NA                NA          1       NA 
+GDP                             -1                 1         NA        1 
+Population                       1                -1         NA       -1 
+thinness..1.19.years             1                -1         NA       -1 
+thinness.5.9.years               1                -1         NA       -1 
+Income.composition.of.resources -1                 1         NA        1 
+Schooling                       -1                 1         NA        1 
+                                Population thinness..1.19.years
+Status                          NA         NA                  
+Life.expectancy                 -1         -1                  
+Adult.Mortality                  1          1                  
+infant.deaths                    1          1                  
+Alcohol                         -1         -1                  
+percentage.expenditure          -1         -1                  
+Hepatitis.B                     -1         -1                  
+Measles                          1          1                  
+BMI                             -1         -1                  
+under.five.deaths                1          1                  
+Polio                           -1         -1                  
+Total.expenditure                1          1                  
+Diphtheria                      -1         -1                  
+HIV.AIDS                        NA         NA                  
+GDP                             -1         -1                  
+Population                       1          1                  
+thinness..1.19.years             1          1                  
+thinness.5.9.years               1          1                  
+Income.composition.of.resources -1         -1                  
+Schooling                       -1         -1                  
+                                thinness.5.9.years
+Status                          NA                
+Life.expectancy                 -1                
+Adult.Mortality                  1                
+infant.deaths                    1                
+Alcohol                         -1                
+percentage.expenditure          -1                
+Hepatitis.B                     -1                
+Measles                          1                
+BMI                             -1                
+under.five.deaths                1                
+Polio                           -1                
+Total.expenditure                1                
+Diphtheria                      -1                
+HIV.AIDS                        NA                
+GDP                             -1                
+Population                       1                
+thinness..1.19.years             1                
+thinness.5.9.years               1                
+Income.composition.of.resources -1                
+Schooling                       -1                
+                                Income.composition.of.resources Schooling
+Status                          NA                              NA       
+Life.expectancy                  1                               1       
+Adult.Mortality                 -1                              -1       
+infant.deaths                   -1                              -1       
+Alcohol                          1                               1       
+percentage.expenditure           1                               1       
+Hepatitis.B                      1                               1       
+Measles                         -1                              -1       
+BMI                              1                               1       
+under.five.deaths               -1                              -1       
+Polio                            1                               1       
+Total.expenditure               -1                              -1       
+Diphtheria                       1                               1       
+HIV.AIDS                        NA                              NA       
+GDP                              1                               1       
+Population                      -1                              -1       
+thinness..1.19.years            -1                              -1       
+thinness.5.9.years              -1                              -1       
+Income.composition.of.resources  1                               1       
+Schooling                        1                               1       
+#+end_example
+
+***** na.or.complete
+#+NAME: fd3117e7-c8af-4653-baae-da31d9aa5e81
+#+begin_src ein-r :session localhost :results output
+cor(life_2015_clean, use=c("na.or.complete"), method=c("pearson"))
+#+end_src
+
+#+RESULTS: fd3117e7-c8af-4653-baae-da31d9aa5e81
+#+begin_example
+
+                                Status Life.expectancy Adult.Mortality
+Status                           1     NA              NA             
+Life.expectancy                 NA      1              -1             
+Adult.Mortality                 NA     -1               1             
+infant.deaths                   NA     -1               1             
+Alcohol                         NA      1              -1             
+percentage.expenditure          NA      1              -1             
+Hepatitis.B                     NA      1              -1             
+Measles                         NA     -1               1             
+BMI                             NA      1              -1             
+under.five.deaths               NA     -1               1             
+Polio                           NA      1              -1             
+Total.expenditure               NA     -1               1             
+Diphtheria                      NA      1              -1             
+HIV.AIDS                        NA     NA              NA             
+GDP                             NA      1              -1             
+Population                      NA     -1               1             
+thinness..1.19.years            NA     -1               1             
+thinness.5.9.years              NA     -1               1             
+Income.composition.of.resources NA      1              -1             
+Schooling                       NA      1              -1             
+                                infant.deaths Alcohol percentage.expenditure
+Status                          NA            NA      NA                    
+Life.expectancy                 -1             1       1                    
+Adult.Mortality                  1            -1      -1                    
+infant.deaths                    1            -1      -1                    
+Alcohol                         -1             1       1                    
+percentage.expenditure          -1             1       1                    
+Hepatitis.B                     -1             1       1                    
+Measles                          1            -1      -1                    
+BMI                             -1             1       1                    
+under.five.deaths                1            -1      -1                    
+Polio                           -1             1       1                    
+Total.expenditure                1            -1      -1                    
+Diphtheria                      -1             1       1                    
+HIV.AIDS                        NA            NA      NA                    
+GDP                             -1             1       1                    
+Population                       1            -1      -1                    
+thinness..1.19.years             1            -1      -1                    
+thinness.5.9.years               1            -1      -1                    
+Income.composition.of.resources -1             1       1                    
+Schooling                       -1             1       1                    
+                                Hepatitis.B Measles BMI under.five.deaths Polio
+Status                          NA          NA      NA  NA                NA   
+Life.expectancy                  1          -1       1  -1                 1   
+Adult.Mortality                 -1           1      -1   1                -1   
+infant.deaths                   -1           1      -1   1                -1   
+Alcohol                          1          -1       1  -1                 1   
+percentage.expenditure           1          -1       1  -1                 1   
+Hepatitis.B                      1          -1       1  -1                 1   
+Measles                         -1           1      -1   1                -1   
+BMI                              1          -1       1  -1                 1   
+under.five.deaths               -1           1      -1   1                -1   
+Polio                            1          -1       1  -1                 1   
+Total.expenditure               -1           1      -1   1                -1   
+Diphtheria                       1          -1       1  -1                 1   
+HIV.AIDS                        NA          NA      NA  NA                NA   
+GDP                              1          -1       1  -1                 1   
+Population                      -1           1      -1   1                -1   
+thinness..1.19.years            -1           1      -1   1                -1   
+thinness.5.9.years              -1           1      -1   1                -1   
+Income.composition.of.resources  1          -1       1  -1                 1   
+Schooling                        1          -1       1  -1                 1   
+                                Total.expenditure Diphtheria HIV.AIDS GDP
+Status                          NA                NA         NA       NA 
+Life.expectancy                 -1                 1         NA        1 
+Adult.Mortality                  1                -1         NA       -1 
+infant.deaths                    1                -1         NA       -1 
+Alcohol                         -1                 1         NA        1 
+percentage.expenditure          -1                 1         NA        1 
+Hepatitis.B                     -1                 1         NA        1 
+Measles                          1                -1         NA       -1 
+BMI                             -1                 1         NA        1 
+under.five.deaths                1                -1         NA       -1 
+Polio                           -1                 1         NA        1 
+Total.expenditure                1                -1         NA       -1 
+Diphtheria                      -1                 1         NA        1 
+HIV.AIDS                        NA                NA          1       NA 
+GDP                             -1                 1         NA        1 
+Population                       1                -1         NA       -1 
+thinness..1.19.years             1                -1         NA       -1 
+thinness.5.9.years               1                -1         NA       -1 
+Income.composition.of.resources -1                 1         NA        1 
+Schooling                       -1                 1         NA        1 
+                                Population thinness..1.19.years
+Status                          NA         NA                  
+Life.expectancy                 -1         -1                  
+Adult.Mortality                  1          1                  
+infant.deaths                    1          1                  
+Alcohol                         -1         -1                  
+percentage.expenditure          -1         -1                  
+Hepatitis.B                     -1         -1                  
+Measles                          1          1                  
+BMI                             -1         -1                  
+under.five.deaths                1          1                  
+Polio                           -1         -1                  
+Total.expenditure                1          1                  
+Diphtheria                      -1         -1                  
+HIV.AIDS                        NA         NA                  
+GDP                             -1         -1                  
+Population                       1          1                  
+thinness..1.19.years             1          1                  
+thinness.5.9.years               1          1                  
+Income.composition.of.resources -1         -1                  
+Schooling                       -1         -1                  
+                                thinness.5.9.years
+Status                          NA                
+Life.expectancy                 -1                
+Adult.Mortality                  1                
+infant.deaths                    1                
+Alcohol                         -1                
+percentage.expenditure          -1                
+Hepatitis.B                     -1                
+Measles                          1                
+BMI                             -1                
+under.five.deaths                1                
+Polio                           -1                
+Total.expenditure                1                
+Diphtheria                      -1                
+HIV.AIDS                        NA                
+GDP                             -1                
+Population                       1                
+thinness..1.19.years             1                
+thinness.5.9.years               1                
+Income.composition.of.resources -1                
+Schooling                       -1                
+                                Income.composition.of.resources Schooling
+Status                          NA                              NA       
+Life.expectancy                  1                               1       
+Adult.Mortality                 -1                              -1       
+infant.deaths                   -1                              -1       
+Alcohol                          1                               1       
+percentage.expenditure           1                               1       
+Hepatitis.B                      1                               1       
+Measles                         -1                              -1       
+BMI                              1                               1       
+under.five.deaths               -1                              -1       
+Polio                            1                               1       
+Total.expenditure               -1                              -1       
+Diphtheria                       1                               1       
+HIV.AIDS                        NA                              NA       
+GDP                              1                               1       
+Population                      -1                              -1       
+thinness..1.19.years            -1                              -1       
+thinness.5.9.years              -1                              -1       
+Income.composition.of.resources  1                               1       
+Schooling                        1                               1       
+#+end_example
+
+***** pairwise.complete.obs
+#+NAME: 98e043dd-6382-4f03-8fc6-f6c43f50fa10
+#+begin_src ein-r :session localhost :results output
+cor(life_2015_clean, use=c("pairwise.complete.obs"), method=c("pearson"))
+#+end_src
+
+#+RESULTS: 98e043dd-6382-4f03-8fc6-f6c43f50fa10
+#+begin_example
+
+                                Status        Life.expectancy Adult.Mortality
+Status                           1.0000000000 -0.51665706      0.36900245    
+Life.expectancy                 -0.5166570632  1.00000000     -0.77911947    
+Adult.Mortality                  0.3690024501 -0.77911947      1.00000000    
+infant.deaths                    0.1247517696 -0.24128954      0.18820516    
+Alcohol                         -0.5722669577  0.60377488     -0.60658826    
+percentage.expenditure           0.0400727074  0.04396412     -0.04292988    
+Hepatitis.B                     -0.1223875598  0.42084792     -0.23171478    
+Measles                          0.0813235618 -0.07461652      0.05119611    
+BMI                             -0.2929402873  0.51666307     -0.36992022    
+under.five.deaths                0.1291009603 -0.27192105      0.21200356    
+Polio                           -0.2257024628  0.51560179     -0.37239163    
+Total.expenditure                          NA -1.00000000      1.00000000    
+Diphtheria                      -0.2211147445  0.50029997     -0.32268845    
+HIV.AIDS                         0.1924626909 -0.60834494      0.62101164    
+GDP                             -0.3739720804  0.45449101     -0.33586964    
+Population                       0.0005978427 -0.04846105      0.04616956    
+thinness..1.19.years             0.3713047706 -0.47502018      0.29801648    
+thinness.5.9.years               0.3752232273 -0.47502673      0.30269890    
+Income.composition.of.resources -0.5580676377  0.90736386     -0.65725777    
+Schooling                       -0.5579942289  0.81815944     -0.54617818    
+                                infant.deaths Alcohol    percentage.expenditure
+Status                           0.12475177   -0.5722670  0.040072707          
+Life.expectancy                 -0.24128954    0.6037749  0.043964121          
+Adult.Mortality                  0.18820516   -0.6065883 -0.042929879          
+infant.deaths                    1.00000000   -0.6140724 -0.014261921          
+Alcohol                         -0.61407243    1.0000000 -0.212868045          
+percentage.expenditure          -0.01426192   -0.2128680  1.000000000          
+Hepatitis.B                     -0.08690157    0.5612067  0.041100311          
+Measles                          0.80085889   -0.5946120 -0.014628987          
+BMI                             -0.22356229    0.9226783  0.037722518          
+under.five.deaths                0.99419572   -0.6141817 -0.014618671          
+Polio                           -0.12972895    0.6198551  0.002149597          
+Total.expenditure                1.00000000   -1.0000000 -1.000000000          
+Diphtheria                      -0.11798926    0.5745324  0.034701325          
+HIV.AIDS                         0.09583712           NA -0.036393365          
+GDP                             -0.12228636   -0.3289319 -0.030799833          
+Population                       0.27181137   -0.9727654 -0.019062400          
+thinness..1.19.years             0.53054418   -0.6976496 -0.015428445          
+thinness.5.9.years               0.53054804   -0.7056867 -0.013887070          
+Income.composition.of.resources -0.20752236    0.6692496  0.014061997          
+Schooling                       -0.20814856    0.8928384  0.018592698          
+                                Hepatitis.B Measles     BMI         
+Status                          -0.12238756  0.08132356 -0.292940287
+Life.expectancy                  0.42084792 -0.07461652  0.516663068
+Adult.Mortality                 -0.23171478  0.05119611 -0.369920223
+infant.deaths                   -0.08690157  0.80085889 -0.223562288
+Alcohol                          0.56120670 -0.59461195  0.922678345
+percentage.expenditure           0.04110031 -0.01462899  0.037722518
+Hepatitis.B                      1.00000000  0.01564200  0.179551156
+Measles                          0.01564200  1.00000000 -0.128184356
+BMI                              0.17955116 -0.12818436  1.000000000
+under.five.deaths               -0.10471583  0.76490826 -0.234981856
+Polio                            0.59455854 -0.02834186  0.212450071
+Total.expenditure               -1.00000000  1.00000000 -1.000000000
+Diphtheria                       0.91522030 -0.00162315  0.197685617
+HIV.AIDS                        -0.38379178 -0.02657996 -0.292452813
+GDP                              0.14211629 -0.07723353  0.345978425
+Population                      -0.04755820  0.12771710  0.001515378
+thinness..1.19.years            -0.05795100  0.34327367 -0.472507580
+thinness.5.9.years              -0.09996453  0.33829411 -0.489715937
+Income.composition.of.resources  0.32716917 -0.07467367  0.589783602
+Schooling                        0.33405089 -0.06779575  0.566204265
+                                under.five.deaths Polio       
+Status                           0.12910096       -0.225702463
+Life.expectancy                 -0.27192105        0.515601795
+Adult.Mortality                  0.21200356       -0.372391627
+infant.deaths                    0.99419572       -0.129728947
+Alcohol                         -0.61418174        0.619855110
+percentage.expenditure          -0.01461867        0.002149597
+Hepatitis.B                     -0.10471583        0.594558536
+Measles                          0.76490826       -0.028341859
+BMI                             -0.23498186        0.212450071
+under.five.deaths                1.00000000       -0.147457487
+Polio                           -0.14745749        1.000000000
+Total.expenditure                1.00000000       -1.000000000
+Diphtheria                      -0.13786287        0.661635315
+HIV.AIDS                         0.12260442       -0.403232519
+GDP                             -0.12767000        0.241974423
+Population                       0.31068652       -0.236340708
+thinness..1.19.years             0.52214172       -0.194517608
+thinness.5.9.years               0.52100562       -0.196669109
+Income.composition.of.resources -0.22957135        0.464524568
+Schooling                       -0.22753042        0.408363489
+                                Total.expenditure Diphtheria  HIV.AIDS   
+Status                          NA                -0.22111474  0.19246269
+Life.expectancy                 -1                 0.50029997 -0.60834494
+Adult.Mortality                  1                -0.32268845  0.62101164
+infant.deaths                    1                -0.11798926  0.09583712
+Alcohol                         -1                 0.57453243          NA
+percentage.expenditure          -1                 0.03470133 -0.03639336
+Hepatitis.B                     -1                 0.91522030 -0.38379178
+Measles                          1                -0.00162315 -0.02657996
+BMI                             -1                 0.19768562 -0.29245281
+under.five.deaths                1                -0.13786287  0.12260442
+Polio                           -1                 0.66163532 -0.40323252
+Total.expenditure                1                -1.00000000          NA
+Diphtheria                      -1                 1.00000000 -0.44141288
+HIV.AIDS                        NA                -0.44141288  1.00000000
+GDP                             -1                 0.22770513 -0.19769304
+Population                       1                -0.06401096  0.02430268
+thinness..1.19.years             1                -0.11399856  0.18428968
+thinness.5.9.years               1                -0.15703750  0.16847058
+Income.composition.of.resources -1                 0.43193612 -0.47878832
+Schooling                       -1                 0.41083260 -0.39416055
+                                GDP         Population    thinness..1.19.years
+Status                          -0.37397208  0.0005978427  0.371304771        
+Life.expectancy                  0.45449101 -0.0484610537 -0.475020177        
+Adult.Mortality                 -0.33586964  0.0461695590  0.298016478        
+infant.deaths                   -0.12228636  0.2718113749  0.530544182        
+Alcohol                         -0.32893188 -0.9727654364 -0.697649635        
+percentage.expenditure          -0.03079983 -0.0190623996 -0.015428445        
+Hepatitis.B                      0.14211629 -0.0475581955 -0.057950998        
+Measles                         -0.07723353  0.1277171002  0.343273666        
+BMI                              0.34597842  0.0015153779 -0.472507580        
+under.five.deaths               -0.12767000  0.3106865170  0.522141718        
+Polio                            0.24197442 -0.2363407075 -0.194517608        
+Total.expenditure               -1.00000000  1.0000000000  1.000000000        
+Diphtheria                       0.22770513 -0.0640109592 -0.113998562        
+HIV.AIDS                        -0.19769304  0.0243026761  0.184289683        
+GDP                              1.00000000  0.0641671811 -0.242374058        
+Population                       0.06416718  1.0000000000  0.007619768        
+thinness..1.19.years            -0.24237406  0.0076197683  1.000000000        
+thinness.5.9.years              -0.25092632 -0.0006055056  0.973195025        
+Income.composition.of.resources  0.52163836  0.0066844216 -0.507867950        
+Schooling                        0.44727548  0.0167176195 -0.507250471        
+                                thinness.5.9.years
+Status                           0.3752232273     
+Life.expectancy                 -0.4750267329     
+Adult.Mortality                  0.3026988996     
+infant.deaths                    0.5305480372     
+Alcohol                         -0.7056866540     
+percentage.expenditure          -0.0138870698     
+Hepatitis.B                     -0.0999645302     
+Measles                          0.3382941135     
+BMI                             -0.4897159366     
+under.five.deaths                0.5210056153     
+Polio                           -0.1966691088     
+Total.expenditure                1.0000000000     
+Diphtheria                      -0.1570375038     
+HIV.AIDS                         0.1684705793     
+GDP                             -0.2509263249     
+Population                      -0.0006055056     
+thinness..1.19.years             0.9731950251     
+thinness.5.9.years               1.0000000000     
+Income.composition.of.resources -0.5059939363     
+Schooling                       -0.5038791522     
+                                Income.composition.of.resources Schooling  
+Status                          -0.558067638                    -0.55799423
+Life.expectancy                  0.907363860                     0.81815944
+Adult.Mortality                 -0.657257766                    -0.54617818
+infant.deaths                   -0.207522360                    -0.20814856
+Alcohol                          0.669249553                     0.89283845
+percentage.expenditure           0.014061997                     0.01859270
+Hepatitis.B                      0.327169172                     0.33405089
+Measles                         -0.074673665                    -0.06779575
+BMI                              0.589783602                     0.56620426
+under.five.deaths               -0.229571347                    -0.22753042
+Polio                            0.464524568                     0.40836349
+Total.expenditure               -1.000000000                    -1.00000000
+Diphtheria                       0.431936118                     0.41083260
+HIV.AIDS                        -0.478788325                    -0.39416055
+GDP                              0.521638357                     0.44727548
+Population                       0.006684422                     0.01671762
+thinness..1.19.years            -0.507867950                    -0.50725047
+thinness.5.9.years              -0.505993936                    -0.50387915
+Income.composition.of.resources  1.000000000                     0.91751420
+Schooling                        0.917514197                     1.00000000
+#+end_example
+
+*** Respectivos plots
+**** everything 
+#+NAME: fde1a2b8-d06e-42bb-b344-08498e13dc12
+#+begin_src ein-r :session localhost :results output
+ggcorrplot(cor(data, use=c("everything"), method=c("pearson")))
+#+end_src
+
+#+RESULTS: fde1a2b8-d06e-42bb-b344-08498e13dc12
+#+ATTR_HTML: :width 300px
+ [[file:ein-images/ob-ein-aa94cd69ce68aa1aee2b9ec8a1d335e1.png]]
+
+
+**** all.obs
+#+NAME: 96a60504-8281-4d58-a570-16aea58c931e
+#+begin_src ein-r :session localhost :results output
+ggcorrplot(cor(life_2015_clean, use=c("all.obs"), method=c("pearson")))
+#+end_src
+
+#+RESULTS: 96a60504-8281-4d58-a570-16aea58c931e
+: Error in cor(life_2015_clean, use = c("all.obs"), method = c("pearson")): missing observations in cov/cor
+: Traceback:
+: 
+: 1. ggcorrplot(cor(life_2015_clean, use = c("all.obs"), method = c("pearson")))
+: 2. cor(life_2015_clean, use = c("all.obs"), method = c("pearson"))
+
+**** complete.obs
+#+NAME: 3801dacd-2572-4b4a-ad2d-21469e5b7ccf
+#+begin_src ein-r :session localhost :results output
+ggcorrplot(cor(life_2015_clean, use=c("complete.obs"), method=c("pearson")))
+#+end_src
+
+#+RESULTS: 3801dacd-2572-4b4a-ad2d-21469e5b7ccf
+
+#+ATTR_HTML: :width 500px
+ [[file:ein-images/ob-ein-e90d4ea94e06bb304e977490af6de845.png]]
+
+**** na.or.complete
+#+NAME: dfcf6351-5cac-47b4-9a22-7f0182a2460c
+#+begin_src ein-r :session localhost :results output
+ggcorrplot(cor(life_2015_clean, use=c("na.or.complete"), method=c("pearson")))
+#+end_src
+
+#+RESULTS: dfcf6351-5cac-47b4-9a22-7f0182a2460c
+
+#+ATTR_HTML: :width 500px
+ [[file:ein-images/ob-ein-e90d4ea94e06bb304e977490af6de845.png]]
+
+**** pairwise.complete.obs
+#+NAME: 98e043dd-6382-4f03-8fc6-f6c43f50fa10
+#+begin_src ein-r :session localhost :results output
+ggcorrplot(cor(life_2015_clean, use=c("pairwise.complete.obs"), method=c("pearson")))
+#+end_src
+
+#+ATTR_HTML: :width 500px
+ [[file:ein-images/ob-ein-28b9cbe40750df74a1bd8d32eb620901.png]]
+
+
