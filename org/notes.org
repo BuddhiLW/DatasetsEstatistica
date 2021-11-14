@@ -204,3 +204,8 @@ DEADLINE: <2021-08-15 Sun> SCHEDULED: <2021-08-12 Thu>
 
 ** Apresentação
 - 06 - 15 Dez
+
+
+#+begin_src ein-r :session localhost :results output
+  corr_birth <- cor(dados_birth[c('Length', 'Headcirc', 'Birthweight', 'Headcirc', 'Gestation', 'smoker','mppwt','fheight','mage35')])
+#+end_src
